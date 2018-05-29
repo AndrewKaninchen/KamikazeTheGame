@@ -5,6 +5,7 @@ using System.Reflection;
 using UnityEngine;
 using System.Threading;
 using System.Threading.Tasks;
+using static Kamikaze.Backend.GameEvents;
 
 namespace Kamikaze.Backend
 {
@@ -75,13 +76,13 @@ namespace Kamikaze.Backend
 
         private static async Task VictoryCheckPhase()
         {
-            //await GameEvents.OnVictoryCheckPhase(currentPlayer); 
+            //await CallEvent<OnVictoryCheckPhase>();
             // Check for Victory
         }
 
         private async static Task DrawPhase()
         {
-            //await GameEvents.OnDrawPhase(currentPlayer);
+            //await CallEvent<OnDrawPhase>(new OnDrawPhase(currentPlayer));
             await currentPlayer.DrawCard();
         }
 
