@@ -5,8 +5,7 @@ using UnityEngine;
 
 namespace Kamikaze.Backend
 {
-    [Serializable]
-    public abstract class FieldCard : Card
+   public abstract class FieldCard : Card
     {
         public List<Ability> Abilites { get; set; }
 

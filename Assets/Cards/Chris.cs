@@ -4,11 +4,11 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using UnityEngine;
-using static Kamikaze.Backend.GameEvents;
 
 namespace Kamikaze.Cards
 {
-    [CreateAssetMenu(menuName = "Card/Unit/Chris", fileName = "Chris Hemsworth")]
+    [CreateAssetMenu(menuName = "Card/Unit/Chris", fileName = "Chris")]
+    [Serializable]
     public class Chris : UnitCard
     {
         public override void Init(Player owner, Player opponent, IEnumerable container, Kamikaze.Frontend.Card front)
@@ -43,7 +43,7 @@ namespace Kamikaze.Cards
             public override bool Condition() => true;
         }
 
-        public class DrinkEffect : TriggerEffect<OnCardDrawn>
+        public class DrinkEffect : TriggerEffect<GameEvents.OnCardDrawn>
         {
             public override bool Condition()
             {
