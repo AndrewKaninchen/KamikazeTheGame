@@ -84,7 +84,38 @@ namespace Kamikaze.Backend
     public interface IHealthStatHolder
     {
         int Health { get; set; }        
-    }    
+    }
+
+    public abstract class FieldCard : Card
+    {
+        public List<Ability> Abilites { get; set; }
+
+        public Vector2 Position { get; set; }
+        public bool IsExiled { get; set; }
+        public bool IsInField { get; set; }
+
+        public override void Init(Player owner, Player opponent, IEnumerable container, Frontend.Card front)
+        {
+            base.Init(owner, opponent, container, front);
+        }
+    }
+
+    public abstract class UnitCard : FieldCard, IAttackStatHolder, IMovementStatHolder, IHealthStatHolder
+    {
+        public AttackStat Attack { get; set; }
+        public MovementStat Movement { get; set; }
+        public int Health { get; set; }
+
+        public override void Init(Player owner, Player opponent, IEnumerable container, Frontend.Card front)
+        {
+            base.Init(owner, opponent, container, front);
+            Abilites = new List<Ability>
+            {
+                new Move(this, Movement),
+                new Attack(this, Attack)
+            };
+        }
+    }
 
     public abstract class BuildingCard : FieldCard, IHealthStatHolder
     {
@@ -97,5 +128,20 @@ namespace Kamikaze.Backend
 
     public abstract class ConjurationCard : Card
     {
-    }   
+    }
+
+    public abstract class TriggerEffect
+    {
+        public Card card;
+        public virtual bool Mandatory() => true;
+        public virtual bool Condition() => true;
+        public abstract Task Body();
+    }
+
+    public abstract class TriggerEffect<T> : TriggerEffect where T : GameEvents.GameEvent
+    {
+        public T context;
+    }
+
+
 }
