@@ -14,7 +14,7 @@ namespace CoroutineAsync
             {
                 yield return c;
                 cS.SetResult(null);
-            }
+            }   
 
             var completionSource = new TaskCompletionSource<object>();
             behaviour.StartCoroutine(CoroutineWrapper(coroutine, completionSource));

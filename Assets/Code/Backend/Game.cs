@@ -74,6 +74,7 @@ namespace Kamikaze.Backend
             await EndPhase();
         }
 
+#pragma warning disable CS1998 // Async method lacks 'await' operators and will run synchronously
         private static async Task VictoryCheckPhase()
         {
             //await CallEvent<OnVictoryCheckPhase>();
@@ -109,8 +110,9 @@ namespace Kamikaze.Backend
         private static async Task EndPhase()
         {
             //await GameEvents.OnEndPhase(currentPlayer);
-        } 
+        }
         #endregion
+#pragma warning restore CS1998 // Async method lacks 'await' operators and will run synchronously
 
     }
 }

@@ -1,2 +1,20 @@
  (0,0): Unity incremental compiler server
- (0,0): watchdog active on pid: 15568
+ (0,0): watchdog active on pid: 9472
+ (0,0): [09/13/2018 03:37:05.108 ] Kamikaze.dll: no prior compilation found in cache
+ (0,0): [09/13/2018 03:37:05.137 ] Kamikaze.dll compiling...
+ (0,0): [09/13/2018 03:37:09.626 ] Kamikaze.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Kamikaze.dll
+ (0,0): [09/13/2018 03:37:11.282 ] Kamikaze.dll compilation finished in 6144ms  source files re-parsed: 15 metadata reloaded: 209
+ (0,0): [09/13/2018 03:37:12.039 ] Kamikaze.Cards.dll: no prior compilation found in cache
+ (0,0): [09/13/2018 03:37:12.266 ] Kamikaze.Cards.dll compiling...
+ (0,0): [09/13/2018 03:37:12.385 ] Kamikaze.Cards.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Kamikaze.Cards.dll
+ (0,0): [09/13/2018 03:37:12.435 ] Kamikaze.Cards.dll compilation finished in 169ms  source files re-parsed: 1 metadata reloaded: 1
+ (0,0): [09/13/2018 03:37:12.957 ] Assembly-CSharp.dll: no prior compilation found in cache
+ (0,0): [09/13/2018 03:37:12.971 ] Assembly-CSharp.dll compiling...
+ (0,0): [09/13/2018 03:37:13.336 ] Assembly-CSharp.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp.dll
+ (0,0): [09/13/2018 03:37:13.843 ] Assembly-CSharp.dll compilation finished in 873ms  source files re-parsed: 13 metadata reloaded: 6
+ (0,0): [09/13/2018 03:37:14.382 ] Assembly-CSharp-Editor.dll: no prior compilation found in cache
+ (0,0): [09/13/2018 03:37:14.394 ] Assembly-CSharp-Editor.dll compiling...
+ (0,0): [09/13/2018 03:37:14.767 ] Assembly-CSharp-Editor.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp-Editor.dll
+ (0,0): [09/13/2018 03:37:14.813 ] Assembly-CSharp-Editor.dll compilation finished in 419ms  source files re-parsed: 1 metadata reloaded: 120
+ (0,0): [09/13/2018 05:38:58.896 ] Compiler cache size is now 18,97 MB
+ (0,0): watchdog triggered an exit

@@ -2,7 +2,7 @@
 -target:library
 -nowarn:0169
 -langversion:7
--out:C:/Users/andre/Desktop/KamikazeTheGame-master/Temp/Kamikaze.dll
+-out:C:/Users/andre/Documents/GitHub/KamikazeTheGame/Temp/Kamikaze.dll
 -nostdlib
 -unsafe
 -r:"C:\Program Files\Unity\Hub\Editor\2018.2.6f1\Editor\Data\Managed/UnityEngine/UnityEngine.dll"
@@ -83,20 +83,22 @@
 -r:"C:/Program Files/Unity/Hub/Editor/2018.2.6f1/Editor/Data/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2018.2.6f1/Editor/Data/Managed/UnityEditor.Graphs.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2018.2.6f1/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll"
--r:C:/Users/andre/Desktop/KamikazeTheGame-master/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll
+-r:C:/Users/andre/Documents/GitHub/KamikazeTheGame/Assets/Demigiant/DOTween/DOTween.dll
+-r:C:/Users/andre/Documents/GitHub/KamikazeTheGame/Assets/Demigiant/DOTween/Editor/DOTweenEditor.dll
+-r:C:/Users/andre/Documents/GitHub/KamikazeTheGame/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll
 -r:C:/Users/andre/AppData/Local/Unity/cache/packages/staging-packages.unity.com/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll
 -r:C:/Users/andre/AppData/Local/Unity/cache/packages/staging-packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll
 -r:C:/Users/andre/AppData/Local/Unity/cache/packages/staging-packages.unity.com/com.unity.analytics@2.0.16/Editor/UnityEditor.Analytics.dll
+-r:C:/Users/andre/AppData/Local/Unity/cache/packages/staging-packages.unity.com/com.unity.probuilder@3.0.9/ProBuilder/AssetIdRemapUtility/Editor/AssetIdRemapUtility.dll
+-r:C:/Users/andre/AppData/Local/Unity/cache/packages/staging-packages.unity.com/com.unity.probuilder@3.0.9/ProBuilder/Classes/ProBuilderCore.dll
+-r:C:/Users/andre/AppData/Local/Unity/cache/packages/staging-packages.unity.com/com.unity.probuilder@3.0.9/ProBuilder/Classes/ProBuilderMeshOps.dll
+-r:C:/Users/andre/AppData/Local/Unity/cache/packages/staging-packages.unity.com/com.unity.probuilder@3.0.9/ProBuilder/Classes/ClassesLib/KdTreeLib.dll
+-r:C:/Users/andre/AppData/Local/Unity/cache/packages/staging-packages.unity.com/com.unity.probuilder@3.0.9/ProBuilder/Classes/ClassesLib/pb_Stl.dll
+-r:C:/Users/andre/AppData/Local/Unity/cache/packages/staging-packages.unity.com/com.unity.probuilder@3.0.9/ProBuilder/Classes/ClassesLib/Poly2Tri.dll
+-r:C:/Users/andre/AppData/Local/Unity/cache/packages/staging-packages.unity.com/com.unity.probuilder@3.0.9/ProBuilder/Editor/ProBuilderEditor.dll
 -r:C:/Users/andre/AppData/Local/Unity/cache/packages/staging-packages.unity.com/com.unity.purchasing@2.0.3/Editor/UnityEditor.Purchasing.dll
 -r:C:/Users/andre/AppData/Local/Unity/cache/packages/staging-packages.unity.com/com.unity.standardevents@1.0.13/UnityEngine.StandardEvents.dll
 -r:"C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/15.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll"
--r:C:/Users/andre/AppData/Local/Unity/cache/packages/staging-packages.unity.com/com.unity.probuilder@3.0.9/ProBuilder/Classes/ProBuilderMeshOps.dll
--r:C:/Users/andre/AppData/Local/Unity/cache/packages/staging-packages.unity.com/com.unity.probuilder@3.0.9/ProBuilder/Classes/ClassesLib/Poly2Tri.dll
--r:C:/Users/andre/AppData/Local/Unity/cache/packages/staging-packages.unity.com/com.unity.probuilder@3.0.9/ProBuilder/Editor/ProBuilderEditor.dll
--r:C:/Users/andre/AppData/Local/Unity/cache/packages/staging-packages.unity.com/com.unity.probuilder@3.0.9/ProBuilder/AssetIdRemapUtility/Editor/AssetIdRemapUtility.dll
--r:C:/Users/andre/AppData/Local/Unity/cache/packages/staging-packages.unity.com/com.unity.probuilder@3.0.9/ProBuilder/Classes/ProBuilderCore.dll
--r:C:/Users/andre/AppData/Local/Unity/cache/packages/staging-packages.unity.com/com.unity.probuilder@3.0.9/ProBuilder/Classes/ClassesLib/KdTreeLib.dll
--r:C:/Users/andre/AppData/Local/Unity/cache/packages/staging-packages.unity.com/com.unity.probuilder@3.0.9/ProBuilder/Classes/ClassesLib/pb_Stl.dll
 -r:"C:\Program Files\Unity\Hub\Editor\2018.2.6f1\Editor\Data\NetStandard\ref\2.0.0\netstandard.dll"
 -r:"C:\Program Files\Unity\Hub\Editor\2018.2.6f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\Microsoft.Win32.Primitives.dll"
 -r:"C:\Program Files\Unity\Hub\Editor\2018.2.6f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.AppContext.dll"
@@ -310,18 +312,19 @@
 -d:UNITY_TEAM_LICENSE
 -d:ENABLE_VSTU
 -d:UNITY_POST_PROCESSING_STACK_V2
--i:C:/Users/andre/Desktop/KamikazeTheGame-master/Assets/Code/Backend/Ability.cs
--i:C:/Users/andre/Desktop/KamikazeTheGame-master/Assets/Code/Backend/Card.cs
--i:C:/Users/andre/Desktop/KamikazeTheGame-master/Assets/Code/Backend/FieldCard.cs
--i:C:/Users/andre/Desktop/KamikazeTheGame-master/Assets/Code/Backend/Game.cs
--i:C:/Users/andre/Desktop/KamikazeTheGame-master/Assets/Code/Backend/GameEvents.cs
--i:C:/Users/andre/Desktop/KamikazeTheGame-master/Assets/Code/Backend/Player.cs
--i:C:/Users/andre/Desktop/KamikazeTheGame-master/Assets/Code/Backend/TriggerEffect.cs
--i:C:/Users/andre/Desktop/KamikazeTheGame-master/Assets/Code/Backend/UnitCard.cs
--i:C:/Users/andre/Desktop/KamikazeTheGame-master/Assets/Code/Bootstrapper.cs
--i:C:/Users/andre/Desktop/KamikazeTheGame-master/Assets/Code/Frontend/AbilityPanel.cs
--i:C:/Users/andre/Desktop/KamikazeTheGame-master/Assets/Code/Frontend/Card.cs
--i:C:/Users/andre/Desktop/KamikazeTheGame-master/Assets/Code/Frontend/HandPanel.cs
--i:C:/Users/andre/Desktop/KamikazeTheGame-master/Assets/Code/Frontend/PlayerCanvas.cs
--i:C:/Users/andre/Desktop/KamikazeTheGame-master/Assets/Code/Frontend/UIManager.cs
+-i:C:/Users/andre/Documents/GitHub/KamikazeTheGame/Assets/Code/Backend/Ability.cs
+-i:C:/Users/andre/Documents/GitHub/KamikazeTheGame/Assets/Code/Backend/Card.cs
+-i:C:/Users/andre/Documents/GitHub/KamikazeTheGame/Assets/Code/Backend/FieldCard.cs
+-i:C:/Users/andre/Documents/GitHub/KamikazeTheGame/Assets/Code/Backend/Game.cs
+-i:C:/Users/andre/Documents/GitHub/KamikazeTheGame/Assets/Code/Backend/GameEvents.cs
+-i:C:/Users/andre/Documents/GitHub/KamikazeTheGame/Assets/Code/Backend/Player.cs
+-i:C:/Users/andre/Documents/GitHub/KamikazeTheGame/Assets/Code/Backend/TriggerEffect.cs
+-i:C:/Users/andre/Documents/GitHub/KamikazeTheGame/Assets/Code/Backend/UnitCard.cs
+-i:C:/Users/andre/Documents/GitHub/KamikazeTheGame/Assets/Code/Bootstrapper.cs
+-i:C:/Users/andre/Documents/GitHub/KamikazeTheGame/Assets/Code/Frontend/_old/AbilityPanel.cs
+-i:C:/Users/andre/Documents/GitHub/KamikazeTheGame/Assets/Code/Frontend/_old/Card.cs
+-i:C:/Users/andre/Documents/GitHub/KamikazeTheGame/Assets/Code/Frontend/_old/HandPanel.cs
+-i:C:/Users/andre/Documents/GitHub/KamikazeTheGame/Assets/Code/Frontend/_old/PlayerCanvas.cs
+-i:C:/Users/andre/Documents/GitHub/KamikazeTheGame/Assets/Code/Frontend/_old/UIManager.cs
+-i:C:/Users/andre/Documents/GitHub/KamikazeTheGame/Assets/Code/Frontend/Token.cs
 -v:0
