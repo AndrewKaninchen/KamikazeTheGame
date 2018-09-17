@@ -3,17 +3,20 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 
-[CustomEditor(typeof(Bootstrapper))]
-public class BootstrapperEditor : Editor
+namespace Kamikaze
 {
-    public override void OnInspectorGUI()
+    [CustomEditor(typeof(Bootstrapper))]
+    public class BootstrapperEditor : Editor
     {
-        Bootstrapper b = target as Bootstrapper;
-        base.OnInspectorGUI();
-
-        if (GUILayout.Button("Begin"))
+        public override void OnInspectorGUI()
         {
-            b.Begin();
+            Bootstrapper b = target as Bootstrapper;
+            base.OnInspectorGUI();
+
+            if (GUILayout.Button("Begin"))
+            {
+                b.Begin();
+            }
         }
     }
 }

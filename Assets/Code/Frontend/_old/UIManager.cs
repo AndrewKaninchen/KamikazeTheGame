@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Kamikaze.Frontend
+namespace Kamikaze.Frontend_Old
 {
     public class UIManager : MonoBehaviour
     {

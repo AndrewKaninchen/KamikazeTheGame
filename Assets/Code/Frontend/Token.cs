@@ -13,7 +13,7 @@ public class Token : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHan
     public void OnDrag(PointerEventData eventData)
     {
         Debug.Log("OnDrag");
-        transform.position = new Vector3(eventData.position.x, 0f, eventData.position.y);
+        //transform.position = new Vector3(eventData.position.x, 0f, eventData.position.y);
     }
 
     public void OnEndDrag(PointerEventData eventData)
@@ -25,6 +25,4 @@ public class Token : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHan
     {
         Debug.Log("OnPointerClick");
     }
-
-
 }

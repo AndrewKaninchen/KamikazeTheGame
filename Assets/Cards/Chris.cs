@@ -11,7 +11,7 @@ namespace Kamikaze.Cards
     [Serializable]
     public class Chris : UnitCard
     {
-        public override void Init(Player owner, Player opponent, IEnumerable container, Kamikaze.Frontend.Card front)
+        public override void Init(Player owner, Player opponent, IEnumerable container, Kamikaze.Frontend_Old.Card front)
         {
             base.Init(owner, opponent, container, front);
 

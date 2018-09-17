@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-namespace Kamikaze.Frontend
+namespace Kamikaze.Frontend_Old
 {
     public class Card : Selectable,
         IBeginDragHandler, IDragHandler, IEndDragHandler, 

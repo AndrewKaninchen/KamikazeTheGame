@@ -3,13 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using Kamikaze.Backend;
 
-public class Bootstrapper : MonoBehaviour
+namespace Kamikaze
 {
-    public List<Card> cardsP1;
-    public List<Card> cardsP2;        
-	
-    public void Begin ()
+    public class Bootstrapper : MonoBehaviour
     {
-        Game.Initialize(cardsP1, cardsP2);
+        public List<Backend.Card> cardsP1;
+        public List<Backend.Card> cardsP2;        
+	
+        public void Begin ()
+        {
+            Game.Initialize(cardsP1, cardsP2);
+        }
     }
 }

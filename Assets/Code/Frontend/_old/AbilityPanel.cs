@@ -5,7 +5,7 @@ using UnityEngine.UI;
 //using Kamikaze.Backend;
 
 
-namespace Kamikaze.Frontend
+namespace Kamikaze.Frontend_Old
 {
     public class AbilityPanel : MonoBehaviour
     {

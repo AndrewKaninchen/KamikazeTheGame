@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using Kamikaze.Frontend;
+using Kamikaze.Frontend_Old;
 using UnityEngine;
 
 namespace Kamikaze.Backend
@@ -15,11 +15,11 @@ namespace Kamikaze.Backend
         public Player owner;
         public Player opponent;
         public IEnumerable container;
-        public Frontend.Card FrontendCard { get; private set; }
+        public Frontend_Old.Card FrontendCard { get; private set; }
 
         public List<TriggerEffect> TriggerEffects { get; set; }
         
-        public virtual void Init(Player owner, Player opponent, IEnumerable container, Frontend.Card front)
+        public virtual void Init(Player owner, Player opponent, IEnumerable container, Frontend_Old.Card front)
         {
             this.owner = owner;
             this.opponent = opponent;
@@ -94,7 +94,7 @@ namespace Kamikaze.Backend
         public bool IsExiled { get; set; }
         public bool IsInField { get; set; }
 
-        public override void Init(Player owner, Player opponent, IEnumerable container, Frontend.Card front)
+        public override void Init(Player owner, Player opponent, IEnumerable container, Frontend_Old.Card front)
         {
             base.Init(owner, opponent, container, front);
         }
@@ -106,7 +106,7 @@ namespace Kamikaze.Backend
         public MovementStat Movement { get; set; }
         public int Health { get; set; }
 
-        public override void Init(Player owner, Player opponent, IEnumerable container, Frontend.Card front)
+        public override void Init(Player owner, Player opponent, IEnumerable container, Frontend_Old.Card front)
         {
             base.Init(owner, opponent, container, front);
             Abilites = new List<Ability>

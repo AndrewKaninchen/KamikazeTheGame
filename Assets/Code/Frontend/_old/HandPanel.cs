@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Linq;
 
-namespace Kamikaze.Frontend
+namespace Kamikaze.Frontend_Old
 {
     public class HandPanel : MonoBehaviour
     {
