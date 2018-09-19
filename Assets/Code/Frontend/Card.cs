@@ -9,22 +9,68 @@ namespace Kamikaze.Frontend
 {
     public class Card : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHandler, IPointerClickHandler, IPointerEnterHandler, IPointerExitHandler
     {
+        public enum DragState
+        {
+            NotDragging,
+            Dragging,
+            ReturningFromDrag,
+            Summonning
+        }
+
+        //public Material transparentMaterial;
+        public GameObject tokenPrefab;
         public DummyCard dummy;
+        public float distanceFromCameraWhenDraggingCards;
+        public DragState dragState;
+        private GameObject token;
+        public LayerMask layers;
+
 
         private void LateUpdate()
         {
-            MoveToPositionImmediately();
+            if (dragState == DragState.NotDragging)
+            {
+                MoveToPositionImmediately();
+            }
+            else if (dragState == DragState.Dragging)
+            {
+                var pos = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 1f);
+                pos.z *= distanceFromCameraWhenDraggingCards;
+                pos = Camera.main.ScreenToWorldPoint(pos);
+
+                transform.DOKill();
+                transform.position = pos;
+            }
+            else if (dragState == DragState.ReturningFromDrag)
+            {
+                transform.position = Vector3.Lerp(transform.position, dummy.transform.position, 0.5f);
+                if (Vector3.Distance(transform.position, dummy.transform.position) < 0.01f)
+                {
+                    transform.position = dummy.transform.position;
+                    dragState = DragState.NotDragging;
+                }
+            }
+            else if (dragState == DragState.Summonning)
+            {
+                RaycastHit hit;
+                Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+
+                if (Physics.Raycast(ray, out hit, 1000f, layers))
+                {
+                    Transform objectHit = hit.transform;
+                }
+                var pos = hit.point;
+                token.transform.position = pos;
+            }
         }
 
-        public void MoveToPosition() => MoveToPosition(dummy.transform.position, dummy.transform.rotation);
         public void MoveToPosition(Vector3 position, Quaternion rotation)
         {
             transform.DOKill();
-            transform.DOMove(position, 0.2f);
+            transform.DOMove(position, 0.05f);
             transform.DORotate(rotation.eulerAngles, 0.2f);
         }
-    
-        public void MoveToPositionImmediately() => MoveToPositionImmediately(dummy.transform.position, dummy.transform.rotation);
+
         public void MoveToPositionImmediately(Vector3 position, Quaternion rotation)
         {
             transform.DOKill();
@@ -32,36 +78,78 @@ namespace Kamikaze.Frontend
             transform.rotation = rotation;
         }
     
+        public void MoveToPosition() => MoveToPosition(dummy.transform.position, dummy.transform.rotation);
+        public void MoveToPositionImmediately() => MoveToPositionImmediately(dummy.transform.position, dummy.transform.rotation);
+
         public void OnBeginDrag(PointerEventData eventData)
         {
             Debug.Log($"OnBeginDrag: {this}");
+
+            dragState = DragState.Dragging;
         }
 
         public void OnDrag(PointerEventData eventData)
         {
-            Debug.Log($"OnDrag: {this}"); 
+            Debug.Log($"OnDrag: {this}");
+            //transform.DOMove(pos, 0.1f);
+
+            Debug.Log(Input.mousePosition.y);
+            if (Input.mousePosition.y / Screen.height > .3f)
+            {
+                if (dragState != DragState.Summonning)
+                {
+                    dragState = DragState.Summonning;
+                    Debug.Log("Summonning");
+                    GetComponent<MeshRenderer>().enabled = false;
+                    
+                    if(token == null) token = Instantiate(tokenPrefab);
+                }
+                //dragState = DragState.Summonning;
+            }
+            else
+            {
+                if (dragState == DragState.Summonning)
+                {
+                    dragState = DragState.Dragging;
+                    Debug.Log("Stap Summonning");
+                    Destroy(token);
+                    GetComponent<MeshRenderer>().enabled = true;
+                }
+            }
         }
-    
+
         public void OnEndDrag(PointerEventData eventData)
         {
             Debug.Log($"OnEndDrag: {this}");
+
+            //var t = transform.DOMove(dummy.transform.position, 20f);
+            dragState = DragState.ReturningFromDrag;
+
+            //t.SetSpeedBased();
+            ////t.SetRelative();
+            ////t.onUpdate += () => t.ChangeEndValue(dummy.transform.position, true);
+            //t.onComplete += () => 
+            //{
+            //    dragState = DragState.NotDragging;
+            //    Debug.Log("FOI PORRA");
+            //};
         }
 
         public void OnPointerClick(PointerEventData eventData)
         {
-            Debug.Log($"OnPointerClick: {this}");
+           // Debug.Log($"OnPointerClick: {this}");
             //MoveToPosition();
-            MoveToPositionImmediately();
+            //MoveToPositionImmediately();
         }
 
         public void OnPointerEnter(PointerEventData eventData)
         {
-            Debug.Log($"OnPointerEnter: {this}");
+           // Debug.Log($"OnPointerEnter: {this}");
         }
 
         public void OnPointerExit(PointerEventData eventData)
         {
-            Debug.Log($"OnPointerExit: {this}");
+            //Debug.Log($"OnPointerExit: {this}");
         }
     }
 }
