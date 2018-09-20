@@ -1041,3 +1041,405 @@
  (0,0): [09/19/2018 08:14:03.307 ] Assembly-CSharp-Editor.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp-Editor.dll
  (0,0): [09/19/2018 08:14:03.337 ] Assembly-CSharp-Editor.dll compilation finished in 57ms  source files re-parsed: 0 metadata reloaded: 1
  (0,0): [09/19/2018 08:14:03.349 ] Assembly-CSharp-Editor.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [09/20/2018 04:28:13.633 ] Kamikaze.dll compiling...
+ (0,0): [09/20/2018 04:28:13.690 ] Kamikaze.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Kamikaze.dll
+ (0,0): [09/20/2018 04:28:13.757 ] Kamikaze.dll compilation finished in 124ms  source files re-parsed: 1 metadata reloaded: 0
+ (0,0): [09/20/2018 04:28:13.769 ] Kamikaze.dll: compilation was cached, 1 file(s) were found to have changed.
+ (0,0): [09/20/2018 04:28:14.914 ] Kamikaze.Cards.dll compiling...
+ (0,0): [09/20/2018 04:28:14.958 ] Kamikaze.Cards.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Kamikaze.Cards.dll
+ (0,0): [09/20/2018 04:28:14.993 ] Kamikaze.Cards.dll compilation finished in 80ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [09/20/2018 04:28:15.005 ] Kamikaze.Cards.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [09/20/2018 04:28:15.423 ] Assembly-CSharp.dll compiling...
+ (0,0): [09/20/2018 04:28:15.506 ] Assembly-CSharp.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp.dll
+ (0,0): [09/20/2018 04:28:15.579 ] Assembly-CSharp.dll compilation finished in 156ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [09/20/2018 04:28:15.591 ] Assembly-CSharp.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [09/20/2018 04:28:15.925 ] Assembly-CSharp-Editor.dll compiling...
+ (0,0): [09/20/2018 04:28:15.954 ] Assembly-CSharp-Editor.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp-Editor.dll
+ (0,0): [09/20/2018 04:28:15.988 ] Assembly-CSharp-Editor.dll compilation finished in 63ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [09/20/2018 04:28:16.001 ] Assembly-CSharp-Editor.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [09/20/2018 04:29:12.939 ] Kamikaze.dll compiling...
+ (0,0): [09/20/2018 04:29:13.059 ] Kamikaze.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Kamikaze.dll
+ (0,0): [09/20/2018 04:29:13.278 ] Kamikaze.dll compilation finished in 338ms  source files re-parsed: 1 metadata reloaded: 0
+ (0,0): [09/20/2018 04:29:13.290 ] Kamikaze.dll: compilation was cached, 1 file(s) were found to have changed.
+ (0,0): [09/20/2018 04:29:13.671 ] Kamikaze.Cards.dll compiling...
+ (0,0): [09/20/2018 04:29:13.702 ] Kamikaze.Cards.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Kamikaze.Cards.dll
+ (0,0): [09/20/2018 04:29:13.739 ] Kamikaze.Cards.dll compilation finished in 67ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [09/20/2018 04:29:13.751 ] Kamikaze.Cards.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [09/20/2018 04:29:13.995 ] Assembly-CSharp.dll compiling...
+ (0,0): [09/20/2018 04:29:14.084 ] Assembly-CSharp.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp.dll
+ (0,0): [09/20/2018 04:29:14.601 ] Assembly-CSharp.dll compilation finished in 605ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [09/20/2018 04:29:14.611 ] Assembly-CSharp.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [09/20/2018 04:29:15.324 ] Assembly-CSharp-Editor.dll compiling...
+ (0,0): [09/20/2018 04:29:15.353 ] Assembly-CSharp-Editor.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp-Editor.dll
+ (0,0): [09/20/2018 04:29:15.385 ] Assembly-CSharp-Editor.dll compilation finished in 61ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [09/20/2018 04:29:15.397 ] Assembly-CSharp-Editor.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [09/20/2018 04:44:20.928 ] Kamikaze.dll compiling...
+ (0,0): [09/20/2018 04:44:20.992 ] Kamikaze.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Kamikaze.dll
+ (0,0): [09/20/2018 04:44:21.432 ] Kamikaze.dll compilation finished in 503ms  source files re-parsed: 1 metadata reloaded: 0
+ (0,0): [09/20/2018 04:44:21.444 ] Kamikaze.dll: compilation was cached, 1 file(s) were found to have changed.
+ (0,0): [09/20/2018 04:44:22.010 ] Kamikaze.Cards.dll compiling...
+ (0,0): [09/20/2018 04:44:22.048 ] Kamikaze.Cards.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Kamikaze.Cards.dll
+ (0,0): [09/20/2018 04:44:22.100 ] Kamikaze.Cards.dll compilation finished in 89ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [09/20/2018 04:44:22.112 ] Kamikaze.Cards.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [09/20/2018 04:44:23.114 ] Assembly-CSharp.dll compiling...
+ (0,0): [09/20/2018 04:44:23.199 ] Assembly-CSharp.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp.dll
+ (0,0): [09/20/2018 04:44:23.343 ] Assembly-CSharp.dll compilation finished in 229ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [09/20/2018 04:44:23.355 ] Assembly-CSharp.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [09/20/2018 04:44:24.048 ] Assembly-CSharp-Editor.dll compiling...
+ (0,0): [09/20/2018 04:44:24.085 ] Assembly-CSharp-Editor.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp-Editor.dll
+ (0,0): [09/20/2018 04:44:24.150 ] Assembly-CSharp-Editor.dll compilation finished in 102ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [09/20/2018 04:44:24.164 ] Assembly-CSharp-Editor.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [09/20/2018 04:44:32.341 ] Compiler cache size is now 19,08 MB
+ (0,0): [09/20/2018 04:44:44.829 ] Kamikaze.dll compiling...
+ (0,0): [09/20/2018 04:44:44.894 ] Kamikaze.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Kamikaze.dll
+ (0,0): [09/20/2018 04:44:44.972 ] Kamikaze.dll compilation finished in 143ms  source files re-parsed: 1 metadata reloaded: 0
+ (0,0): [09/20/2018 04:44:44.984 ] Kamikaze.dll: compilation was cached, 1 file(s) were found to have changed.
+ (0,0): [09/20/2018 04:44:45.370 ] Kamikaze.Cards.dll compiling...
+ (0,0): [09/20/2018 04:44:45.401 ] Kamikaze.Cards.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Kamikaze.Cards.dll
+ (0,0): [09/20/2018 04:44:45.442 ] Kamikaze.Cards.dll compilation finished in 70ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [09/20/2018 04:44:45.454 ] Kamikaze.Cards.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [09/20/2018 04:44:45.971 ] Assembly-CSharp.dll compiling...
+ (0,0): [09/20/2018 04:44:46.055 ] Assembly-CSharp.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp.dll
+ (0,0): [09/20/2018 04:44:46.143 ] Assembly-CSharp.dll compilation finished in 170ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [09/20/2018 04:44:46.155 ] Assembly-CSharp.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [09/20/2018 04:44:46.691 ] Assembly-CSharp-Editor.dll compiling...
+ (0,0): [09/20/2018 04:44:46.718 ] Assembly-CSharp-Editor.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp-Editor.dll
+ (0,0): [09/20/2018 04:44:46.750 ] Assembly-CSharp-Editor.dll compilation finished in 59ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [09/20/2018 04:44:46.762 ] Assembly-CSharp-Editor.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [09/20/2018 04:48:38.622 ] Kamikaze.dll compiling...
+ (0,0): [09/20/2018 04:48:38.676 ] Kamikaze.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Kamikaze.dll
+ (0,0): [09/20/2018 04:48:38.762 ] Kamikaze.dll compilation finished in 140ms  source files re-parsed: 1 metadata reloaded: 0
+ (0,0): [09/20/2018 04:48:38.774 ] Kamikaze.dll: compilation was cached, 1 file(s) were found to have changed.
+ (0,0): [09/20/2018 04:48:39.171 ] Kamikaze.Cards.dll compiling...
+ (0,0): [09/20/2018 04:48:39.208 ] Kamikaze.Cards.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Kamikaze.Cards.dll
+ (0,0): [09/20/2018 04:48:39.243 ] Kamikaze.Cards.dll compilation finished in 71ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [09/20/2018 04:48:39.255 ] Kamikaze.Cards.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [09/20/2018 04:48:39.578 ] Assembly-CSharp.dll compiling...
+ (0,0): [09/20/2018 04:48:39.661 ] Assembly-CSharp.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp.dll
+ (0,0): [09/20/2018 04:48:39.735 ] Assembly-CSharp.dll compilation finished in 156ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [09/20/2018 04:48:39.747 ] Assembly-CSharp.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [09/20/2018 04:48:40.290 ] Assembly-CSharp-Editor.dll compiling...
+ (0,0): [09/20/2018 04:48:40.320 ] Assembly-CSharp-Editor.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp-Editor.dll
+ (0,0): [09/20/2018 04:48:40.354 ] Assembly-CSharp-Editor.dll compilation finished in 63ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [09/20/2018 04:48:40.366 ] Assembly-CSharp-Editor.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [09/20/2018 04:49:34.600 ] Compiler cache size is now 19,07 MB
+ (0,0): [09/20/2018 05:09:39.575 ] Kamikaze.dll compiling...
+ (0,0): [09/20/2018 05:09:39.639 ] Kamikaze.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Kamikaze.dll
+ (0,0): [09/20/2018 05:09:39.741 ] Kamikaze.dll compilation finished in 165ms  source files re-parsed: 1 metadata reloaded: 0
+ (0,0): [09/20/2018 05:09:39.753 ] Kamikaze.dll: compilation was cached, 1 file(s) were found to have changed.
+ (0,0): [09/20/2018 05:09:40.354 ] Kamikaze.Cards.dll compiling...
+ (0,0): [09/20/2018 05:09:40.386 ] Kamikaze.Cards.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Kamikaze.Cards.dll
+ (0,0): [09/20/2018 05:09:40.423 ] Kamikaze.Cards.dll compilation finished in 68ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [09/20/2018 05:09:40.435 ] Kamikaze.Cards.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [09/20/2018 05:09:40.722 ] Assembly-CSharp.dll compiling...
+ (0,0): [09/20/2018 05:09:40.804 ] Assembly-CSharp.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp.dll
+ (0,0): [09/20/2018 05:09:40.905 ] Assembly-CSharp.dll compilation finished in 182ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [09/20/2018 05:09:40.917 ] Assembly-CSharp.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [09/20/2018 05:09:41.304 ] Assembly-CSharp-Editor.dll compiling...
+ (0,0): [09/20/2018 05:09:41.331 ] Assembly-CSharp-Editor.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp-Editor.dll
+ (0,0): [09/20/2018 05:09:41.365 ] Assembly-CSharp-Editor.dll compilation finished in 60ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [09/20/2018 05:09:41.377 ] Assembly-CSharp-Editor.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [09/20/2018 05:09:46.412 ] Compiler cache size is now 19,08 MB
+ (0,0): [09/20/2018 05:14:01.201 ] Kamikaze.dll compiling...
+ (0,0): [09/20/2018 05:14:01.250 ] Kamikaze.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Kamikaze.dll
+ (0,0): [09/20/2018 05:14:01.278 ] Kamikaze.dll compilation finished in 77ms  source files re-parsed: 1 metadata reloaded: 0
+ (0,0): [09/20/2018 05:14:01.290 ] Kamikaze.dll: compilation was cached, 1 file(s) were found to have changed.
+ (0,0): [09/20/2018 05:14:49.205 ] Kamikaze.dll compiling...
+ (0,0): [09/20/2018 05:14:49.264 ] Kamikaze.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Kamikaze.dll
+ (0,0): [09/20/2018 05:14:49.379 ] Kamikaze.dll compilation finished in 174ms  source files re-parsed: 1 metadata reloaded: 0
+ (0,0): [09/20/2018 05:14:49.391 ] Kamikaze.dll: compilation was cached, 1 file(s) were found to have changed.
+ (0,0): [09/20/2018 05:14:49.929 ] Kamikaze.Cards.dll compiling...
+ (0,0): [09/20/2018 05:14:49.959 ] Kamikaze.Cards.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Kamikaze.Cards.dll
+ (0,0): [09/20/2018 05:14:50.147 ] Kamikaze.Cards.dll compilation finished in 217ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [09/20/2018 05:14:50.159 ] Kamikaze.Cards.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [09/20/2018 05:14:50.497 ] Assembly-CSharp.dll compiling...
+ (0,0): [09/20/2018 05:14:50.582 ] Assembly-CSharp.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp.dll
+ (0,0): [09/20/2018 05:14:50.715 ] Assembly-CSharp.dll compilation finished in 217ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [09/20/2018 05:14:50.727 ] Assembly-CSharp.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [09/20/2018 05:14:51.242 ] Assembly-CSharp-Editor.dll compiling...
+ (0,0): [09/20/2018 05:14:51.271 ] Assembly-CSharp-Editor.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp-Editor.dll
+ (0,0): [09/20/2018 05:14:51.305 ] Assembly-CSharp-Editor.dll compilation finished in 62ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [09/20/2018 05:14:51.317 ] Assembly-CSharp-Editor.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [09/20/2018 05:17:33.385 ] Kamikaze.dll compiling...
+ (0,0): [09/20/2018 05:17:33.447 ] Kamikaze.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Kamikaze.dll
+ (0,0): [09/20/2018 05:17:33.554 ] Kamikaze.dll compilation finished in 167ms  source files re-parsed: 1 metadata reloaded: 0
+ (0,0): [09/20/2018 05:17:33.566 ] Kamikaze.dll: compilation was cached, 1 file(s) were found to have changed.
+ (0,0): [09/20/2018 05:17:34.071 ] Kamikaze.Cards.dll compiling...
+ (0,0): [09/20/2018 05:17:34.103 ] Kamikaze.Cards.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Kamikaze.Cards.dll
+ (0,0): [09/20/2018 05:17:34.138 ] Kamikaze.Cards.dll compilation finished in 67ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [09/20/2018 05:17:34.151 ] Kamikaze.Cards.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [09/20/2018 05:17:34.458 ] Assembly-CSharp.dll compiling...
+ (0,0): [09/20/2018 05:17:34.543 ] Assembly-CSharp.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp.dll
+ (0,0): [09/20/2018 05:17:34.615 ] Assembly-CSharp.dll compilation finished in 157ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [09/20/2018 05:17:34.628 ] Assembly-CSharp.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [09/20/2018 05:17:34.992 ] Assembly-CSharp-Editor.dll compiling...
+ (0,0): [09/20/2018 05:17:35.021 ] Assembly-CSharp-Editor.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp-Editor.dll
+ (0,0): [09/20/2018 05:17:35.053 ] Assembly-CSharp-Editor.dll compilation finished in 60ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [09/20/2018 05:17:35.065 ] Assembly-CSharp-Editor.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [09/20/2018 05:19:50.738 ] Compiler cache size is now 19,08 MB
+ (0,0): [09/20/2018 05:20:44.811 ] Kamikaze.dll compiling...
+ (0,0): [09/20/2018 05:20:44.869 ] Kamikaze.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Kamikaze.dll
+ (0,0): [09/20/2018 05:20:45.038 ] Kamikaze.dll compilation finished in 227ms  source files re-parsed: 1 metadata reloaded: 0
+ (0,0): [09/20/2018 05:20:45.050 ] Kamikaze.dll: compilation was cached, 1 file(s) were found to have changed.
+ (0,0): [09/20/2018 05:20:45.521 ] Kamikaze.Cards.dll compiling...
+ (0,0): [09/20/2018 05:20:45.553 ] Kamikaze.Cards.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Kamikaze.Cards.dll
+ (0,0): [09/20/2018 05:20:45.602 ] Kamikaze.Cards.dll compilation finished in 80ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [09/20/2018 05:20:45.614 ] Kamikaze.Cards.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [09/20/2018 05:20:45.924 ] Assembly-CSharp.dll compiling...
+ (0,0): [09/20/2018 05:20:46.012 ] Assembly-CSharp.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp.dll
+ (0,0): [09/20/2018 05:20:46.081 ] Assembly-CSharp.dll compilation finished in 156ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [09/20/2018 05:20:46.093 ] Assembly-CSharp.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [09/20/2018 05:20:46.640 ] Assembly-CSharp-Editor.dll compiling...
+ (0,0): [09/20/2018 05:20:46.666 ] Assembly-CSharp-Editor.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp-Editor.dll
+ (0,0): [09/20/2018 05:20:46.698 ] Assembly-CSharp-Editor.dll compilation finished in 57ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [09/20/2018 05:20:46.710 ] Assembly-CSharp-Editor.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [09/20/2018 05:21:22.853 ] Kamikaze.dll compiling...
+ (0,0): [09/20/2018 05:21:22.962 ] Kamikaze.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Kamikaze.dll
+ (0,0): [09/20/2018 05:21:23.060 ] Kamikaze.dll compilation finished in 206ms  source files re-parsed: 1 metadata reloaded: 0
+ (0,0): [09/20/2018 05:21:23.072 ] Kamikaze.dll: compilation was cached, 1 file(s) were found to have changed.
+ (0,0): [09/20/2018 05:21:23.543 ] Kamikaze.Cards.dll compiling...
+ (0,0): [09/20/2018 05:21:23.581 ] Kamikaze.Cards.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Kamikaze.Cards.dll
+ (0,0): [09/20/2018 05:21:23.614 ] Kamikaze.Cards.dll compilation finished in 70ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [09/20/2018 05:21:23.626 ] Kamikaze.Cards.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [09/20/2018 05:21:24.045 ] Assembly-CSharp.dll compiling...
+ (0,0): [09/20/2018 05:21:24.127 ] Assembly-CSharp.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp.dll
+ (0,0): [09/20/2018 05:21:24.202 ] Assembly-CSharp.dll compilation finished in 156ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [09/20/2018 05:21:24.214 ] Assembly-CSharp.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [09/20/2018 05:21:24.641 ] Assembly-CSharp-Editor.dll compiling...
+ (0,0): [09/20/2018 05:21:24.669 ] Assembly-CSharp-Editor.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp-Editor.dll
+ (0,0): [09/20/2018 05:21:24.700 ] Assembly-CSharp-Editor.dll compilation finished in 58ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [09/20/2018 05:21:24.712 ] Assembly-CSharp-Editor.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [09/20/2018 05:21:50.227 ] Kamikaze.dll compiling...
+ (0,0): [09/20/2018 05:21:50.453 ] Kamikaze.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Kamikaze.dll
+ (0,0): [09/20/2018 05:21:50.579 ] Kamikaze.dll compilation finished in 352ms  source files re-parsed: 1 metadata reloaded: 0
+ (0,0): [09/20/2018 05:21:50.591 ] Kamikaze.dll: compilation was cached, 1 file(s) were found to have changed.
+ (0,0): [09/20/2018 05:21:51.313 ] Kamikaze.Cards.dll compiling...
+ (0,0): [09/20/2018 05:21:51.346 ] Kamikaze.Cards.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Kamikaze.Cards.dll
+ (0,0): [09/20/2018 05:21:51.385 ] Kamikaze.Cards.dll compilation finished in 72ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [09/20/2018 05:21:51.397 ] Kamikaze.Cards.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [09/20/2018 05:21:51.827 ] Assembly-CSharp.dll compiling...
+ (0,0): [09/20/2018 05:21:51.942 ] Assembly-CSharp.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp.dll
+ (0,0): [09/20/2018 05:21:52.025 ] Assembly-CSharp.dll compilation finished in 197ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [09/20/2018 05:21:52.038 ] Assembly-CSharp.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [09/20/2018 05:21:53.552 ] Assembly-CSharp-Editor.dll compiling...
+ (0,0): [09/20/2018 05:21:53.588 ] Assembly-CSharp-Editor.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp-Editor.dll
+ (0,0): [09/20/2018 05:21:53.645 ] Assembly-CSharp-Editor.dll compilation finished in 92ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [09/20/2018 05:21:53.657 ] Assembly-CSharp-Editor.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [09/20/2018 05:23:19.862 ] Kamikaze.dll compiling...
+ (0,0): [09/20/2018 05:23:19.937 ] Kamikaze.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Kamikaze.dll
+ (0,0): [09/20/2018 05:23:20.118 ] Kamikaze.dll compilation finished in 256ms  source files re-parsed: 1 metadata reloaded: 0
+ (0,0): [09/20/2018 05:23:20.130 ] Kamikaze.dll: compilation was cached, 1 file(s) were found to have changed.
+ (0,0): [09/20/2018 05:23:20.702 ] Kamikaze.Cards.dll compiling...
+ (0,0): [09/20/2018 05:23:20.738 ] Kamikaze.Cards.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Kamikaze.Cards.dll
+ (0,0): [09/20/2018 05:23:20.782 ] Kamikaze.Cards.dll compilation finished in 79ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [09/20/2018 05:23:20.794 ] Kamikaze.Cards.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [09/20/2018 05:23:21.048 ] Assembly-CSharp.dll compiling...
+ (0,0): [09/20/2018 05:23:21.152 ] Assembly-CSharp.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp.dll
+ (0,0): [09/20/2018 05:23:21.230 ] Assembly-CSharp.dll compilation finished in 181ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [09/20/2018 05:23:21.242 ] Assembly-CSharp.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [09/20/2018 05:23:21.769 ] Assembly-CSharp-Editor.dll compiling...
+ (0,0): [09/20/2018 05:23:21.797 ] Assembly-CSharp-Editor.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp-Editor.dll
+ (0,0): [09/20/2018 05:23:21.830 ] Assembly-CSharp-Editor.dll compilation finished in 60ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [09/20/2018 05:23:21.842 ] Assembly-CSharp-Editor.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [09/20/2018 05:24:33.286 ] Kamikaze.dll compiling...
+ (0,0): [09/20/2018 05:24:33.364 ] Kamikaze.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Kamikaze.dll
+ (0,0): [09/20/2018 05:24:33.501 ] Kamikaze.dll compilation finished in 215ms  source files re-parsed: 1 metadata reloaded: 0
+ (0,0): [09/20/2018 05:24:33.513 ] Kamikaze.dll: compilation was cached, 1 file(s) were found to have changed.
+ (0,0): [09/20/2018 05:24:34.135 ] Kamikaze.Cards.dll compiling...
+ (0,0): [09/20/2018 05:24:34.163 ] Kamikaze.Cards.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Kamikaze.Cards.dll
+ (0,0): [09/20/2018 05:24:34.270 ] Kamikaze.Cards.dll compilation finished in 134ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [09/20/2018 05:24:34.282 ] Kamikaze.Cards.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [09/20/2018 05:24:34.706 ] Assembly-CSharp.dll compiling...
+ (0,0): [09/20/2018 05:24:34.788 ] Assembly-CSharp.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp.dll
+ (0,0): [09/20/2018 05:24:34.859 ] Assembly-CSharp.dll compilation finished in 152ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [09/20/2018 05:24:34.871 ] Assembly-CSharp.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [09/20/2018 05:24:35.200 ] Assembly-CSharp-Editor.dll compiling...
+ (0,0): [09/20/2018 05:24:35.233 ] Assembly-CSharp-Editor.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp-Editor.dll
+ (0,0): [09/20/2018 05:24:35.267 ] Assembly-CSharp-Editor.dll compilation finished in 66ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [09/20/2018 05:24:35.279 ] Assembly-CSharp-Editor.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [09/20/2018 05:41:23.809 ] Kamikaze.dll compiling...
+ (0,0): [09/20/2018 05:41:23.875 ] Kamikaze.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Kamikaze.dll
+ (0,0): [09/20/2018 05:41:24.096 ] Kamikaze.dll compilation finished in 286ms  source files re-parsed: 1 metadata reloaded: 0
+ (0,0): [09/20/2018 05:41:24.109 ] Kamikaze.dll: compilation was cached, 1 file(s) were found to have changed.
+ (0,0): [09/20/2018 05:41:24.658 ] Kamikaze.Cards.dll compiling...
+ (0,0): [09/20/2018 05:41:24.690 ] Kamikaze.Cards.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Kamikaze.Cards.dll
+ (0,0): [09/20/2018 05:41:24.725 ] Kamikaze.Cards.dll compilation finished in 67ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [09/20/2018 05:41:24.738 ] Kamikaze.Cards.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [09/20/2018 05:41:25.302 ] Assembly-CSharp.dll compiling...
+ (0,0): [09/20/2018 05:41:25.391 ] Assembly-CSharp.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp.dll
+ (0,0): [09/20/2018 05:41:25.469 ] Assembly-CSharp.dll compilation finished in 166ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [09/20/2018 05:41:25.481 ] Assembly-CSharp.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [09/20/2018 05:41:25.940 ] Assembly-CSharp-Editor.dll compiling...
+ (0,0): [09/20/2018 05:41:25.968 ] Assembly-CSharp-Editor.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp-Editor.dll
+ (0,0): [09/20/2018 05:41:26.006 ] Assembly-CSharp-Editor.dll compilation finished in 66ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [09/20/2018 05:41:26.018 ] Assembly-CSharp-Editor.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [09/20/2018 05:44:19.059 ] Kamikaze.dll compiling...
+ (0,0): [09/20/2018 05:44:19.275 ] Kamikaze.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Kamikaze.dll
+ (0,0): [09/20/2018 05:44:19.587 ] Kamikaze.dll compilation finished in 527ms  source files re-parsed: 2 metadata reloaded: 0
+ (0,0): [09/20/2018 05:44:19.599 ] Kamikaze.dll: compilation was cached, 2 file(s) were found to have changed.
+ (0,0): [09/20/2018 05:44:20.140 ] Kamikaze.Cards.dll compiling...
+ (0,0): [09/20/2018 05:44:20.169 ] Kamikaze.Cards.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Kamikaze.Cards.dll
+ (0,0): [09/20/2018 05:44:20.201 ] Kamikaze.Cards.dll compilation finished in 60ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [09/20/2018 05:44:20.213 ] Kamikaze.Cards.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [09/20/2018 05:44:20.451 ] Assembly-CSharp.dll compiling...
+ (0,0): [09/20/2018 05:44:20.532 ] Assembly-CSharp.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp.dll
+ (0,0): [09/20/2018 05:44:20.599 ] Assembly-CSharp.dll compilation finished in 147ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [09/20/2018 05:44:20.611 ] Assembly-CSharp.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [09/20/2018 05:44:20.975 ] Assembly-CSharp-Editor.dll compiling...
+ (0,0): [09/20/2018 05:44:21.007 ] Assembly-CSharp-Editor.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp-Editor.dll
+ (0,0): [09/20/2018 05:44:21.043 ] Assembly-CSharp-Editor.dll compilation finished in 67ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [09/20/2018 05:44:21.055 ] Assembly-CSharp-Editor.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [09/20/2018 05:45:00.937 ] Compiler cache size is now 19,08 MB
+ (0,0): [09/20/2018 05:45:05.492 ] Kamikaze.dll compiling...
+ (0,0): [09/20/2018 05:45:05.544 ] Kamikaze.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Kamikaze.dll
+ (0,0): [09/20/2018 05:45:05.664 ] Kamikaze.dll compilation finished in 172ms  source files re-parsed: 1 metadata reloaded: 0
+ (0,0): [09/20/2018 05:45:05.676 ] Kamikaze.dll: compilation was cached, 1 file(s) were found to have changed.
+ (0,0): [09/20/2018 05:45:06.423 ] Kamikaze.Cards.dll compiling...
+ (0,0): [09/20/2018 05:45:06.455 ] Kamikaze.Cards.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Kamikaze.Cards.dll
+ (0,0): [09/20/2018 05:45:07.536 ] Kamikaze.Cards.dll compilation finished in 1112ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [09/20/2018 05:45:07.548 ] Kamikaze.Cards.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [09/20/2018 05:45:07.829 ] Assembly-CSharp.dll compiling...
+ (0,0): [09/20/2018 05:45:07.919 ] Assembly-CSharp.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp.dll
+ (0,0): [09/20/2018 05:45:07.989 ] Assembly-CSharp.dll compilation finished in 160ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [09/20/2018 05:45:08.002 ] Assembly-CSharp.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [09/20/2018 05:45:08.548 ] Assembly-CSharp-Editor.dll compiling...
+ (0,0): [09/20/2018 05:45:08.579 ] Assembly-CSharp-Editor.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp-Editor.dll
+ (0,0): [09/20/2018 05:45:08.613 ] Assembly-CSharp-Editor.dll compilation finished in 64ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [09/20/2018 05:45:08.625 ] Assembly-CSharp-Editor.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [09/20/2018 05:45:56.951 ] Kamikaze.dll compiling...
+ (0,0): [09/20/2018 05:45:57.015 ] Kamikaze.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Kamikaze.dll
+ (0,0): [09/20/2018 05:45:57.084 ] Kamikaze.dll compilation finished in 133ms  source files re-parsed: 1 metadata reloaded: 0
+ (0,0): [09/20/2018 05:45:57.096 ] Kamikaze.dll: compilation was cached, 1 file(s) were found to have changed.
+ (0,0): [09/20/2018 05:45:57.623 ] Kamikaze.Cards.dll compiling...
+ (0,0): [09/20/2018 05:45:57.658 ] Kamikaze.Cards.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Kamikaze.Cards.dll
+ (0,0): [09/20/2018 05:45:57.696 ] Kamikaze.Cards.dll compilation finished in 72ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [09/20/2018 05:45:57.709 ] Kamikaze.Cards.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [09/20/2018 05:45:57.994 ] Assembly-CSharp.dll compiling...
+ (0,0): [09/20/2018 05:45:58.080 ] Assembly-CSharp.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp.dll
+ (0,0): [09/20/2018 05:45:58.152 ] Assembly-CSharp.dll compilation finished in 158ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [09/20/2018 05:45:58.165 ] Assembly-CSharp.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [09/20/2018 05:45:58.728 ] Assembly-CSharp-Editor.dll compiling...
+ (0,0): [09/20/2018 05:45:58.761 ] Assembly-CSharp-Editor.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp-Editor.dll
+ (0,0): [09/20/2018 05:45:58.793 ] Assembly-CSharp-Editor.dll compilation finished in 64ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [09/20/2018 05:45:58.805 ] Assembly-CSharp-Editor.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [09/20/2018 05:49:17.971 ] Kamikaze.dll compiling...
+ (0,0): [09/20/2018 05:49:18.033 ] Kamikaze.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Kamikaze.dll
+ (0,0): [09/20/2018 05:49:19.060 ] Kamikaze.dll compilation finished in 1089ms  source files re-parsed: 1 metadata reloaded: 0
+ (0,0): [09/20/2018 05:49:19.072 ] Kamikaze.dll: compilation was cached, 1 file(s) were found to have changed.
+ (0,0): [09/20/2018 05:49:19.498 ] Kamikaze.Cards.dll compiling...
+ (0,0): [09/20/2018 05:49:19.530 ] Kamikaze.Cards.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Kamikaze.Cards.dll
+ (0,0): [09/20/2018 05:49:19.564 ] Kamikaze.Cards.dll compilation finished in 65ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [09/20/2018 05:49:19.577 ] Kamikaze.Cards.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [09/20/2018 05:49:19.882 ] Assembly-CSharp.dll compiling...
+ (0,0): [09/20/2018 05:49:19.982 ] Assembly-CSharp.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp.dll
+ (0,0): [09/20/2018 05:49:20.054 ] Assembly-CSharp.dll compilation finished in 172ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [09/20/2018 05:49:20.066 ] Assembly-CSharp.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [09/20/2018 05:49:20.479 ] Assembly-CSharp-Editor.dll compiling...
+ (0,0): [09/20/2018 05:49:20.507 ] Assembly-CSharp-Editor.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp-Editor.dll
+ (0,0): [09/20/2018 05:49:20.540 ] Assembly-CSharp-Editor.dll compilation finished in 61ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [09/20/2018 05:49:20.552 ] Assembly-CSharp-Editor.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [09/20/2018 05:53:46.550 ] Kamikaze.dll compiling...
+ (0,0): [09/20/2018 05:53:46.700 ] Kamikaze.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Kamikaze.dll
+ (0,0): [09/20/2018 05:53:46.717 ] Kamikaze.dll compilation finished in 166ms  source files re-parsed: 1 metadata reloaded: 0
+ (0,0): [09/20/2018 05:53:46.729 ] Kamikaze.dll: compilation was cached, 1 file(s) were found to have changed.
+ (0,0): [09/20/2018 05:55:47.917 ] Kamikaze.dll compiling...
+ (0,0): [09/20/2018 05:55:48.002 ] Kamikaze.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Kamikaze.dll
+ (0,0): [09/20/2018 05:55:48.027 ] Kamikaze.dll compilation finished in 109ms  source files re-parsed: 1 metadata reloaded: 0
+ (0,0): [09/20/2018 05:55:48.040 ] Kamikaze.dll: compilation was cached, 1 file(s) were found to have changed.
+ (0,0): [09/20/2018 05:58:54.320 ] Kamikaze.dll compiling...
+ (0,0): [09/20/2018 05:58:54.384 ] Kamikaze.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Kamikaze.dll
+ (0,0): [09/20/2018 05:58:54.455 ] Kamikaze.dll compilation finished in 135ms  source files re-parsed: 1 metadata reloaded: 0
+ (0,0): [09/20/2018 05:58:54.467 ] Kamikaze.dll: compilation was cached, 1 file(s) were found to have changed.
+ (0,0): [09/20/2018 05:58:55.231 ] Kamikaze.Cards.dll compiling...
+ (0,0): [09/20/2018 05:58:55.261 ] Kamikaze.Cards.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Kamikaze.Cards.dll
+ (0,0): [09/20/2018 05:58:55.352 ] Kamikaze.Cards.dll compilation finished in 122ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [09/20/2018 05:58:55.364 ] Kamikaze.Cards.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [09/20/2018 05:58:55.826 ] Assembly-CSharp.dll compiling...
+ (0,0): [09/20/2018 05:58:55.915 ] Assembly-CSharp.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp.dll
+ (0,0): [09/20/2018 05:58:55.987 ] Assembly-CSharp.dll compilation finished in 160ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [09/20/2018 05:58:55.999 ] Assembly-CSharp.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [09/20/2018 05:58:56.376 ] Assembly-CSharp-Editor.dll compiling...
+ (0,0): [09/20/2018 05:58:56.402 ] Assembly-CSharp-Editor.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp-Editor.dll
+ (0,0): [09/20/2018 05:58:56.439 ] Assembly-CSharp-Editor.dll compilation finished in 62ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [09/20/2018 05:58:56.451 ] Assembly-CSharp-Editor.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [09/20/2018 06:03:43.695 ] Kamikaze.dll compiling...
+ (0,0): [09/20/2018 06:03:44.515 ] Kamikaze.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Kamikaze.dll
+ (0,0): [09/20/2018 06:03:44.584 ] Kamikaze.dll compilation finished in 888ms  source files re-parsed: 1 metadata reloaded: 0
+ (0,0): [09/20/2018 06:03:44.596 ] Kamikaze.dll: compilation was cached, 1 file(s) were found to have changed.
+ (0,0): [09/20/2018 06:03:45.241 ] Kamikaze.Cards.dll compiling...
+ (0,0): [09/20/2018 06:03:45.271 ] Kamikaze.Cards.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Kamikaze.Cards.dll
+ (0,0): [09/20/2018 06:03:45.509 ] Kamikaze.Cards.dll compilation finished in 268ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [09/20/2018 06:03:45.521 ] Kamikaze.Cards.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [09/20/2018 06:03:45.966 ] Assembly-CSharp.dll compiling...
+ (0,0): [09/20/2018 06:03:46.053 ] Assembly-CSharp.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp.dll
+ (0,0): [09/20/2018 06:03:46.137 ] Assembly-CSharp.dll compilation finished in 169ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [09/20/2018 06:03:46.149 ] Assembly-CSharp.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [09/20/2018 06:03:46.564 ] Assembly-CSharp-Editor.dll compiling...
+ (0,0): [09/20/2018 06:03:46.593 ] Assembly-CSharp-Editor.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp-Editor.dll
+ (0,0): [09/20/2018 06:03:46.625 ] Assembly-CSharp-Editor.dll compilation finished in 61ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [09/20/2018 06:03:46.637 ] Assembly-CSharp-Editor.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [09/20/2018 06:05:09.009 ] Kamikaze.dll compiling...
+ (0,0): [09/20/2018 06:05:09.074 ] Kamikaze.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Kamikaze.dll
+ (0,0): [09/20/2018 06:05:09.214 ] Kamikaze.dll compilation finished in 206ms  source files re-parsed: 1 metadata reloaded: 0
+ (0,0): [09/20/2018 06:05:09.226 ] Kamikaze.dll: compilation was cached, 1 file(s) were found to have changed.
+ (0,0): [09/20/2018 06:05:09.859 ] Kamikaze.Cards.dll compiling...
+ (0,0): [09/20/2018 06:05:09.892 ] Kamikaze.Cards.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Kamikaze.Cards.dll
+ (0,0): [09/20/2018 06:05:09.955 ] Kamikaze.Cards.dll compilation finished in 95ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [09/20/2018 06:05:09.967 ] Kamikaze.Cards.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [09/20/2018 06:05:10.379 ] Assembly-CSharp.dll compiling...
+ (0,0): [09/20/2018 06:05:10.462 ] Assembly-CSharp.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp.dll
+ (0,0): [09/20/2018 06:05:10.531 ] Assembly-CSharp.dll compilation finished in 151ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [09/20/2018 06:05:10.543 ] Assembly-CSharp.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [09/20/2018 06:05:10.943 ] Assembly-CSharp-Editor.dll compiling...
+ (0,0): [09/20/2018 06:05:10.976 ] Assembly-CSharp-Editor.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp-Editor.dll
+ (0,0): [09/20/2018 06:05:11.013 ] Assembly-CSharp-Editor.dll compilation finished in 70ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [09/20/2018 06:05:11.025 ] Assembly-CSharp-Editor.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [09/20/2018 06:05:16.137 ] Compiler cache size is now 19,08 MB
+ (0,0): [09/20/2018 06:06:20.989 ] Kamikaze.dll compiling...
+ (0,0): [09/20/2018 06:06:21.051 ] Kamikaze.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Kamikaze.dll
+ (0,0): [09/20/2018 06:06:21.137 ] Kamikaze.dll compilation finished in 148ms  source files re-parsed: 1 metadata reloaded: 0
+ (0,0): [09/20/2018 06:06:21.150 ] Kamikaze.dll: compilation was cached, 1 file(s) were found to have changed.
+ (0,0): [09/20/2018 06:06:21.650 ] Kamikaze.Cards.dll compiling...
+ (0,0): [09/20/2018 06:06:21.679 ] Kamikaze.Cards.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Kamikaze.Cards.dll
+ (0,0): [09/20/2018 06:06:21.735 ] Kamikaze.Cards.dll compilation finished in 85ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [09/20/2018 06:06:21.748 ] Kamikaze.Cards.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [09/20/2018 06:06:22.159 ] Assembly-CSharp.dll compiling...
+ (0,0): [09/20/2018 06:06:22.281 ] Assembly-CSharp.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp.dll
+ (0,0): [09/20/2018 06:06:22.349 ] Assembly-CSharp.dll compilation finished in 190ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [09/20/2018 06:06:22.361 ] Assembly-CSharp.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [09/20/2018 06:06:22.729 ] Assembly-CSharp-Editor.dll compiling...
+ (0,0): [09/20/2018 06:06:22.757 ] Assembly-CSharp-Editor.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp-Editor.dll
+ (0,0): [09/20/2018 06:06:22.790 ] Assembly-CSharp-Editor.dll compilation finished in 60ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [09/20/2018 06:06:22.801 ] Assembly-CSharp-Editor.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [09/20/2018 06:12:25.492 ] Kamikaze.dll compiling...
+ (0,0): [09/20/2018 06:12:25.565 ] Kamikaze.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Kamikaze.dll
+ (0,0): [09/20/2018 06:12:26.044 ] Kamikaze.dll compilation finished in 551ms  source files re-parsed: 1 metadata reloaded: 0
+ (0,0): [09/20/2018 06:12:26.057 ] Kamikaze.dll: compilation was cached, 1 file(s) were found to have changed.
+ (0,0): [09/20/2018 06:12:26.550 ] Kamikaze.Cards.dll compiling...
+ (0,0): [09/20/2018 06:12:26.582 ] Kamikaze.Cards.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Kamikaze.Cards.dll
+ (0,0): [09/20/2018 06:12:26.616 ] Kamikaze.Cards.dll compilation finished in 66ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [09/20/2018 06:12:26.628 ] Kamikaze.Cards.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [09/20/2018 06:12:26.942 ] Assembly-CSharp.dll compiling...
+ (0,0): [09/20/2018 06:12:27.032 ] Assembly-CSharp.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp.dll
+ (0,0): [09/20/2018 06:12:27.101 ] Assembly-CSharp.dll compilation finished in 158ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [09/20/2018 06:12:27.113 ] Assembly-CSharp.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [09/20/2018 06:12:27.647 ] Assembly-CSharp-Editor.dll compiling...
+ (0,0): [09/20/2018 06:12:27.680 ] Assembly-CSharp-Editor.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp-Editor.dll
+ (0,0): [09/20/2018 06:12:27.718 ] Assembly-CSharp-Editor.dll compilation finished in 70ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [09/20/2018 06:12:27.731 ] Assembly-CSharp-Editor.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [09/20/2018 06:14:29.561 ] Kamikaze.dll compiling...
+ (0,0): [09/20/2018 06:14:29.629 ] Kamikaze.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Kamikaze.dll
+ (0,0): [09/20/2018 06:14:29.707 ] Kamikaze.dll compilation finished in 146ms  source files re-parsed: 1 metadata reloaded: 0
+ (0,0): [09/20/2018 06:14:29.720 ] Kamikaze.dll: compilation was cached, 1 file(s) were found to have changed.
+ (0,0): [09/20/2018 06:14:30.395 ] Kamikaze.Cards.dll compiling...
+ (0,0): [09/20/2018 06:14:30.426 ] Kamikaze.Cards.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Kamikaze.Cards.dll
+ (0,0): [09/20/2018 06:14:30.464 ] Kamikaze.Cards.dll compilation finished in 68ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [09/20/2018 06:14:30.476 ] Kamikaze.Cards.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [09/20/2018 06:14:30.891 ] Assembly-CSharp.dll compiling...
+ (0,0): [09/20/2018 06:14:30.981 ] Assembly-CSharp.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp.dll
+ (0,0): [09/20/2018 06:14:31.051 ] Assembly-CSharp.dll compilation finished in 159ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [09/20/2018 06:14:31.064 ] Assembly-CSharp.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [09/20/2018 06:14:31.627 ] Assembly-CSharp-Editor.dll compiling...
+ (0,0): [09/20/2018 06:14:31.657 ] Assembly-CSharp-Editor.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp-Editor.dll
+ (0,0): [09/20/2018 06:14:31.689 ] Assembly-CSharp-Editor.dll compilation finished in 61ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [09/20/2018 06:14:31.701 ] Assembly-CSharp-Editor.dll: compilation was cached, 0 file(s) were found to have changed.

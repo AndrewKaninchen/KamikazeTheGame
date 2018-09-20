@@ -462,6 +462,7 @@ MonoBehaviour:
   layers:
     serializedVersion: 2
     m_Bits: 16384
+  isVisible: 0
 --- !u!4 &758489374 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4216652216143770, guid: 460ea0bec1ec9694ba0bb4c1ebbb5f94,
@@ -608,12 +609,12 @@ Prefab:
       propertyPath: m_RootOrder
       value: 5
       objectReference: {fileID: 0}
-    - target: {fileID: 64696060214212826, guid: a1a5010a9126f974bb15160e26b6daa6,
+    - target: {fileID: 33147760028350842, guid: a1a5010a9126f974bb15160e26b6daa6,
         type: 2}
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1217465781}
-    - target: {fileID: 33147760028350842, guid: a1a5010a9126f974bb15160e26b6daa6,
+    - target: {fileID: 64696060214212826, guid: a1a5010a9126f974bb15160e26b6daa6,
         type: 2}
       propertyPath: m_Mesh
       value: 
@@ -1252,7 +1253,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh12944
+  m_Name: pb_Mesh14036
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -1788,6 +1789,7 @@ MonoBehaviour:
   layers:
     serializedVersion: 2
     m_Bits: 16384
+  isVisible: 0
 --- !u!1 &1897840671
 GameObject:
   m_ObjectHideFlags: 0
@@ -1918,6 +1920,7 @@ MonoBehaviour:
   layers:
     serializedVersion: 2
     m_Bits: 16384
+  isVisible: 0
 --- !u!1 &2043966313 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1995268697547090, guid: 460ea0bec1ec9694ba0bb4c1ebbb5f94,
@@ -1946,6 +1949,7 @@ MonoBehaviour:
   layers:
     serializedVersion: 2
     m_Bits: 16384
+  isVisible: 0
 --- !u!1 &2074551450
 GameObject:
   m_ObjectHideFlags: 0

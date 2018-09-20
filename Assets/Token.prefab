@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 114309941791840860}
   - component: {fileID: 64696060214212826}
   - component: {fileID: 114980823698733816}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Token
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -816,3 +816,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08fc6375aaf279c44a58b8b159c0605a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  movementStat: 3
+  moveState: 0
+  layers:
+    serializedVersion: 2
+    m_Bits: 16384

@@ -9,6 +9,14 @@ namespace Kamikaze.Frontend
 {
     public class Card : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHandler, IPointerClickHandler, IPointerEnterHandler, IPointerExitHandler
     {
+        //public Material transparentMaterial;
+        public GameObject tokenPrefab;
+        public DummyCard dummy;
+        public float distanceFromCameraWhenDraggingCards;
+        public DragState dragState;
+        private GameObject token;
+        [SerializeField] private LayerMask layers; //temporário porque preguiça de pensar
+
         public enum DragState
         {
             NotDragging,
@@ -17,13 +25,21 @@ namespace Kamikaze.Frontend
             Summoning
         }
 
-        //public Material transparentMaterial;
-        public GameObject tokenPrefab;
-        public DummyCard dummy;
-        public float distanceFromCameraWhenDraggingCards;
-        public DragState dragState;
-        private GameObject token;
-        public LayerMask layers;
+        public bool isVisible;
+        private bool Visible 
+        {
+            get => isVisible;
+            set 
+            {
+                if (value)
+                    Destroy(token);
+                else
+                    token = Instantiate(tokenPrefab);
+
+                GetComponent<MeshRenderer>().enabled = value;
+                isVisible = value;
+            }
+        }
 
 
         private void LateUpdate()
@@ -103,11 +119,9 @@ namespace Kamikaze.Frontend
             {
                 if (dragState != DragState.Summoning)
                 {
-                    dragState = DragState.Summoning;
                     Debug.Log("Summoning");
-                    GetComponent<MeshRenderer>().enabled = false;
-                    
-                    if(token == null) token = Instantiate(tokenPrefab);
+                    dragState = DragState.Summoning;
+                    Visible = false;
                 }
                 //dragState = DragState.Summonning;
             }
@@ -115,10 +129,9 @@ namespace Kamikaze.Frontend
             {
                 if (dragState == DragState.Summoning)
                 {
-                    dragState = DragState.Dragging;
                     Debug.Log("Stap Summoning");
-                    Destroy(token);
-                    GetComponent<MeshRenderer>().enabled = true;
+                    dragState = DragState.Dragging;
+                    Visible = true;
                 }
             }
         }
@@ -127,34 +140,19 @@ namespace Kamikaze.Frontend
         {
             Debug.Log($"OnEndDrag: {this}");
 
-            //var t = transform.DOMove(dummy.transform.position, 20f);
             dragState = DragState.ReturningFromDrag;
-
-            //t.SetSpeedBased();
-            ////t.SetRelative();
-            ////t.onUpdate += () => t.ChangeEndValue(dummy.transform.position, true);
-            //t.onComplete += () => 
-            //{
-            //    dragState = DragState.NotDragging;
-            //    Debug.Log("FOI PORRA");
-            //};
         }
 
         public void OnPointerClick(PointerEventData eventData)
         {
-           // Debug.Log($"OnPointerClick: {this}");
-            //MoveToPosition();
-            //MoveToPositionImmediately();
         }
 
         public void OnPointerEnter(PointerEventData eventData)
         {
-           // Debug.Log($"OnPointerEnter: {this}");
         }
 
         public void OnPointerExit(PointerEventData eventData)
         {
-            //Debug.Log($"OnPointerExit: {this}");
         }
     }
 }
