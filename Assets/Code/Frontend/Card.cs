@@ -14,7 +14,7 @@ namespace Kamikaze.Frontend
             NotDragging,
             Dragging,
             ReturningFromDrag,
-            Summonning
+            Summoning
         }
 
         //public Material transparentMaterial;
@@ -28,39 +28,44 @@ namespace Kamikaze.Frontend
 
         private void LateUpdate()
         {
-            if (dragState == DragState.NotDragging)
+            switch (dragState)
             {
-                MoveToPositionImmediately();
-            }
-            else if (dragState == DragState.Dragging)
-            {
-                var pos = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 1f);
-                pos.z *= distanceFromCameraWhenDraggingCards;
-                pos = Camera.main.ScreenToWorldPoint(pos);
-
-                transform.DOKill();
-                transform.position = pos;
-            }
-            else if (dragState == DragState.ReturningFromDrag)
-            {
-                transform.position = Vector3.Lerp(transform.position, dummy.transform.position, 0.5f);
-                if (Vector3.Distance(transform.position, dummy.transform.position) < 0.01f)
+                case DragState.NotDragging:
+                    MoveToPositionImmediately();
+                    break;
+                case DragState.Dragging:
                 {
-                    transform.position = dummy.transform.position;
-                    dragState = DragState.NotDragging;
-                }
-            }
-            else if (dragState == DragState.Summonning)
-            {
-                RaycastHit hit;
-                Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+                    var pos = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 1f);
+                    pos.z *= distanceFromCameraWhenDraggingCards;
+                    pos = Camera.main.ScreenToWorldPoint(pos);
 
-                if (Physics.Raycast(ray, out hit, 1000f, layers))
-                {
-                    Transform objectHit = hit.transform;
+                    transform.DOKill();
+                    transform.position = pos;
+                    break;
                 }
-                var pos = hit.point;
-                token.transform.position = pos;
+                case DragState.ReturningFromDrag:
+                {
+                    transform.position = Vector3.Lerp(transform.position, dummy.transform.position, 0.5f);
+                    if (Vector3.Distance(transform.position, dummy.transform.position) < 0.01f)
+                    {
+                        transform.position = dummy.transform.position;
+                        dragState = DragState.NotDragging;
+                    }
+
+                    break;
+                }
+                case DragState.Summoning:
+                {
+                    var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+
+                    if (Physics.Raycast(ray, out var hit, 1000f, layers))
+                    {
+                        var objectHit = hit.transform;
+                    }
+                    var pos = hit.point;
+                    token.transform.position = pos;
+                    break;
+                }
             }
         }
 
@@ -96,10 +101,10 @@ namespace Kamikaze.Frontend
             Debug.Log(Input.mousePosition.y);
             if (Input.mousePosition.y / Screen.height > .3f)
             {
-                if (dragState != DragState.Summonning)
+                if (dragState != DragState.Summoning)
                 {
-                    dragState = DragState.Summonning;
-                    Debug.Log("Summonning");
+                    dragState = DragState.Summoning;
+                    Debug.Log("Summoning");
                     GetComponent<MeshRenderer>().enabled = false;
                     
                     if(token == null) token = Instantiate(tokenPrefab);
@@ -108,10 +113,10 @@ namespace Kamikaze.Frontend
             }
             else
             {
-                if (dragState == DragState.Summonning)
+                if (dragState == DragState.Summoning)
                 {
                     dragState = DragState.Dragging;
-                    Debug.Log("Stap Summonning");
+                    Debug.Log("Stap Summoning");
                     Destroy(token);
                     GetComponent<MeshRenderer>().enabled = true;
                 }
