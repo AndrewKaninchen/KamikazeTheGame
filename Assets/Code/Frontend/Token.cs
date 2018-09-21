@@ -48,7 +48,6 @@ namespace Kamikaze.Frontend
                 moveState = MoveState.Idle;
                 Debug.Log($"Moved to {pos}");
             };
-
         }
 
         public void DisplayActions()

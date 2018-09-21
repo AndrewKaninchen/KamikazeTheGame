@@ -2,9 +2,10 @@
 -target:library
 -nowarn:0169
 -langversion:7
--out:C:/Users/andre/Documents/GitHub/KamikazeTheGame/Temp/Unity.ProBuilder.AddOns.Editor.dll
+-out:C:/Users/andre/Documents/GitHub/KamikazeTheGame/Temp/Unity.Postprocessing.Editor.dll
 -nostdlib
 -unsafe
+-r:C:/Users/andre/Documents/GitHub/KamikazeTheGame/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll
 -r:"C:\Program Files\Unity\Hub\Editor\2018.2.6f1\Editor\Data\Managed/UnityEngine/UnityEngine.dll"
 -r:"C:\Program Files\Unity\Hub\Editor\2018.2.6f1\Editor\Data\Managed/UnityEngine/UnityEngine.AIModule.dll"
 -r:"C:\Program Files\Unity\Hub\Editor\2018.2.6f1\Editor\Data\Managed/UnityEngine/UnityEngine.ARModule.dll"
@@ -313,5 +314,39 @@
 -d:UNITY_TEAM_LICENSE
 -d:ENABLE_VSTU
 -d:UNITY_POST_PROCESSING_STACK_V2
--i:C:/Users/andre/AppData/Local/Unity/cache/packages/staging-packages.unity.com/com.unity.probuilder@3.0.9/ProBuilder/Editor/Addons/pb_Fbx.cs
+-i:C:/Users/andre/AppData/Local/Unity/cache/packages/staging-packages.unity.com/com.unity.postprocessing@2.0.13-preview/PostProcessing/Editor/Attributes/DecoratorAttribute.cs
+-i:C:/Users/andre/AppData/Local/Unity/cache/packages/staging-packages.unity.com/com.unity.postprocessing@2.0.13-preview/PostProcessing/Editor/Attributes/PostProcessEditorAttribute.cs
+-i:C:/Users/andre/AppData/Local/Unity/cache/packages/staging-packages.unity.com/com.unity.postprocessing@2.0.13-preview/PostProcessing/Editor/BaseEditor.cs
+-i:C:/Users/andre/AppData/Local/Unity/cache/packages/staging-packages.unity.com/com.unity.postprocessing@2.0.13-preview/PostProcessing/Editor/Decorators/AttributeDecorator.cs
+-i:C:/Users/andre/AppData/Local/Unity/cache/packages/staging-packages.unity.com/com.unity.postprocessing@2.0.13-preview/PostProcessing/Editor/Decorators/Decorators.cs
+-i:C:/Users/andre/AppData/Local/Unity/cache/packages/staging-packages.unity.com/com.unity.postprocessing@2.0.13-preview/PostProcessing/Editor/Decorators/TrackballDecorator.cs
+-i:C:/Users/andre/AppData/Local/Unity/cache/packages/staging-packages.unity.com/com.unity.postprocessing@2.0.13-preview/PostProcessing/Editor/EffectListEditor.cs
+-i:C:/Users/andre/AppData/Local/Unity/cache/packages/staging-packages.unity.com/com.unity.postprocessing@2.0.13-preview/PostProcessing/Editor/Effects/AmbientOcclusionEditor.cs
+-i:C:/Users/andre/AppData/Local/Unity/cache/packages/staging-packages.unity.com/com.unity.postprocessing@2.0.13-preview/PostProcessing/Editor/Effects/AutoExposureEditor.cs
+-i:C:/Users/andre/AppData/Local/Unity/cache/packages/staging-packages.unity.com/com.unity.postprocessing@2.0.13-preview/PostProcessing/Editor/Effects/BloomEditor.cs
+-i:C:/Users/andre/AppData/Local/Unity/cache/packages/staging-packages.unity.com/com.unity.postprocessing@2.0.13-preview/PostProcessing/Editor/Effects/ChromaticAberrationEditor.cs
+-i:C:/Users/andre/AppData/Local/Unity/cache/packages/staging-packages.unity.com/com.unity.postprocessing@2.0.13-preview/PostProcessing/Editor/Effects/ColorGradingEditor.cs
+-i:C:/Users/andre/AppData/Local/Unity/cache/packages/staging-packages.unity.com/com.unity.postprocessing@2.0.13-preview/PostProcessing/Editor/Effects/DefaultPostProcessEffectEditor.cs
+-i:C:/Users/andre/AppData/Local/Unity/cache/packages/staging-packages.unity.com/com.unity.postprocessing@2.0.13-preview/PostProcessing/Editor/Effects/DepthOfFieldEditor.cs
+-i:C:/Users/andre/AppData/Local/Unity/cache/packages/staging-packages.unity.com/com.unity.postprocessing@2.0.13-preview/PostProcessing/Editor/Effects/LensDistortionEditor.cs
+-i:C:/Users/andre/AppData/Local/Unity/cache/packages/staging-packages.unity.com/com.unity.postprocessing@2.0.13-preview/PostProcessing/Editor/Effects/ScreenSpaceReflectionsEditor.cs
+-i:C:/Users/andre/AppData/Local/Unity/cache/packages/staging-packages.unity.com/com.unity.postprocessing@2.0.13-preview/PostProcessing/Editor/Effects/VignetteEditor.cs
+-i:C:/Users/andre/AppData/Local/Unity/cache/packages/staging-packages.unity.com/com.unity.postprocessing@2.0.13-preview/PostProcessing/Editor/PostProcessDebugEditor.cs
+-i:C:/Users/andre/AppData/Local/Unity/cache/packages/staging-packages.unity.com/com.unity.postprocessing@2.0.13-preview/PostProcessing/Editor/PostProcessEffectBaseEditor.cs
+-i:C:/Users/andre/AppData/Local/Unity/cache/packages/staging-packages.unity.com/com.unity.postprocessing@2.0.13-preview/PostProcessing/Editor/PostProcessEffectEditor.cs
+-i:C:/Users/andre/AppData/Local/Unity/cache/packages/staging-packages.unity.com/com.unity.postprocessing@2.0.13-preview/PostProcessing/Editor/PostProcessLayerEditor.cs
+-i:C:/Users/andre/AppData/Local/Unity/cache/packages/staging-packages.unity.com/com.unity.postprocessing@2.0.13-preview/PostProcessing/Editor/PostProcessProfileEditor.cs
+-i:C:/Users/andre/AppData/Local/Unity/cache/packages/staging-packages.unity.com/com.unity.postprocessing@2.0.13-preview/PostProcessing/Editor/PostProcessVolumeEditor.cs
+-i:C:/Users/andre/AppData/Local/Unity/cache/packages/staging-packages.unity.com/com.unity.postprocessing@2.0.13-preview/PostProcessing/Editor/Tools/CubeLutAssetFactory.cs
+-i:C:/Users/andre/AppData/Local/Unity/cache/packages/staging-packages.unity.com/com.unity.postprocessing@2.0.13-preview/PostProcessing/Editor/Tools/CubeLutAssetImporter.cs
+-i:C:/Users/andre/AppData/Local/Unity/cache/packages/staging-packages.unity.com/com.unity.postprocessing@2.0.13-preview/PostProcessing/Editor/Tools/DefineSetter.cs
+-i:C:/Users/andre/AppData/Local/Unity/cache/packages/staging-packages.unity.com/com.unity.postprocessing@2.0.13-preview/PostProcessing/Editor/Tools/ProfileFactory.cs
+-i:C:/Users/andre/AppData/Local/Unity/cache/packages/staging-packages.unity.com/com.unity.postprocessing@2.0.13-preview/PostProcessing/Editor/Tools/ResourceAssetFactory.cs
+-i:C:/Users/andre/AppData/Local/Unity/cache/packages/staging-packages.unity.com/com.unity.postprocessing@2.0.13-preview/PostProcessing/Editor/Tools/VolumeFactory.cs
+-i:C:/Users/andre/AppData/Local/Unity/cache/packages/staging-packages.unity.com/com.unity.postprocessing@2.0.13-preview/PostProcessing/Editor/Utils/CurveEditor.cs
+-i:C:/Users/andre/AppData/Local/Unity/cache/packages/staging-packages.unity.com/com.unity.postprocessing@2.0.13-preview/PostProcessing/Editor/Utils/EditorUtilities.cs
+-i:C:/Users/andre/AppData/Local/Unity/cache/packages/staging-packages.unity.com/com.unity.postprocessing@2.0.13-preview/PostProcessing/Editor/Utils/GlobalSettings.cs
+-i:C:/Users/andre/AppData/Local/Unity/cache/packages/staging-packages.unity.com/com.unity.postprocessing@2.0.13-preview/PostProcessing/Editor/Utils/PostProcessShaderIncludePath.cs
+-i:C:/Users/andre/AppData/Local/Unity/cache/packages/staging-packages.unity.com/com.unity.postprocessing@2.0.13-preview/PostProcessing/Editor/Utils/SerializedParameterOverride.cs
+-i:C:/Users/andre/AppData/Local/Unity/cache/packages/staging-packages.unity.com/com.unity.postprocessing@2.0.13-preview/PostProcessing/Editor/Utils/Styling.cs
 -v:0
