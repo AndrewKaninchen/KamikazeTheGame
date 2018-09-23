@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Transactions;
 using DG.Tweening;
@@ -13,19 +14,21 @@ namespace Kamikaze.Frontend
         public GameObject tokenPrefab;
         public DummyCard dummy;
         public float distanceFromCameraWhenDraggingCards;
-        public DragState dragState;
         private GameObject token;
         [SerializeField] private LayerMask layers; //temporário porque preguiça de pensar
 
+        public DragState dragState = DragState.Tweening;
         public enum DragState
         {
             NotDragging,
             Dragging,
-            ReturningFromDrag,
-            Summoning
+            Previewing,
+            Tweening
         }
 
-        public bool isVisible;
+        public event Action OnSummon;
+        
+        private bool isVisible;
         private bool Visible 
         {
             get => isVisible;
@@ -37,18 +40,22 @@ namespace Kamikaze.Frontend
                     token = Instantiate(tokenPrefab);
 
                 GetComponent<MeshRenderer>().enabled = value;
+                //GetComponent<MeshCollider>().enabled = value;
                 isVisible = value;
             }
         }
 
+        public IEnumerator GetDrawn()
+        {
+            yield return new WaitForEndOfFrame();
+            transform.DOMove(dummy.transform.position, 0.1f).onComplete += () => dragState = DragState.NotDragging;;
+            transform.DORotate(dummy.transform.rotation.eulerAngles, 0.2f);
+        }
 
         private void LateUpdate()
         {
             switch (dragState)
             {
-                case DragState.NotDragging:
-                    MoveToPositionImmediately();
-                    break;
                 case DragState.Dragging:
                 {
                     var pos = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 1f);
@@ -59,18 +66,26 @@ namespace Kamikaze.Frontend
                     transform.position = pos;
                     break;
                 }
-                case DragState.ReturningFromDrag:
+                case DragState.NotDragging:
                 {
-                    transform.position = Vector3.Lerp(transform.position, dummy.transform.position, 0.5f);
-                    if (Vector3.Distance(transform.position, dummy.transform.position) < 0.01f)
+                    transform.SetPositionAndRotation
+                    (
+                        Vector3.Lerp(transform.position, dummy.transform.position, 0.5f),
+                        Quaternion.Lerp(transform.rotation, dummy.transform.rotation, 0.5f)
+                    );
+                    
+                    if (Vector3.Distance(transform.position, dummy.transform.position) < 0.01f &&
+                        Quaternion.Angle(transform.rotation, dummy.transform.rotation) < 0.01f )
                     {
                         transform.position = dummy.transform.position;
+                        transform.rotation = dummy.transform.rotation;
                         dragState = DragState.NotDragging;
                     }
 
+                    
                     break;
                 }
-                case DragState.Summoning:
+                case DragState.Previewing:
                 {
                     var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
@@ -85,13 +100,14 @@ namespace Kamikaze.Frontend
             }
         }
 
-        public void MoveToPosition(Vector3 position, Quaternion rotation)
+        public Tweener MoveToPosition(Vector3 position, Quaternion rotation)
         {
             transform.DOKill();
-            transform.DOMove(position, 0.05f);
+            var t = transform.DOMove(position, 0.05f);
             transform.DORotate(rotation.eulerAngles, 0.2f);
+            return t;
         }
-
+        
         public void MoveToPositionImmediately(Vector3 position, Quaternion rotation)
         {
             transform.DOKill();
@@ -99,14 +115,14 @@ namespace Kamikaze.Frontend
             transform.rotation = rotation;
         }
     
-        public void MoveToPosition() => MoveToPosition(dummy.transform.position, dummy.transform.rotation);
+        public Tweener MoveToPosition() => MoveToPosition(dummy.transform.position, dummy.transform.rotation);
         public void MoveToPositionImmediately() => MoveToPositionImmediately(dummy.transform.position, dummy.transform.rotation);
 
         public void OnBeginDrag(PointerEventData eventData)
         {
             Debug.Log($"OnBeginDrag: {this}");
-
-            dragState = DragState.Dragging;
+            if (dragState == DragState.NotDragging)
+                dragState = DragState.Dragging;
         }
 
         public void OnDrag(PointerEventData eventData)
@@ -117,17 +133,16 @@ namespace Kamikaze.Frontend
             Debug.Log(Input.mousePosition.y);
             if (Input.mousePosition.y / Screen.height > .3f)
             {
-                if (dragState != DragState.Summoning)
+                if (dragState != DragState.Previewing)
                 {
                     Debug.Log("Summoning");
-                    dragState = DragState.Summoning;
+                    dragState = DragState.Previewing;
                     Visible = false;
                 }
-                //dragState = DragState.Summonning;
             }
             else
             {
-                if (dragState == DragState.Summoning)
+                if (dragState == DragState.Previewing)
                 {
                     Debug.Log("Stap Summoning");
                     dragState = DragState.Dragging;
@@ -140,7 +155,18 @@ namespace Kamikaze.Frontend
         {
             Debug.Log($"OnEndDrag: {this}");
 
-            dragState = DragState.ReturningFromDrag;
+            switch (dragState)
+            {
+                case DragState.Dragging:
+                    dragState = DragState.NotDragging;
+                    //dragState = DragState.ReturningFromDrag;
+                    break;
+                case DragState.Previewing:
+                    OnSummon?.Invoke();
+                    Destroy(dummy.gameObject);
+                    Destroy(this.gameObject);
+                    break;
+            }
         }
 
         public void OnPointerClick(PointerEventData eventData)

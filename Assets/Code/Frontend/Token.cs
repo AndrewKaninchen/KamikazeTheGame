@@ -92,7 +92,8 @@ namespace Kamikaze.Frontend
 
                     if (Physics.Raycast(ray, out var hit, 1000f, layers))
                     {
-                        transform.LookAt(hit.point, Vector3.up);
+                        if (Vector3.Distance(hit.point, transform.position) > 0.1f)
+                            transform.LookAt(hit.point, Vector3.up);
                     }
                     break;
                 default:
