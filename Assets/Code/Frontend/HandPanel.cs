@@ -39,8 +39,6 @@ namespace Kamikaze.Frontend
 			dummy.gameObject.SetActive(true);
 			card.gameObject.SetActive(true);
 			cards.Add(card);
-			
-			card.StartCoroutine(card.GetDrawn());
 		}
 	}
 

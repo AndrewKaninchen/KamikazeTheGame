@@ -17,13 +17,12 @@ namespace Kamikaze.Frontend
         private GameObject token;
         [SerializeField] private LayerMask layers; //temporário porque preguiça de pensar
 
-        public DragState dragState = DragState.Tweening;
+        public DragState dragState = DragState.NotDragging;
         public enum DragState
         {
             NotDragging,
             Dragging,
             Previewing,
-            Tweening
         }
 
         public event Action OnSummon;
@@ -44,14 +43,7 @@ namespace Kamikaze.Frontend
                 isVisible = value;
             }
         }
-
-        public IEnumerator GetDrawn()
-        {
-            yield return new WaitForEndOfFrame();
-            transform.DOMove(dummy.transform.position, 0.1f).onComplete += () => dragState = DragState.NotDragging;;
-            transform.DORotate(dummy.transform.rotation.eulerAngles, 0.2f);
-        }
-
+      
         private void LateUpdate()
         {
             switch (dragState)
@@ -62,7 +54,6 @@ namespace Kamikaze.Frontend
                     pos.z *= distanceFromCameraWhenDraggingCards;
                     pos = Camera.main.ScreenToWorldPoint(pos);
 
-                    transform.DOKill();
                     transform.position = pos;
                     break;
                 }
@@ -130,7 +121,7 @@ namespace Kamikaze.Frontend
             Debug.Log($"OnDrag: {this}");
             //transform.DOMove(pos, 0.1f);
 
-            Debug.Log(Input.mousePosition.y);
+//            Debug.Log(Input.mousePosition.y);
             if (Input.mousePosition.y / Screen.height > .3f)
             {
                 if (dragState != DragState.Previewing)

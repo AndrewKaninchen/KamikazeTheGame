@@ -14,7 +14,7 @@ namespace Kamikaze.Frontend
         public event Action OnUpdate;
         public MoveState moveState = MoveState.Idle;
         [SerializeField] private LayerMask layers; //temporário porque preguiça de pensar
-
+        
         public enum MoveState
         {
             Idle,
