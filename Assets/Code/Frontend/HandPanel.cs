@@ -7,6 +7,8 @@ namespace Kamikaze.Frontend
 {	
 	public class HandPanel : MonoBehaviour
 	{
+        public Player player;
+
 		public GameObject dummyPrefab;
 		public GameObject cardPrefab;
 		public List<Card> cards = new List<Card>();
@@ -39,6 +41,7 @@ namespace Kamikaze.Frontend
 			dummy.gameObject.SetActive(true);
 			card.gameObject.SetActive(true);
 			cards.Add(card);
+            card.owner = player;
 		}
 	}
 

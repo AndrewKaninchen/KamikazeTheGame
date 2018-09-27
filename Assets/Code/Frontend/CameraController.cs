@@ -36,6 +36,11 @@ public class CameraController : MonoBehaviour
         
         if (Input.GetMouseButton(1))
             ApplyRotation(Input.GetAxisRaw("Mouse X"));
+        
+        if (Input.GetKey(KeyCode.Q))
+            ApplyRotation(5);
+        if (Input.GetKey(KeyCode.E))
+            ApplyRotation(-5);
     }
 
     private void ApplyRotation (float hor)

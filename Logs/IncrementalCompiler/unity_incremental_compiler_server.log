@@ -1,19 +1,47 @@
  (0,0): Unity incremental compiler server
- (0,0): watchdog active on pid: 7644
- (0,0): [09/21/2018 02:00:19.781 ] Kamikaze.dll: no prior compilation found in cache
- (0,0): [09/21/2018 02:00:19.811 ] Kamikaze.dll compiling...
- (0,0): [09/21/2018 02:00:26.952 ] Kamikaze.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Kamikaze.dll
- (0,0): [09/21/2018 02:00:27.745 ] Kamikaze.dll compilation finished in 7934ms  source files re-parsed: 20 metadata reloaded: 209
- (0,0): [09/21/2018 02:00:28.646 ] Kamikaze.Cards.dll: no prior compilation found in cache
- (0,0): [09/21/2018 02:00:28.659 ] Kamikaze.Cards.dll compiling...
- (0,0): [09/21/2018 02:00:28.697 ] Kamikaze.Cards.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Kamikaze.Cards.dll
- (0,0): [09/21/2018 02:00:28.762 ] Kamikaze.Cards.dll compilation finished in 103ms  source files re-parsed: 1 metadata reloaded: 1
- (0,0): [09/21/2018 02:00:29.218 ] Assembly-CSharp.dll: no prior compilation found in cache
- (0,0): [09/21/2018 02:00:29.230 ] Assembly-CSharp.dll compiling...
- (0,0): [09/21/2018 02:00:29.473 ] Assembly-CSharp.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp.dll
- (0,0): [09/21/2018 02:00:29.562 ] Assembly-CSharp.dll compilation finished in 331ms  source files re-parsed: 10 metadata reloaded: 8
- (0,0): [09/21/2018 02:00:29.834 ] Assembly-CSharp-Editor.dll: no prior compilation found in cache
- (0,0): [09/21/2018 02:00:29.846 ] Assembly-CSharp-Editor.dll compiling...
- (0,0): [09/21/2018 02:00:32.380 ] Assembly-CSharp-Editor.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp-Editor.dll
- (0,0): [09/21/2018 02:00:32.418 ] Assembly-CSharp-Editor.dll compilation finished in 2572ms  source files re-parsed: 1 metadata reloaded: 120
- (0,0): [09/21/2018 02:02:10.282 ] Compiler cache size is now 19,32 MB
+ (0,0): watchdog active on pid: 2488
+ (0,0): [09/26/2018 04:32:17.252 ] Unity.Postprocessing.Runtime.dll: no prior compilation found in cache
+ (0,0): [09/26/2018 04:32:17.252 ] Unity.PackageManagerUI.Editor.dll: no prior compilation found in cache
+ (0,0): [09/26/2018 04:32:17.293 ] Unity.Postprocessing.Runtime.dll compiling...
+ (0,0): [09/26/2018 04:32:17.253 ] Unity.TextMeshPro.dll: no prior compilation found in cache
+ (0,0): [09/26/2018 04:32:17.253 ] Kamikaze.dll: no prior compilation found in cache
+ (0,0): [09/26/2018 04:32:17.311 ] Unity.TextMeshPro.dll compiling...
+ (0,0): [09/26/2018 04:32:17.299 ] Unity.PackageManagerUI.Editor.dll compiling...
+ (0,0): [09/26/2018 04:32:17.322 ] Kamikaze.dll compiling...
+ (0,0): [09/26/2018 04:32:24.273 ] Unity.TextMeshPro.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Unity.TextMeshPro.dll
+ (0,0): [09/26/2018 04:32:24.274 ] Unity.Postprocessing.Runtime.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Unity.Postprocessing.Runtime.dll
+ (0,0): [09/26/2018 04:32:24.274 ] Kamikaze.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Kamikaze.dll
+ (0,0): [09/26/2018 04:32:24.274 ] Unity.PackageManagerUI.Editor.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Unity.PackageManagerUI.Editor.dll
+ (0,0): [09/26/2018 04:32:24.482 ] Unity.PackageManagerUI.Editor.dll compilation finished in 7182ms  source files re-parsed: 44 metadata reloaded: 195
+ (0,0): [09/26/2018 04:32:24.498 ] Kamikaze.dll compilation finished in 7175ms  source files re-parsed: 21 metadata reloaded: 184
+ (0,0): [09/26/2018 04:32:24.504 ] Unity.TextMeshPro.dll compilation finished in 7193ms  source files re-parsed: 45 metadata reloaded: 177
+ (0,0): [09/26/2018 04:32:24.498 ] Unity.Postprocessing.Runtime.dll compilation finished in 7204ms  source files re-parsed: 56 metadata reloaded: 184
+ (0,0): [09/26/2018 04:32:25.733 ] Kamikaze.Cards.dll: no prior compilation found in cache
+ (0,0): [09/26/2018 04:32:25.746 ] Kamikaze.Cards.dll compiling...
+ (0,0): [09/26/2018 04:32:25.789 ] Kamikaze.Cards.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Kamikaze.Cards.dll
+ (0,0): [09/26/2018 04:32:25.841 ] Kamikaze.Cards.dll compilation finished in 96ms  source files re-parsed: 1 metadata reloaded: 1
+ (0,0): [09/26/2018 04:32:26.069 ] Unity.Postprocessing.Editor.dll: no prior compilation found in cache
+ (0,0): [09/26/2018 04:32:26.082 ] Unity.Postprocessing.Editor.dll compiling...
+ (0,0): [09/26/2018 04:32:26.156 ] Unity.TextMeshPro.Editor.dll: no prior compilation found in cache
+ (0,0): [09/26/2018 04:32:26.168 ] Unity.TextMeshPro.Editor.dll compiling...
+ (0,0): [09/26/2018 04:32:26.374 ] UnityEditor.StandardEvents.dll: no prior compilation found in cache
+ (0,0): [09/26/2018 04:32:26.396 ] UnityEditor.StandardEvents.dll compiling...
+ (0,0): [09/26/2018 04:32:26.540 ] UnityEditor.StandardEvents.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\UnityEditor.StandardEvents.dll
+ (0,0): [09/26/2018 04:32:26.653 ] UnityEditor.StandardEvents.dll compilation finished in 257ms  source files re-parsed: 1 metadata reloaded: 0
+ (0,0): [09/26/2018 04:32:26.698 ] Unity.ProBuilder.AddOns.Editor.dll: no prior compilation found in cache
+ (0,0): [09/26/2018 04:32:26.711 ] Unity.ProBuilder.AddOns.Editor.dll compiling...
+ (0,0): [09/26/2018 04:32:26.803 ] Unity.ProBuilder.AddOns.Editor.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Unity.ProBuilder.AddOns.Editor.dll
+ (0,0): [09/26/2018 04:32:26.926 ] Unity.ProBuilder.AddOns.Editor.dll compilation finished in 215ms  source files re-parsed: 1 metadata reloaded: 0
+ (0,0): [09/26/2018 04:32:27.066 ] Unity.Postprocessing.Editor.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Unity.Postprocessing.Editor.dll
+ (0,0): [09/26/2018 04:32:27.273 ] Unity.Postprocessing.Editor.dll compilation finished in 1191ms  source files re-parsed: 35 metadata reloaded: 1
+ (0,0): [09/26/2018 04:32:27.299 ] Unity.TextMeshPro.Editor.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Unity.TextMeshPro.Editor.dll
+ (0,0): [09/26/2018 04:32:27.698 ] Unity.TextMeshPro.Editor.dll compilation finished in 1529ms  source files re-parsed: 39 metadata reloaded: 1
+ (0,0): [09/26/2018 04:32:28.264 ] Assembly-CSharp.dll: no prior compilation found in cache
+ (0,0): [09/26/2018 04:32:28.276 ] Assembly-CSharp.dll compiling...
+ (0,0): [09/26/2018 04:32:28.673 ] Assembly-CSharp.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp.dll
+ (0,0): [09/26/2018 04:32:28.737 ] Assembly-CSharp.dll compilation finished in 461ms  source files re-parsed: 10 metadata reloaded: 6
+ (0,0): [09/26/2018 04:32:31.176 ] Assembly-CSharp-Editor.dll: no prior compilation found in cache
+ (0,0): [09/26/2018 04:32:31.188 ] Assembly-CSharp-Editor.dll compiling...
+ (0,0): [09/26/2018 04:32:31.227 ] Assembly-CSharp-Editor.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp-Editor.dll
+ (0,0): [09/26/2018 04:32:31.259 ] Assembly-CSharp-Editor.dll compilation finished in 70ms  source files re-parsed: 1 metadata reloaded: 4
+ (0,0): [09/26/2018 04:32:41.066 ] Compiler cache size is now 19,32 MB

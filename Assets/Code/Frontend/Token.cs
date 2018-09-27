@@ -13,8 +13,30 @@ namespace Kamikaze.Frontend
         public float movementStat;
         public event Action OnUpdate;
         public MoveState moveState = MoveState.Idle;
-        [SerializeField] private LayerMask layers; //temporário porque preguiça de pensar
-        
+        public LayerMask layers; //temporário porque preguiça de pensar
+        public Material friendlyMat, enemyMat, friendlyBaseMat, enemyBaseMat;
+        public ParticleSystemRenderer particleSystemRenderer;
+        public MeshRenderer meshRenderer;
+
+        public TokenColor Color 
+        {
+            get => t_Color;
+            set 
+            {
+                meshRenderer.material = value == TokenColor.Friendly ?  friendlyBaseMat : enemyBaseMat;
+                particleSystemRenderer.material = value == TokenColor.Friendly ? friendlyMat : enemyMat;
+                t_Color = value;
+            }
+        }
+
+        private TokenColor t_Color;
+
+        public enum TokenColor
+        {
+            Friendly,
+            Enemy
+        }
+
         public enum MoveState
         {
             Idle,

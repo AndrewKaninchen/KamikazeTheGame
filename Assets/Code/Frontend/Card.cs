@@ -10,6 +10,8 @@ namespace Kamikaze.Frontend
 {
     public class Card : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHandler, IPointerClickHandler, IPointerEnterHandler, IPointerExitHandler
     {
+        public Player owner;
+
         //public Material transparentMaterial;
         public GameObject tokenPrefab;
         public DummyCard dummy;
@@ -72,7 +74,6 @@ namespace Kamikaze.Frontend
                         transform.rotation = dummy.transform.rotation;
                         dragState = DragState.NotDragging;
                     }
-
                     
                     break;
                 }
@@ -150,10 +151,12 @@ namespace Kamikaze.Frontend
             {
                 case DragState.Dragging:
                     dragState = DragState.NotDragging;
-                    //dragState = DragState.ReturningFromDrag;
                     break;
                 case DragState.Previewing:
                     OnSummon?.Invoke();
+                    var t = token.GetComponent<Token>();
+                    owner.tokens.Add(t);
+                    t.Color = Token.TokenColor.Friendly;
                     Destroy(dummy.gameObject);
                     Destroy(this.gameObject);
                     break;
