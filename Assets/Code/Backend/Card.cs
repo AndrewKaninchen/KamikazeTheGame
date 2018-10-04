@@ -8,29 +8,46 @@ using UnityEngine;
 namespace Kamikaze.Backend
 {
     [Serializable]
-    public abstract class Card : ScriptableObject
+    public class CardAsset : ScriptableObject
     {
         public Texture2D image;
         public string description;
+        public Type associatedType;
+    }
+
+    public abstract class Card
+    {
+        #region SerializedFields
+        private CardAsset cardAsset;
+        private GameController game;
+        #endregion
+
+        public Frontend_Old.Card FrontendCard { get; private set; }
+
+        public IEnumerable container;
         public Player owner;
         public Player opponent;
-        public IEnumerable container;
-        public Frontend_Old.Card FrontendCard { get; private set; }
+
+        public static Card CreateCard(Type type)
+        {
+            return (Card) Activator.CreateInstance(type);
+        }
 
         public List<TriggerEffect> TriggerEffects { get; set; }
         
-        public virtual void Init(Player owner, Player opponent, IEnumerable container, Frontend_Old.Card front)
+        public virtual void Init(Player owner, Player opponent, IEnumerable container, Frontend_Old.Card front, GameController game)
         {
             this.owner = owner;
             this.opponent = opponent;
             this.container = container;
+            this.game = game;
             FrontendCard = front;            
         }
 
         public void SubscribeTriggerEffects()
         {
             foreach (var eff in TriggerEffects)            
-                GameEvents.SubscribeTriggerEffect(eff);            
+                game.Events.SubscribeTriggerEffect(eff);            
         }
     }
     
@@ -94,9 +111,9 @@ namespace Kamikaze.Backend
         public bool IsExiled { get; set; }
         public bool IsInField { get; set; }
 
-        public override void Init(Player owner, Player opponent, IEnumerable container, Frontend_Old.Card front)
+        public override void Init(Player owner, Player opponent, IEnumerable container, Frontend_Old.Card front, GameController game)
         {
-            base.Init(owner, opponent, container, front);
+            base.Init(owner, opponent, container, front, game);
         }
     }
 
@@ -106,9 +123,9 @@ namespace Kamikaze.Backend
         public MovementStat Movement { get; set; }
         public int Health { get; set; }
 
-        public override void Init(Player owner, Player opponent, IEnumerable container, Frontend_Old.Card front)
+        public override void Init(Player owner, Player opponent, IEnumerable container, Frontend_Old.Card front, GameController game)
         {
-            base.Init(owner, opponent, container, front);
+            base.Init(owner, opponent, container, front, game);
             Abilites = new List<Ability>
             {
                 new Move(this, Movement),
@@ -142,6 +159,4 @@ namespace Kamikaze.Backend
     {
         public T context;
     }
-
-
 }

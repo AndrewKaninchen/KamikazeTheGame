@@ -1,16 +1,14 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
 using System;
-using CoroutineAsync;
 using System.Collections;
 
 namespace Kamikaze.Frontend
 {
-    public class TheGame : MonoBehaviour
+    public class FrontendController : MonoBehaviour
     {
         public Player p1, p2, currentPlayer, otherPlayer;
         public Animator SUAVEZ;
-
 
         public void Start()
         {
@@ -38,8 +36,6 @@ namespace Kamikaze.Frontend
             otherPlayer.cam.gameObject.SetActive(false);
             currentPlayer.cam.gameObject.SetActive(true);
             yield return new WaitForSeconds(.3f);
-
-
 
             foreach (Token t in currentPlayer.tokens)
                 t.Color = Token.TokenColor.Friendly;

@@ -6,6 +6,8 @@ using UnityEngine;
 using System.Threading;
 using System.Threading.Tasks;
 using static Kamikaze.Backend.GameEvents;
+using CoroutineAsync;
+
 
 namespace Kamikaze.Backend
 {
@@ -18,24 +20,31 @@ namespace Kamikaze.Backend
         Quintessence
     }
 
-    public static class Game
+    public class GameController
     {
-        public static bool isGameStarted = false;
-        public static bool isGameOver = true;
-        public static Player[] players;
-        public static Player currentPlayer;
-        public static List<Card> cardsInPlay;
-        public static List<Card> cardsInField;
+        public bool isGameStarted = false;
+        public bool isGameOver = true;
+        public Player[] players;
+        public Player currentPlayer;
+        public List<Card> cardsInPlay;
+        public List<Card> cardsInField;
 
-        public static void Initialize (List<Card> p1cards, List<Card> p2cards)
-        {   
+        public GameEvents Events { get; private set; }
+
+        private Frontend.FrontendController frontendController;
+
+        public GameController (List<CardAsset> p1cards, List<CardAsset> p2cards, Frontend.FrontendController frontendController)
+        {
+            this.frontendController = frontendController;
+            this.Events = new GameEvents(this);
+
             var p1deck = new Stack<Card>();
             var p2deck = new Stack<Card>();
 
             foreach (var card in p1cards)            
-                p1deck.Push(ScriptableObject.CreateInstance(card.GetType()) as Card);
+                p1deck.Push(Card.CreateCard(card.associatedType));
             foreach (var card in p2cards)
-                p2deck.Push(ScriptableObject.CreateInstance(card.GetType()) as Card);
+                p2deck.Push(Card.CreateCard(card.associatedType));
 
             cardsInPlay = new List<Card>(p1deck);
             cardsInPlay.AddRange(p2deck);
@@ -46,25 +55,29 @@ namespace Kamikaze.Backend
             currentPlayer = players[0];
             isGameStarted = true;
             isGameOver = false;
-
-            Run();
         }
 
-        private static async void Run()
+        public async void Run()
         {
             if (isGameStarted)
             {
                 while (!isGameOver)
                 {
                     currentPlayer = currentPlayer == players[0] ? players[1] : players[0];
+                    await ChangePlayer();
                     await Turn(currentPlayer);
                 }
             }
         }
 
+        public async Task ChangePlayer()
+        {
+            await frontendController.StartCoroutineAsync(frontendController.ChangePlayer());
+        }
+
         #region Phases
 
-        private static async Task Turn(Player player)
+        private async Task Turn(Player player)
         {
             await VictoryCheckPhase();
             await DrawPhase();
@@ -75,25 +88,25 @@ namespace Kamikaze.Backend
         }
 
 #pragma warning disable CS1998 // Async method lacks 'await' operators and will run synchronously
-        private static async Task VictoryCheckPhase()
+        private async Task VictoryCheckPhase()
         {
             //await CallEvent<OnVictoryCheckPhase>();
             // Check for Victory
         }
 
-        private async static Task DrawPhase()
+        private async Task DrawPhase()
         {
             //await CallEvent<OnDrawPhase>(new OnDrawPhase(currentPlayer));
             await currentPlayer.DrawCard();
         }
 
-        private static async Task CrystalUnlockPhase()
+        private async Task CrystalUnlockPhase()
         {
             //currentPlayer.AddCrystal(/*await Choose crystal*/);
             //await GameEvents.OnCrystalUnlockPhase(currentPlayer);
         }
 
-        private static async Task ActionPointRestorePhase()
+        private async Task ActionPointRestorePhase()
         {
             //na real tô restaurando energia aqui também porque sei lá
             //foreach (var crystal in currentPlayer.crystals)
@@ -102,12 +115,12 @@ namespace Kamikaze.Backend
             //restore ap 
         }
 
-        private static async Task MainPhase()
+        private async Task MainPhase()
         {
             //await GameEvents.OnMainPhase(currentPlayer);
         }
 
-        private static async Task EndPhase()
+        private async Task EndPhase()
         {
             //await GameEvents.OnEndPhase(currentPlayer);
         }

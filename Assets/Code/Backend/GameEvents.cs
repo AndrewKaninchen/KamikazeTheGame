@@ -8,11 +8,15 @@ using UnityEngine;
 
 namespace Kamikaze.Backend
 {
-    public static class GameEvents
+    public class GameEvents
     {
-        private static Dictionary<Type, List<TriggerEffect>> triggerEffects = new Dictionary<Type, List<TriggerEffect>>();
+        public GameController Game { get; private set; }
+        public GameEvents(GameController game) { Game = game; }
 
-        public static void SubscribeTriggerEffect(TriggerEffect eff)
+        private Dictionary<Type, List<TriggerEffect>> triggerEffects = new Dictionary<Type, List<TriggerEffect>>();
+
+
+        public void SubscribeTriggerEffect(TriggerEffect eff)
         {
             var T = eff.GetType().BaseType.GetGenericArguments()[0];
             if (!triggerEffects.ContainsKey(T))
@@ -21,7 +25,7 @@ namespace Kamikaze.Backend
                 triggerEffects[T].Add(eff);
         }
 
-        public async static void CallEvent<T>(T context) where T : GameEvent
+        public async void CallEvent<T>(T context) where T : GameEvent
         {
             var triggeredEffects = triggerEffects[typeof(T)] as List<TriggerEffect<T>>;
 
@@ -40,7 +44,7 @@ namespace Kamikaze.Backend
                 else
                     (eff.Mandatory() ? p2mandatory : p2optional).Add(eff);
             }
-                        
+
             // Tell frontend to get the order of entry from the players
 
             var stack = p1mandatory.Concat(p2mandatory).Concat(p1optional).Concat(p2mandatory).ToList();

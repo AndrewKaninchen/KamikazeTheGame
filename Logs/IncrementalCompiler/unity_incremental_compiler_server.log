@@ -1,2 +1,35 @@
  (0,0): Unity incremental compiler server
  (0,0): watchdog active on pid: 22732
+ (0,0): [10/04/2018 01:57:21.968 ] Kamikaze.dll: no prior compilation found in cache
+ (0,0): [10/04/2018 01:57:21.985 ] Kamikaze.dll compiling...
+ (0,0): [10/04/2018 01:57:25.707 ] Kamikaze.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Kamikaze.dll
+ (0,0): [10/04/2018 01:57:26.327 ] Kamikaze.dll compilation finished in 4341ms  source files re-parsed: 21 metadata reloaded: 209
+ (0,0): [10/04/2018 01:57:27.408 ] Kamikaze.Cards.dll: no prior compilation found in cache
+ (0,0): [10/04/2018 01:57:27.449 ] Kamikaze.Cards.dll compiling...
+ (0,0): [10/04/2018 01:57:27.488 ] Kamikaze.Cards.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Kamikaze.Cards.dll
+ (0,0): [10/04/2018 01:57:27.607 ] Kamikaze.Cards.dll compilation finished in 158ms  source files re-parsed: 1 metadata reloaded: 1
+ (0,0): [10/04/2018 01:57:27.988 ] Assembly-CSharp.dll: no prior compilation found in cache
+ (0,0): [10/04/2018 01:57:28.000 ] Assembly-CSharp.dll compiling...
+ (0,0): [10/04/2018 01:57:28.324 ] Assembly-CSharp.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp.dll
+ (0,0): [10/04/2018 01:57:28.429 ] Assembly-CSharp.dll compilation finished in 429ms  source files re-parsed: 10 metadata reloaded: 8
+ (0,0): [10/04/2018 01:57:28.902 ] Assembly-CSharp-Editor.dll: no prior compilation found in cache
+ (0,0): [10/04/2018 01:57:28.915 ] Assembly-CSharp-Editor.dll compiling...
+ (0,0): [10/04/2018 01:57:29.057 ] Assembly-CSharp-Editor.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp-Editor.dll
+ (0,0): [10/04/2018 01:57:29.092 ] Assembly-CSharp-Editor.dll compilation finished in 178ms  source files re-parsed: 1 metadata reloaded: 120
+ (0,0): [10/04/2018 02:00:42.837 ] Compiler cache size is now 19,32 MB
+ (0,0): [10/04/2018 02:27:32.512 ] Kamikaze.dll compiling...
+ (0,0): [10/04/2018 02:27:32.597 ] Kamikaze.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Kamikaze.dll
+ (0,0): [10/04/2018 02:27:32.665 ] Kamikaze.dll compilation finished in 152ms  source files re-parsed: 4 metadata reloaded: 0
+ (0,0): [10/04/2018 02:27:32.678 ] Kamikaze.dll: compilation was cached, 4 file(s) were found to have changed.
+ (0,0): [10/04/2018 04:40:33.589 ] Kamikaze.dll compiling...
+ (0,0): [10/04/2018 04:40:33.639 ] Kamikaze.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Kamikaze.dll
+ (0,0): [10/04/2018 04:40:33.652 ] Kamikaze.dll compilation finished in 62ms  source files re-parsed: 3 metadata reloaded: 0
+ (0,0): [10/04/2018 04:40:33.664 ] Kamikaze.dll: compilation was cached, 3 file(s) were found to have changed.
+ (0,0): [10/04/2018 04:45:56.987 ] Kamikaze.dll: no prior compilation found in cache
+ (0,0): [10/04/2018 04:45:57.000 ] Kamikaze.dll compiling...
+ (0,0): [10/04/2018 04:45:57.075 ] Kamikaze.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Kamikaze.dll
+ (0,0): [10/04/2018 04:45:57.102 ] Kamikaze.dll compilation finished in 101ms  source files re-parsed: 21 metadata reloaded: 0
+ (0,0): [10/04/2018 05:02:11.682 ] Kamikaze.dll compiling...
+ (0,0): [10/04/2018 05:02:11.745 ] Kamikaze.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Kamikaze.dll
+ (0,0): [10/04/2018 05:02:11.770 ] Kamikaze.dll compilation finished in 87ms  source files re-parsed: 3 metadata reloaded: 0
+ (0,0): [10/04/2018 05:02:11.782 ] Kamikaze.dll: compilation was cached, 3 file(s) were found to have changed.

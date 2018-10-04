@@ -1,18 +1,24 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Kamikaze.Backend;
 
 namespace Kamikaze
 {
     public class Bootstrapper : MonoBehaviour
     {
-        public List<Backend.Card> cardsP1;
-        public List<Backend.Card> cardsP2;        
+        private Frontend.FrontendController frontendController;
+        private Backend.GameController gameController;
+        private Backend.GameEvents gameEvents;
+
+        [Header("Cards")]
+        public List<Backend.CardAsset> cardsP1;
+        public List<Backend.CardAsset> cardsP2;        
 	
         public void Begin ()
         {
-            Game.Initialize(cardsP1, cardsP2);
+            gameController = new Backend.GameController(cardsP1, cardsP2, frontendController);
+            gameEvents = new Backend.GameEvents(gameController);
+            gameController.Run();
         }
     }
 }
