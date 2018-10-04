@@ -12,8 +12,14 @@ namespace Kamikaze
 
         [Header("Cards")]
         public List<Backend.CardAsset> cardsP1;
-        public List<Backend.CardAsset> cardsP2;        
-	
+        public List<Backend.CardAsset> cardsP2;
+
+        private void Start()
+        {
+            frontendController = GetComponent<Frontend.FrontendController>();
+            if (frontendController == null)
+                gameObject.AddComponent<Frontend.FrontendController>();
+        }
         public void Begin ()
         {
             gameController = new Backend.GameController(cardsP1, cardsP2, frontendController);

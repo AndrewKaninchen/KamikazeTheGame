@@ -73,6 +73,7 @@ namespace Kamikaze.Backend
         private async Task ChangePlayer()
         {
             await frontendController.StartCoroutineAsync(frontendController.ChangePlayer());
+            Debug.Log("O CARALHO DO MEU AVÔ");
         }
 
         #region Phases
@@ -90,51 +91,68 @@ namespace Kamikaze.Backend
 #pragma warning disable CS1998 // Async method lacks 'await' operators and will run synchronously
         private async Task VictoryCheckPhase()
         {
+            Debug.Log("VictoryCheckPhase");
+
             //await CallEvent<OnVictoryCheckPhase>();
             // Check for Victory
         }
 
         private async Task DrawPhase()
         {
+            Debug.Log("DrawPhase");
+
             //await CallEvent<OnDrawPhase>(new OnDrawPhase(currentPlayer));
             await currentPlayer.DrawCard();
         }
 
         private async Task CrystalUnlockPhase()
         {
+            Debug.Log("CrystalUnlockPhase");
+
             //currentPlayer.AddCrystal(/*await Choose crystal*/);
             //await GameEvents.OnCrystalUnlockPhase(currentPlayer);
         }
 
         private async Task ActionPointRestorePhase()
         {
+            Debug.Log("ActionPointRestorePhase");
+
             //na real tô restaurando energia aqui também porque sei lá
             //foreach (var crystal in currentPlayer.crystals)
-                //await currentPlayer.AddEnergy(crystal, 1);
+            //await currentPlayer.AddEnergy(crystal, 1);
 
             //restore ap 
         }
 
         private async Task MainPhase()
         {
+            Debug.Log("NÃO CONTÉM CARTAS PATÉTICAS");
+
             //await frontendController.ShowMainPhaseText();
 
             //await Events.CallEvent(new OnMainPhase());
 
-            await frontendController.DisplayEndTurnButton();
+            frontendController.DisplayEndTurnButton();
             
             var completionSource = new TaskCompletionSource<int>();
 
-            frontendController.OnTurnEnded += () =>
+            Debug.Log("MainPhase");
+
+
+            void EndTurn()
             {
                 completionSource.SetResult(1);
-            };
+                frontendController.OnTurnEnded -= EndTurn;
+            }
+
+            frontendController.OnTurnEnded += EndTurn;
 
             await completionSource.Task;
         }
 
         private async Task EndPhase()
         {
+            Debug.Log("EndPhase");
             //await GameEvents.OnEndPhase(currentPlayer);
         }
         #endregion

@@ -9,8 +9,8 @@ namespace Kamikaze.Backend
     public class Player
     {
         public Player opponent;
-        public Stack<Card> deck;
-        public List<Card> hand;
+        public Stack<Card> deck = new Stack<Card>();
+        public List<Card> hand = new List<Card>();
 
         public uint maxCrystals;
         public List<EnergyType> crystals;
@@ -34,10 +34,12 @@ namespace Kamikaze.Backend
 
         public async Task DrawCard()
         {
-            var card = deck.Pop();
-            //Do animation using await
-            hand.Add(card);
-
+            if (deck.Count > 0)
+            {
+                var card = deck.Pop();
+                //Do animation using await
+                hand.Add(card);
+            }
         //    GameEvents.OnCardDrawn.Invoke(opponent, (card, this));
         //    //foreach (var del in GameEvents.OnCardDrawn)
         //    //{

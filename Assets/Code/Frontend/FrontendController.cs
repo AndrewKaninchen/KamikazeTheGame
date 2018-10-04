@@ -9,7 +9,9 @@ namespace Kamikaze.Frontend
     public class FrontendController : MonoBehaviour
     {
         public Player p1, p2, currentPlayer, otherPlayer;
-        public Animator SUAVEZ;
+        public Animator SUA_VEZ;
+        public GameObject endTurnButton;
+
 
         public event Action OnTurnEnded;
 
@@ -35,19 +37,29 @@ namespace Kamikaze.Frontend
                 //gameController.ChangePlayer();
         }
 
-        public Task DisplayEndTurnButton()
+        public void DisplayEndTurnButton()
         {
-            return new Task(() => { });
+            endTurnButton.SetActive(true);
+        }
 
-            //
+        public void HideEndTurnButton()
+        {
+            endTurnButton.SetActive(false);
+        }
+
+        public void EndTurn()
+        {
+            OnTurnEnded?.Invoke();
         }
 
         public IEnumerator ChangePlayer()
         {
+            HideEndTurnButton();
+
             otherPlayer = currentPlayer;
             currentPlayer = currentPlayer == p1 ? p2 : p1;
 
-            SUAVEZ.SetTrigger("VAI");
+            SUA_VEZ.SetTrigger("VAI");
             yield return new WaitForSeconds(1.5f);
 
             otherPlayer.cam.gameObject.SetActive(false);
@@ -60,8 +72,8 @@ namespace Kamikaze.Frontend
             foreach (Token t in otherPlayer.tokens)
                 t.Color = Token.TokenColor.Enemy;
 
-            SUAVEZ.SetTrigger("DESCE");
-            yield return new WaitForSeconds(1.1f);
+            SUA_VEZ.SetTrigger("DESCE");
+            yield return new WaitForSeconds(.7f);
         }
     }
 

@@ -18,8 +18,7 @@ namespace CoroutineAsync
 
             var completionSource = new TaskCompletionSource<object>();
             behaviour.StartCoroutine(CoroutineWrapper(coroutine, completionSource));
-            var task = completionSource.Task;
-            return task;
+            return completionSource.Task;
         }
 
         //A ideia é isso aqui servir pra encapsular CoroutineAsync em Coroutine normal, mas não acho que isso vá ser útil ainda e tô com preguiça de testar se isso funciona
