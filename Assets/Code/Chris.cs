@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using UnityEngine;
 
-namespace Kamikaze.Cards
+namespace Kamikaze
 {
     public class Chris : UnitCard
     {

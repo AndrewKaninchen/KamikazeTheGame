@@ -3286,6 +3286,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 887486903}
+  - component: {fileID: 887486904}
   - component: {fileID: 887486902}
   m_Layer: 0
   m_Name: TheGame
@@ -3335,6 +3336,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &887486904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 887486901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eca6cafc3d77f1e4184ffde6031442fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardsP1:
+  - {fileID: 11400000, guid: 7398c5c6fe11a1d4ab46dd55e7651428, type: 2}
+  - {fileID: 11400000, guid: 7398c5c6fe11a1d4ab46dd55e7651428, type: 2}
+  - {fileID: 11400000, guid: 7398c5c6fe11a1d4ab46dd55e7651428, type: 2}
+  - {fileID: 11400000, guid: 7398c5c6fe11a1d4ab46dd55e7651428, type: 2}
+  - {fileID: 11400000, guid: 7398c5c6fe11a1d4ab46dd55e7651428, type: 2}
+  - {fileID: 11400000, guid: 7398c5c6fe11a1d4ab46dd55e7651428, type: 2}
+  - {fileID: 11400000, guid: 7398c5c6fe11a1d4ab46dd55e7651428, type: 2}
+  - {fileID: 11400000, guid: 7398c5c6fe11a1d4ab46dd55e7651428, type: 2}
+  - {fileID: 11400000, guid: 7398c5c6fe11a1d4ab46dd55e7651428, type: 2}
+  - {fileID: 11400000, guid: 7398c5c6fe11a1d4ab46dd55e7651428, type: 2}
+  cardsP2:
+  - {fileID: 11400000, guid: 7398c5c6fe11a1d4ab46dd55e7651428, type: 2}
+  - {fileID: 11400000, guid: 7398c5c6fe11a1d4ab46dd55e7651428, type: 2}
+  - {fileID: 11400000, guid: 7398c5c6fe11a1d4ab46dd55e7651428, type: 2}
 --- !u!1 &1008049443
 GameObject:
   m_ObjectHideFlags: 0
@@ -7219,7 +7246,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh4916
+  m_Name: pb_Mesh4908
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2

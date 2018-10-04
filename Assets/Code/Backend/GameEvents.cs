@@ -15,7 +15,6 @@ namespace Kamikaze.Backend
 
         private Dictionary<Type, List<TriggerEffect>> triggerEffects = new Dictionary<Type, List<TriggerEffect>>();
 
-
         public void SubscribeTriggerEffect(TriggerEffect eff)
         {
             var T = eff.GetType().BaseType.GetGenericArguments()[0];
@@ -24,8 +23,8 @@ namespace Kamikaze.Backend
             else
                 triggerEffects[T].Add(eff);
         }
-
-        public async void CallEvent<T>(T context) where T : GameEvent
+        
+        public async Task CallEvent<T>(T context) where T : GameEvent
         {
             var triggeredEffects = triggerEffects[typeof(T)] as List<TriggerEffect<T>>;
 

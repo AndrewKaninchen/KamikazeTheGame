@@ -70,7 +70,7 @@ namespace Kamikaze.Backend
             }
         }
 
-        public async Task ChangePlayer()
+        private async Task ChangePlayer()
         {
             await frontendController.StartCoroutineAsync(frontendController.ChangePlayer());
         }
@@ -117,7 +117,20 @@ namespace Kamikaze.Backend
 
         private async Task MainPhase()
         {
-            //await GameEvents.OnMainPhase(currentPlayer);
+            //await frontendController.ShowMainPhaseText();
+
+            //await Events.CallEvent(new OnMainPhase());
+
+            await frontendController.DisplayEndTurnButton();
+            
+            var completionSource = new TaskCompletionSource<int>();
+
+            frontendController.OnTurnEnded += () =>
+            {
+                completionSource.SetResult(1);
+            };
+
+            await completionSource.Task;
         }
 
         private async Task EndPhase()

@@ -12,7 +12,6 @@ namespace Kamikaze.Backend
     {
         public Texture2D image;
         public string description;
-        public Type associatedType;
+        public Type associatedType = typeof(Kamikaze.Chris);
     }
-
 }

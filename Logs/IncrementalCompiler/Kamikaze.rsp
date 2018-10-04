@@ -322,6 +322,7 @@
 -i:C:/Users/andre/Documents/GitHub/KamikazeTheGame/Assets/Code/Backend/TriggerEffect.cs
 -i:C:/Users/andre/Documents/GitHub/KamikazeTheGame/Assets/Code/Backend/UnitCard.cs
 -i:C:/Users/andre/Documents/GitHub/KamikazeTheGame/Assets/Code/Bootstrapper.cs
+-i:C:/Users/andre/Documents/GitHub/KamikazeTheGame/Assets/Code/Chris.cs
 -i:C:/Users/andre/Documents/GitHub/KamikazeTheGame/Assets/Code/CouroutineUtilities.cs
 -i:C:/Users/andre/Documents/GitHub/KamikazeTheGame/Assets/Code/Frontend/_old/AbilityPanel.cs
 -i:C:/Users/andre/Documents/GitHub/KamikazeTheGame/Assets/Code/Frontend/_old/Card.cs
@@ -331,7 +332,7 @@
 -i:C:/Users/andre/Documents/GitHub/KamikazeTheGame/Assets/Code/Frontend/CameraController.cs
 -i:C:/Users/andre/Documents/GitHub/KamikazeTheGame/Assets/Code/Frontend/Card.cs
 -i:C:/Users/andre/Documents/GitHub/KamikazeTheGame/Assets/Code/Frontend/DummyCard.cs
+-i:C:/Users/andre/Documents/GitHub/KamikazeTheGame/Assets/Code/Frontend/FrontendController.cs
 -i:C:/Users/andre/Documents/GitHub/KamikazeTheGame/Assets/Code/Frontend/HandPanel.cs
--i:C:/Users/andre/Documents/GitHub/KamikazeTheGame/Assets/Code/Frontend/TheGame.cs
 -i:C:/Users/andre/Documents/GitHub/KamikazeTheGame/Assets/Code/Frontend/Token.cs
 -v:0

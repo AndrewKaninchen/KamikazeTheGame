@@ -6,7 +6,6 @@
 -nostdlib
 -unsafe
 -r:C:/Users/andre/Documents/GitHub/KamikazeTheGame/Library/ScriptAssemblies/Kamikaze.dll
--r:C:/Users/andre/Documents/GitHub/KamikazeTheGame/Library/ScriptAssemblies/Kamikaze.Cards.dll
 -r:"C:\Program Files\Unity\Hub\Editor\2018.2.6f1\Editor\Data\Managed/UnityEngine/UnityEngine.dll"
 -r:"C:\Program Files\Unity\Hub\Editor\2018.2.6f1\Editor\Data\Managed/UnityEngine/UnityEngine.AIModule.dll"
 -r:"C:\Program Files\Unity\Hub\Editor\2018.2.6f1\Editor\Data\Managed/UnityEngine/UnityEngine.ARModule.dll"

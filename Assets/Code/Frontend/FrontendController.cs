@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System;
 using System.Collections;
+using System.Threading.Tasks;
 
 namespace Kamikaze.Frontend
 {
@@ -9,6 +10,15 @@ namespace Kamikaze.Frontend
     {
         public Player p1, p2, currentPlayer, otherPlayer;
         public Animator SUAVEZ;
+
+        public event Action OnTurnEnded;
+
+        private Backend.GameController gameController;
+
+        public void Init(Backend.GameController  gameController)
+        {
+            this.gameController = gameController;
+        }
 
         public void Start()
         {
@@ -21,8 +31,15 @@ namespace Kamikaze.Frontend
 
         private void Update()
         {
-            if (Input.GetKeyDown(KeyCode.Space))
-                StartCoroutine(ChangePlayer());
+            //if (Input.GetKeyDown(KeyCode.Space))
+                //gameController.ChangePlayer();
+        }
+
+        public Task DisplayEndTurnButton()
+        {
+            return new Task(() => { });
+
+            //
         }
 
         public IEnumerator ChangePlayer()
