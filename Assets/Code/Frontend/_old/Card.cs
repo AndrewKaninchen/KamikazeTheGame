@@ -43,8 +43,8 @@ namespace Kamikaze.Frontend_Old
 
         protected override void Start()
         {
-            BackendCard = ScriptableObject.CreateInstance(BackendCardTemplate.GetType()) as Backend.FieldCard;
-            BackendCard.Init(null, null, null, this);
+            //BackendCard = ScriptableObject.CreateInstance(BackendCardTemplate.GetType()) as Backend.FieldCard;
+            //BackendCard.Init(null, null, null, this);
             BackendCard.SubscribeTriggerEffects();
         }
 

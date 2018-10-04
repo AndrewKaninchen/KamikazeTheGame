@@ -7,13 +7,11 @@ using UnityEngine;
 
 namespace Kamikaze.Cards
 {
-    [CreateAssetMenu(menuName = "Card/Unit/Chris", fileName = "Chris")]
-    [Serializable]
     public class Chris : UnitCard
     {
-        public override void Init(Player owner, Player opponent, IEnumerable container, Kamikaze.Frontend_Old.Card front)
+        public override void Init(Player owner, Player opponent, IEnumerable container, Kamikaze.Frontend_Old.Card front, GameController game)
         {
-            base.Init(owner, opponent, container, front);
+            base.Init(owner, opponent, container, front, game);
 
             Attack = new AttackStat(AttackStat.AttackMode.Frontal, 3);
             Movement = new MovementStat(MovementStat.MovementMode.March, 10);

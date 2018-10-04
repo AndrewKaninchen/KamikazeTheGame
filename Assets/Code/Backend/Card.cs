@@ -8,13 +8,6 @@ using UnityEngine;
 namespace Kamikaze.Backend
 {
     [Serializable]
-    public class CardAsset : ScriptableObject
-    {
-        public Texture2D image;
-        public string description;
-        public Type associatedType;
-    }
-
     public abstract class Card
     {
         #region SerializedFields

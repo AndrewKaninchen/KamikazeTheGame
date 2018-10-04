@@ -314,6 +314,7 @@
 -d:UNITY_POST_PROCESSING_STACK_V2
 -i:C:/Users/andre/Documents/GitHub/KamikazeTheGame/Assets/Code/Backend/Ability.cs
 -i:C:/Users/andre/Documents/GitHub/KamikazeTheGame/Assets/Code/Backend/Card.cs
+-i:C:/Users/andre/Documents/GitHub/KamikazeTheGame/Assets/Code/Backend/CardAsset.cs
 -i:C:/Users/andre/Documents/GitHub/KamikazeTheGame/Assets/Code/Backend/FieldCard.cs
 -i:C:/Users/andre/Documents/GitHub/KamikazeTheGame/Assets/Code/Backend/GameController.cs
 -i:C:/Users/andre/Documents/GitHub/KamikazeTheGame/Assets/Code/Backend/GameEvents.cs
