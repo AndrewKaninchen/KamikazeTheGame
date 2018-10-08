@@ -26,27 +26,29 @@ namespace Kamikaze.Backend
         
         public async Task CallEvent<T>(T context) where T : GameEvent
         {
-            var triggeredEffects = triggerEffects[typeof(T)] as List<TriggerEffect<T>>;
+            var triggeredEffects = triggerEffects[typeof(T)];
 
-            var p1mandatory = new List<TriggerEffect<T>>();
-            var p1optional = new List<TriggerEffect<T>>();
-            var p2mandatory = new List<TriggerEffect<T>>();
-            var p2optional = new List<TriggerEffect<T>>();
+            var p1Mandatory = new List<TriggerEffect<T>>();
+            var p1Optional = new List<TriggerEffect<T>>();
+            var p2Mandatory = new List<TriggerEffect<T>>();
+            var p2Optional = new List<TriggerEffect<T>>();
 
-            var p1 = Game.currentPlayer;
-            var p2 = p1.opponent;
+            var p1 = Game.CurrentPlayer;
+            var p2 = p1.Opponent;
 
-            foreach (var eff in triggeredEffects)
+            if (triggeredEffects != null)
             {
-                if (eff.card.owner == p1)
-                    (eff.Mandatory() ? p1mandatory : p1optional).Add(eff);
-                else
-                    (eff.Mandatory() ? p2mandatory : p2optional).Add(eff);
+                foreach (var eff in triggeredEffects)
+                {
+                    if (eff.card.owner == p1)
+                        (eff.Mandatory() ? p1Mandatory : p1Optional).Add(eff as TriggerEffect<T>);
+                    else
+                        (eff.Mandatory() ? p2Mandatory : p2Optional).Add(eff as TriggerEffect<T>);
+                }
             }
-
             // Tell frontend to get the order of entry from the players
 
-            var stack = p1mandatory.Concat(p2mandatory).Concat(p1optional).Concat(p2mandatory).ToList();
+            var stack = p1Mandatory.Concat(p2Mandatory).Concat(p1Optional).Concat(p2Mandatory).ToList();
 
             foreach (var eff in stack)
                 await eff.Body();

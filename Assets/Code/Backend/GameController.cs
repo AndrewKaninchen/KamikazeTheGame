@@ -1,78 +1,65 @@
-﻿using System;
-using System.Collections;
+﻿using UnityEngine;
 using System.Collections.Generic;
-using System.Reflection;
-using UnityEngine;
-using System.Threading;
 using System.Threading.Tasks;
-using static Kamikaze.Backend.GameEvents;
 using CoroutineAsync;
-
+using Kamikaze.Frontend;
 
 namespace Kamikaze.Backend
 {
-    public enum EnergyType
-    {
-        PrimaMateria,
-        Vitae,
-        Glamour,
-        Ether,
-        Quintessence
-    }
-
     public class GameController
     {
-        public bool isGameStarted = false;
-        public bool isGameOver = true;
-        public Player[] players;
-        public Player currentPlayer;
-        public List<Card> cardsInPlay;
-        public List<Card> cardsInField;
-
+        public FrontendController FrontendController { get; }
+        public Player[] Players { get; }
+        public Player CurrentPlayer { get; set; }
         public GameEvents Events { get; private set; }
+        
+        public List<Card> CardsInPlay { get; }
+        public List<Card> CardsInField { get; }
+        
+        public bool IsGameStarted { get; private set; }
+        public bool IsGameOver { get; private set; }
 
-        private Frontend.FrontendController frontendController;
-
-        public GameController (List<CardAsset> p1cards, List<CardAsset> p2cards, Frontend.FrontendController frontendController)
+        public GameController (IEnumerable<CardAsset> p1Cards, IEnumerable<CardAsset> p2Cards, FrontendController frontendController)
         {
-            this.frontendController = frontendController;
+            this.FrontendController = frontendController;
             this.Events = new GameEvents(this);
 
-            var p1deck = new Stack<Card>();
-            var p2deck = new Stack<Card>();
+            var p1Deck = new Stack<Card>();
+            var p2Deck = new Stack<Card>();
 
-            foreach (var card in p1cards)            
-                p1deck.Push(Card.CreateCard(card.associatedType));
-            foreach (var card in p2cards)
-                p2deck.Push(Card.CreateCard(card.associatedType));
+            foreach (var card in p1Cards)            
+                p1Deck.Push(Card.CreateCard(card.associatedType));
+            foreach (var card in p2Cards)
+                p2Deck.Push(Card.CreateCard(card.associatedType));
 
-            cardsInPlay = new List<Card>(p1deck);
-            cardsInPlay.AddRange(p2deck);
+            CardsInPlay = new List<Card>(p1Deck);
+            CardsInPlay.AddRange(p2Deck);
+            CardsInField = new List<Card>();
 
-            players = new Player[2];
-            players[0] = new Player(p1deck);
-            players[1] = new Player(p2deck);
-            currentPlayer = players[0];
-            isGameStarted = true;
-            isGameOver = false;
+            Players = new Player[2];
+            Players[0] = new Player(p1Deck);
+            Players[1] = new Player(p2Deck);
+            CurrentPlayer = Players[0];            
+            IsGameOver = false;
         }
 
-        public async void Run()
+        public async Task Run()
         {
-            if (isGameStarted)
+            IsGameStarted = true;
+            if (IsGameStarted)
             {
-                while (!isGameOver)
+                while (!IsGameOver)
                 {
-                    currentPlayer = currentPlayer == players[0] ? players[1] : players[0];
+                    CurrentPlayer = CurrentPlayer == Players[0] ? Players[1] : Players[0];
                     await ChangePlayer();
-                    await Turn(currentPlayer);
+                    await Turn(CurrentPlayer);
                 }
             }
         }
 
         private async Task ChangePlayer()
         {
-            await frontendController.StartCoroutineAsync(frontendController.ChangePlayer());
+            await FrontendController.StartCoroutineAsync(FrontendController.ChangePlayer());
             Debug.Log("O CARALHO DO MEU AVÔ");
         }
 
@@ -102,7 +89,7 @@ namespace Kamikaze.Backend
             Debug.Log("DrawPhase");
 
             //await CallEvent<OnDrawPhase>(new OnDrawPhase(currentPlayer));
-            await currentPlayer.DrawCard();
+            await CurrentPlayer.DrawCard();
         }
 
         private async Task CrystalUnlockPhase()
@@ -132,7 +119,7 @@ namespace Kamikaze.Backend
 
             //await Events.CallEvent(new OnMainPhase());
 
-            frontendController.DisplayEndTurnButton();
+            FrontendController.DisplayEndTurnButton();
             
             var completionSource = new TaskCompletionSource<int>();
 
@@ -142,10 +129,10 @@ namespace Kamikaze.Backend
             void EndTurn()
             {
                 completionSource.SetResult(1);
-                frontendController.OnTurnEnded -= EndTurn;
+                FrontendController.OnTurnEnded -= EndTurn;
             }
 
-            frontendController.OnTurnEnded += EndTurn;
+            FrontendController.OnTurnEnded += EndTurn;
 
             await completionSource.Task;
         }

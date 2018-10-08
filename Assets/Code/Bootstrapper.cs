@@ -10,7 +10,7 @@ namespace Kamikaze
         private Backend.GameController gameController;
         private Backend.GameEvents gameEvents;
 
-        [Header("Cards")]
+        [Header("Decks")]
         public List<Backend.CardAsset> cardsP1;
         public List<Backend.CardAsset> cardsP2;
 

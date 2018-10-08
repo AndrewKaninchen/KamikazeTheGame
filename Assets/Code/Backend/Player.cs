@@ -8,16 +8,16 @@ namespace Kamikaze.Backend
 {
     public class Player
     {
-        public Player opponent;
-        public Stack<Card> deck = new Stack<Card>();
-        public List<Card> hand = new List<Card>();
+        public Player Opponent { get; }
+        public Stack<Card> Deck { get; } = new Stack<Card>();
+        public List<Card> Hand { get; } = new List<Card>();
 
         public uint maxCrystals;
         public List<EnergyType> crystals;
 
         public Player(Stack<Card> deck)
         {
-            this.deck = deck;
+            this.Deck = deck;
         }
 
         public Dictionary<EnergyType, int> Energy { get; set; }
@@ -34,11 +34,11 @@ namespace Kamikaze.Backend
 
         public async Task DrawCard()
         {
-            if (deck.Count > 0)
+            if (Deck.Count > 0)
             {
-                var card = deck.Pop();
+                var card = Deck.Pop();
                 //Do animation using await
-                hand.Add(card);
+                Hand.Add(card);
             }
         //    GameEvents.OnCardDrawn.Invoke(opponent, (card, this));
         //    //foreach (var del in GameEvents.OnCardDrawn)
