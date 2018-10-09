@@ -6,7 +6,7 @@ using Kamikaze.Frontend;
 
 namespace Kamikaze.Backend
 {
-    public class GameController
+    public partial class GameController
     {
         public FrontendController FrontendController { get; }
         public Player[] Players { get; }

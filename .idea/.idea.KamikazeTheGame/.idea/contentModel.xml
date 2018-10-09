@@ -13,14 +13,20 @@
             <e p="Card.cs" t="Include" />
             <e p="CardAsset.cs" t="Include" />
             <e p="Enums.cs" t="Include" />
+            <e p="GameActions.cs" t="Include" />
             <e p="GameController.cs" t="Include" />
             <e p="GameEvents.cs" t="Include" />
             <e p="Player.cs" t="Include" />
+            <e p="StatusEffects.cs" t="Include" />
             <e p="TriggerEffect.cs" t="Include" />
           </e>
           <e p="Bootstrapper.cs" t="Include" />
           <e p="Chris.cs" t="Include" />
           <e p="CouroutineUtilities.cs" t="Include" />
+          <e p="Editor" t="Include">
+            <e p="BootstrapperEditor.cs" t="Include" />
+            <e p="CardAssetEditor.cs" t="Include" />
+          </e>
           <e p="Frontend" t="Include">
             <e p="_old" t="Include">
               <e p="AbilityPanel.cs" t="Include" />

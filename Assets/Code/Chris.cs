@@ -45,11 +45,9 @@ namespace Kamikaze
         {
             public override bool Condition()
             {
-                return (card as FieldCard).IsInField;
+                return ((FieldCard) card).IsInField;
             }
-#pragma warning disable CS1998 // Async method lacks 'await' operators and will run synchronously
             public override async Task Body()
-#pragma warning restore CS1998 // Async method lacks 'await' operators and will run synchronously
             {
                 UnityEngine.Debug.Log("Everybody Drinks");
             }
