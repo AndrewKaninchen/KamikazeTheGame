@@ -3,7 +3,6 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Kamikaze.Frontend_Old;
-using UnityEngine;
 
 namespace Kamikaze.Backend
 {
@@ -12,8 +11,10 @@ namespace Kamikaze.Backend
     {
         #region SerializedFields
         private CardAsset cardAsset;
-        private GameController game;
         #endregion
+
+        protected GameController Game { get; set; }
+        protected GameActions Actions { get; set; }
 
         public Frontend_Old.Card FrontendCard { get; private set; }
 
@@ -27,20 +28,21 @@ namespace Kamikaze.Backend
         }
 
         public List<TriggerEffect> TriggerEffects { get; set; }
-        
-        public virtual void Init(Player owner, Player opponent, IEnumerable container, Frontend_Old.Card front, GameController game)
+
+        protected Card(Player owner, Player opponent, IEnumerable container, Frontend_Old.Card front, GameController game, GameActions gameActions)
         {
             this.owner = owner;
             this.opponent = opponent;
             this.container = container;
-            this.game = game;
+            this.Game = game;
+            Actions = gameActions;
             FrontendCard = front;            
         }
 
         public void SubscribeTriggerEffects()
         {
             foreach (var eff in TriggerEffects)            
-                game.Events.SubscribeTriggerEffect(eff);            
+                Game.Events.SubscribeTriggerEffect(eff);            
         }
     }
     
@@ -94,50 +96,6 @@ namespace Kamikaze.Backend
     public interface IHealthStatHolder
     {
         int Health { get; set; }        
-    }
-
-    public abstract class FieldCard : Card
-    {
-        public List<Ability> Abilites { get; set; }
-
-        public Vector2 Position { get; set; }
-        public bool IsExiled { get; set; }
-        public bool IsInField { get; set; }
-
-        public override void Init(Player owner, Player opponent, IEnumerable container, Frontend_Old.Card front, GameController game)
-        {
-            base.Init(owner, opponent, container, front, game);
-        }
-    }
-
-    public abstract class UnitCard : FieldCard, IAttackStatHolder, IMovementStatHolder, IHealthStatHolder
-    {
-        public AttackStat Attack { get; set; }
-        public MovementStat Movement { get; set; }
-        public int Health { get; set; }
-
-        public override void Init(Player owner, Player opponent, IEnumerable container, Frontend_Old.Card front, GameController game)
-        {
-            base.Init(owner, opponent, container, front, game);
-            Abilites = new List<Ability>
-            {
-                new Move(this, Movement),
-                new Attack(this, Attack)
-            };
-        }
-    }
-
-    public abstract class BuildingCard : FieldCard, IHealthStatHolder
-    {
-        public int Health { get; set; }
-    }
-
-    public abstract class EnchantmentCard : FieldCard
-    {
-    }
-
-    public abstract class ConjurationCard : Card
-    {
     }
 
     public abstract class TriggerEffect

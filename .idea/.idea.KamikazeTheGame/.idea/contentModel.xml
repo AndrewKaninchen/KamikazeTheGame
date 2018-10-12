@@ -1,24 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\KonViction\.Rider2018.2\config\extensions" t="IncludeRecursive" />
-    <e p="C:\Users\KonViction\.Rider2018.2\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\KonViction\.Rider2018.2\system\resharper-host\Local\Transient\ReSharperHost\v182\SolutionCaches\_KamikazeTheGame.287490669.00" t="ExcludeRecursive" />
-    <e p="F:\Documents\Unity Projects\KamikazeTheGame" t="IncludeRecursive">
+    <e p="C:\Users\andre\.Rider2018.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\andre\.Rider2018.2\system\resharper-host\Local\Transient\ReSharperHost\v182\SolutionCaches\_KamikazeTheGame.987416942.00" t="ExcludeRecursive" />
+    <e p="C:\Users\andre\Documents\GitHub\KamikazeTheGame" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Code" t="Include">
           <e p="Backend" t="Include">
             <e p="Ability.cs" t="Include" />
+            <e p="BuildingCard.cs" t="Include" />
             <e p="Card.cs" t="Include" />
             <e p="CardAsset.cs" t="Include" />
+            <e p="ConjurationCard.cs" t="Include" />
+            <e p="EnchantmentCard.cs" t="Include" />
             <e p="Enums.cs" t="Include" />
+            <e p="FieldCard.cs" t="Include" />
             <e p="GameActions.cs" t="Include" />
             <e p="GameController.cs" t="Include" />
             <e p="GameEvents.cs" t="Include" />
             <e p="Player.cs" t="Include" />
             <e p="StatusEffects.cs" t="Include" />
             <e p="TriggerEffect.cs" t="Include" />
+            <e p="UnitCard.cs" t="Include" />
           </e>
           <e p="Bootstrapper.cs" t="Include" />
           <e p="Chris.cs" t="Include" />

@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using Kamikaze.Backend;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 namespace Kamikaze.Frontend

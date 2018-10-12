@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Transactions;
 using DG.Tweening;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -45,7 +42,7 @@ namespace Kamikaze.Frontend
                 isVisible = value;
             }
         }
-      
+        
         private void LateUpdate()
         {
             switch (dragState)
@@ -54,7 +51,7 @@ namespace Kamikaze.Frontend
                 {
                     var pos = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 1f);
                     pos.z *= distanceFromCameraWhenDraggingCards;
-                    pos = Camera.main.ScreenToWorldPoint(pos);
+                    if (Camera.main != null) pos = Camera.main.ScreenToWorldPoint(pos);
 
                     transform.position = pos;
                     break;

@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using System;
 using System.Collections;
 using System.Threading.Tasks;
+using UnityEngine.Serialization;
 
 namespace Kamikaze.Frontend
 {
     public class FrontendController : MonoBehaviour
     {
         public Player p1, p2, currentPlayer, otherPlayer;
-        public Animator SUA_VEZ;
+        [FormerlySerializedAs("SUA_VEZ")] public Animator suaVez;
         public GameObject endTurnButton;
 
 
@@ -17,9 +18,9 @@ namespace Kamikaze.Frontend
 
         private Backend.GameController gameController;
 
-        public void Init(Backend.GameController  gameController)
+        public void Init(Backend.GameController gc)
         {
-            this.gameController = gameController;
+            gameController = gc;
         }
 
         public void Start()
@@ -29,12 +30,6 @@ namespace Kamikaze.Frontend
 
             p1.hand.player = p1;
             p2.hand.player = p2;
-        }
-
-        private void Update()
-        {
-            //if (Input.GetKeyDown(KeyCode.Space))
-                //gameController.ChangePlayer();
         }
 
         public void DisplayEndTurnButton()
@@ -59,7 +54,7 @@ namespace Kamikaze.Frontend
             otherPlayer = currentPlayer;
             currentPlayer = currentPlayer == p1 ? p2 : p1;
 
-            SUA_VEZ.SetTrigger("VAI");
+            suaVez.SetTrigger("VAI");
             yield return new WaitForSeconds(1.5f);
 
             otherPlayer.cam.gameObject.SetActive(false);
@@ -72,9 +67,14 @@ namespace Kamikaze.Frontend
             foreach (Token t in otherPlayer.tokens)
                 t.Color = Token.TokenColor.Enemy;
 
-            SUA_VEZ.SetTrigger("DESCE");
+            suaVez.SetTrigger("DESCE");
             yield return new WaitForSeconds(.7f);
         }
+
+        public Token CreateToken(Card card)
+        {
+            throw  new NotImplementedException();
+        }        
     }
 
     [Serializable]

@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 008f4959e49d1ba42ad1951a03990d23, type: 3}
+  m_Name: Jilo
+  m_EditorClassIdentifier: 
+  scriptAssetPath: Assets/Cards/Jilo.asset
+  scriptAsset: {fileID: 49415680896690114}
+  image: {fileID: 0}
+  description: 
+--- !u!49 &49415680896690114
+TextAsset:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Script.cs
+  m_Script: 
