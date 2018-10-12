@@ -11,7 +11,8 @@ namespace Kamikaze.Backend
     public class CardAsset : ScriptableObject
     {
         #if UNITY_EDITOR
-        [SerializeField] public TextAsset scriptTemplate;
+        [SerializeField] public string scriptAssetPath;
+        [SerializeField] public TextAsset scriptAsset;
         #endif
         
         public Texture2D image;

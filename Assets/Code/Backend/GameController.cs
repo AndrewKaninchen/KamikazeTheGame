@@ -12,17 +12,17 @@ namespace Kamikaze.Backend
         public Player[] Players { get; }
         public Player CurrentPlayer { get; set; }
         public GameEvents Events { get; private set; }
-        
-        public List<Card> CardsInPlay { get; }
-        public List<Card> CardsInField { get; }
-        
-        public bool IsGameStarted { get; private set; }
-        public bool IsGameOver { get; private set; }
+
+        public List<Card> CardsInPlay { get; private set; }
+        public List<Card> CardsInField { get; private set; }
+
+        private bool IsGameStarted { get; set; }
+        private bool IsGameOver { get; set; }
 
         public GameController (IEnumerable<CardAsset> p1Cards, IEnumerable<CardAsset> p2Cards, FrontendController frontendController)
         {
-            this.FrontendController = frontendController;
-            this.Events = new GameEvents(this);
+            FrontendController = frontendController;
+            Events = new GameEvents(this);
 
             var p1Deck = new Stack<Card>();
             var p2Deck = new Stack<Card>();

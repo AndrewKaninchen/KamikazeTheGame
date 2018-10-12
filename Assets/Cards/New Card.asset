@@ -9,12 +9,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 008f4959e49d1ba42ad1951a03990d23, type: 3}
-  m_Name: Thomas
+  m_Name: New Card
   m_EditorClassIdentifier: 
-  scriptTemplate: {fileID: 11500000, guid: 91ea2f23efdb095419af6a81ee426519, type: 3}
+  scriptAssetPath: 
+  scriptAsset: {fileID: 0}
   image: {fileID: 0}
   description: 
---- !u!115 &115469783639037834
+--- !u!115 &115589621092558892
 MonoScript:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -38,12 +39,9 @@ MonoScript:
     Drinks\");\r\n            }\r\n\r\n            public override bool Condition()
     => true;\r\n        }\r\n\r\n        public class DrinkEffect : TriggerEffect<GameEvents.OnCardDrawn>\r\n
     \       {\r\n            public override bool Condition()\r\n            {\r\n
-    \               return (card as FieldCard).IsInField;\r\n            }\r\n#pragma
-    warning disable CS1998 // Async method lacks 'await' operators and will run synchronously\r\n
-    \           public override async Task Body()\r\n#pragma warning restore CS1998
-    // Async method lacks 'await' operators and will run synchronously\r\n            {\r\n
-    \               UnityEngine.Debug.Log(\"Everybody Drinks\");\r\n            }\r\n
-    \       }\r\n    }\r\n}"
+    \               return ((FieldCard) card).IsInField;\r\n            }\r\n            public
+    override async Task Body()\r\n            {\r\n                UnityEngine.Debug.Log(\"Everybody
+    Drinks\");\r\n            }\r\n        }\r\n    }\r\n}"
   m_DefaultReferences: {}
   m_Icon: {fileID: 0}
   m_ExecutionOrder: 0

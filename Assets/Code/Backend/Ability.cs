@@ -4,12 +4,17 @@ namespace Kamikaze.Backend
 {
     public abstract class Ability
     {
-        public Card card;
+        protected GameActions Actions { get; set; }
+        public readonly Card card;
         public abstract Task Body();
         public abstract bool Condition();
         public string description;
 
-        public Ability(Card card) { this.card = card; }
+        public Ability(Card card)
+        {
+            this.card = card;
+            Actions = card.Actions;
+        }
     }
 
     public class Move : Ability

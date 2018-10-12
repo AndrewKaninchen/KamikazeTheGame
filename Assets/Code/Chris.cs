@@ -9,10 +9,9 @@ namespace Kamikaze
 {
     public class Chris : UnitCard
     {
-        public override void Init(Player owner, Player opponent, IEnumerable container, Kamikaze.Frontend_Old.Card front, GameController game)
+        public Chris(Player owner, Player opponent, IEnumerable container, Frontend_Old.Card front, GameController game, GameActions actions) 
+            : base(owner, opponent, container, front, game, actions)
         {
-            base.Init(owner, opponent, container, front, game);
-
             Attack = new AttackStat(AttackStat.AttackMode.Frontal, 3);
             Movement = new MovementStat(MovementStat.MovementMode.March, 10);
 
@@ -35,6 +34,7 @@ namespace Kamikaze
 
             public override async Task Body()
             {
+                await Actions.Damage(card as IHealthStatHolder);
                 UnityEngine.Debug.Log("Chris Drinks");
             }
 
