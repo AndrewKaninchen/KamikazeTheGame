@@ -310,5 +310,5 @@
 -d:ENABLE_BURST_AOT
 -d:UNITY_TEAM_LICENSE
 -d:UNITY_POST_PROCESSING_STACK_V2
--i:"F:/Documents/Unity Projects/KamikazeTheGame/Assets/Cards/GenerateCode.cs"
+-i:"F:/Documents/Unity Projects/KamikazeTheGame/Assets/Cards/Thomas/Thomas.cs"
 -v:0

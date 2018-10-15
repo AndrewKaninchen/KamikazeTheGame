@@ -12,8 +12,8 @@ namespace Kamikaze
         public Chris(Player owner, Player opponent, IEnumerable container, Frontend_Old.Card front, GameController game, GameActions actions) 
             : base(owner, opponent, container, front, game, actions)
         {
-            Attack = new AttackStat(AttackStat.AttackMode.Frontal, 3);
-            Movement = new MovementStat(MovementStat.MovementMode.March, 10);
+            Attack = new AttackStat(AttackMode.Frontal, 3);
+            Movement = new MovementStat(MovementMode.March, 10);
 
             Abilites = new List<Ability>
             {
@@ -24,7 +24,7 @@ namespace Kamikaze
 
             TriggerEffects = new List<TriggerEffect>
             {
-                new DrinkEffect()
+                new DrinkEffect(this)
             };
         }
 
@@ -41,15 +41,17 @@ namespace Kamikaze
             public override bool Condition() => true;
         }
 
-        public class DrinkEffect : TriggerEffect<GameEvents.OnCardDrawn>
+        public class DrinkEffect : TriggerEffect<GameEvents.OnCardDamaged>
         {
+            public DrinkEffect(Card effectOwnerCard) : base(effectOwnerCard) {}
+            
             public override bool Condition()
             {
-                return ((FieldCard) card).IsInField;
+                return context.damagedCard.IsInField;
             }
             public override async Task Body()
             {
-                UnityEngine.Debug.Log("Everybody Drinks");
+                await Actions.DisplayMessage("Everybody Drinks");
             }
         }
     }

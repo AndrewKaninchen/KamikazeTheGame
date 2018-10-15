@@ -40,7 +40,7 @@ namespace Kamikaze.Backend
             {
                 foreach (var eff in triggeredEffects)
                 {
-                    if (eff.card.owner == p1)
+                    if (eff.effectOwnerCard.owner == p1)
                         (eff.Mandatory() ? p1Mandatory : p1Optional).Add(eff as TriggerEffect<T>);
                     else
                         (eff.Mandatory() ? p2Mandatory : p2Optional).Add(eff as TriggerEffect<T>);
@@ -84,16 +84,39 @@ namespace Kamikaze.Backend
 
         public class OnCardAbilityActivated
         {
-            public FieldCard card;
+            public Card card;
             public Ability ability;
         }
 
-        public class OnCardAttack
+        public class OnCardAttacked
         {
-            public UnitCard attacker;
-            public IHealthStatHolder defender;
+            public Card attacker;
+            public Card defender;
+            public Attack attackUsed;
         }
 
+        public class OnCardDamaged
+        {
+            public FieldCard damagedCard;
+            //info about damage taken
+        }
+
+
+        public class OnCardHealed
+        {
+            public FieldCard healedCard;
+        }
+        
+        public class OnCardDestroyed
+        {
+            public FieldCard destroyedCard;
+        }
+
+        public class OnCardRessurrected
+        {
+            public FieldCard ressurrectedCard;
+        }
+        
         public class OnAddCrystal
         {
             public EnergyType energyType;

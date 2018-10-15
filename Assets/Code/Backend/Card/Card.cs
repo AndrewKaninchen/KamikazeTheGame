@@ -45,8 +45,5 @@ namespace Kamikaze.Backend
         }
     }
 
-    public abstract class TriggerEffect<T> : TriggerEffect where T : GameEvents.GameEvent
-    {
-        public T context;
-    }
+    
 }

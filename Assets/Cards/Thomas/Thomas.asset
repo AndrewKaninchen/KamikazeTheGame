@@ -9,16 +9,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 008f4959e49d1ba42ad1951a03990d23, type: 3}
-  m_Name: Jilo
+  m_Name: Thomas
   m_EditorClassIdentifier: 
-  scriptAssetPath: Assets/Cards/Jilo.asset
-  scriptAsset: {fileID: 49415680896690114}
+  scriptAssetPath: 
+  scriptAsset: {fileID: 0}
   image: {fileID: 0}
   description: 
---- !u!49 &49415680896690114
-TextAsset:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: Script.cs
-  m_Script: 

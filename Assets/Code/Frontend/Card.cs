@@ -7,13 +7,15 @@ namespace Kamikaze.Frontend
 {
     public class Card : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHandler, IPointerClickHandler, IPointerEnterHandler, IPointerExitHandler
     {
+        public FrontendController frontendController;
         public Player owner;
+        
 
         //public Material transparentMaterial;
         public GameObject tokenPrefab;
         public DummyCard dummy;
         public float distanceFromCameraWhenDraggingCards;
-        private GameObject token;
+        private Token token;
         [SerializeField] private LayerMask layers; //temporário porque preguiça de pensar
 
         public DragState dragState = DragState.NotDragging;
@@ -35,7 +37,7 @@ namespace Kamikaze.Frontend
                 if (value)
                     Destroy(token);
                 else
-                    token = Instantiate(tokenPrefab);
+                    token = Instantiate(tokenPrefab).GetComponent<Token>();
 
                 GetComponent<MeshRenderer>().enabled = value;
                 //GetComponent<MeshCollider>().enabled = value;
@@ -151,9 +153,10 @@ namespace Kamikaze.Frontend
                     break;
                 case DragState.Previewing:
                     OnSummon?.Invoke();
-                    var t = token.GetComponent<Token>();
-                    owner.tokens.Add(t);
-                    t.Color = Token.TokenColor.Friendly;
+                    
+                    owner.tokens.Add(token);
+                    token.Color = Token.TokenColor.Friendly;
+                    token.frontendController = frontendController;
                     Destroy(dummy.gameObject);
                     Destroy(this.gameObject);
                     break;

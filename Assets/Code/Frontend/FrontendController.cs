@@ -7,7 +7,7 @@ using UnityEngine.Serialization;
 
 namespace Kamikaze.Frontend
 {
-    public class FrontendController : MonoBehaviour
+    public partial class FrontendController : MonoBehaviour
     {
         public Player p1, p2, currentPlayer, otherPlayer;
         [FormerlySerializedAs("SUA_VEZ")] public Animator suaVez;
@@ -16,6 +16,8 @@ namespace Kamikaze.Frontend
 
         public event Action OnTurnEnded;
 
+        public Canvas screenSpaceCanvas;
+        
         private Backend.GameController gameController;
 
         public void Init(Backend.GameController gc)
@@ -25,6 +27,9 @@ namespace Kamikaze.Frontend
 
         public void Start()
         {
+            p1.hand.frontendController = this;
+            p2.hand.frontendController = this;
+            
             currentPlayer = p1;
             otherPlayer = p2;
 
@@ -71,10 +76,16 @@ namespace Kamikaze.Frontend
             yield return new WaitForSeconds(.7f);
         }
 
-        public Token CreateToken(Card card)
+        public Token CreateToken()
         {
-            throw  new NotImplementedException();
-        }        
+            
+            throw new NotImplementedException();
+        }
+        
+        public Token CreateCard()
+        {
+            throw new NotImplementedException();
+        }
     }
 
     [Serializable]

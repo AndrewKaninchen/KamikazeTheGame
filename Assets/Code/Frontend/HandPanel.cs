@@ -5,6 +5,8 @@ namespace Kamikaze.Frontend
 {	
 	public class HandPanel : MonoBehaviour
 	{
+		public FrontendController frontendController;
+		
         public Player player;
 
 		public GameObject dummyPrefab;
@@ -16,7 +18,7 @@ namespace Kamikaze.Frontend
 		public Transform drawOrigin;
 
 		public uint startingCards;
-		
+
 		private void Start()
 		{
 //			for (var i = 0; i < startingCards; i++)
@@ -36,6 +38,7 @@ namespace Kamikaze.Frontend
 			var dummy = Instantiate(dummyPrefab, dummyRoot).GetComponent<DummyCard>();
 			var card = Instantiate(cardPrefab, drawOrigin.position, drawOrigin.rotation, cardRoot).GetComponent<Card>();
 			card.dummy = dummy;
+			card.frontendController = frontendController;
 			dummy.gameObject.SetActive(true);
 			card.gameObject.SetActive(true);
 			cards.Add(card);

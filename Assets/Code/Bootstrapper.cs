@@ -6,9 +6,9 @@ namespace Kamikaze
 {
     public class Bootstrapper : MonoBehaviour
     {
-        private Frontend.FrontendController frontendController;
-        private Backend.GameController gameController;
-        private Backend.GameEvents gameEvents;
+        [HideInInspector] public Frontend.FrontendController frontendController;
+        [HideInInspector] public Backend.GameController gameController;
+        [HideInInspector] public Backend.GameEvents gameEvents;
 
         [Header("Decks")]
         public List<Backend.CardAsset> cardsP1;
@@ -20,6 +20,7 @@ namespace Kamikaze
             if (frontendController == null)
                 gameObject.AddComponent<Frontend.FrontendController>();
         }
+        
         public void Begin ()
         {
             gameController = new Backend.GameController(cardsP1, cardsP2, frontendController);

@@ -1,20 +1,32 @@
 ﻿using System;
+using System.Collections;
 using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using DG.Tweening;
+using UnityEngine.XR.WSA;
 
 namespace Kamikaze.Frontend
 {
     public class Token : MonoBehaviour, IPointerClickHandler
     {
-        public float movementStat;
-        public event Action OnUpdate;
-        public MoveState moveState = MoveState.Idle;
+        public FrontendController frontendController;
+        
         public LayerMask layers; //temporário porque preguiça de pensar
-        public Material friendlyMat, enemyMat, friendlyBaseMat, enemyBaseMat;
-        public ParticleSystemRenderer particleSystemRenderer;
-        public MeshRenderer meshRenderer;
+        
+        public float movementStat;
+        
+        [SerializeField] private GameObject abilityPanelPrefab;
+        private AbilityPanel abilityPanel;
+        [SerializeField] private Material friendlyMat, enemyMat, friendlyBaseMat, enemyBaseMat;
+        
+        [SerializeField] private ParticleSystemRenderer particleSystemRenderer;
+        [SerializeField] private MeshRenderer meshRenderer;
+        
+        
+        [SerializeField] private MoveState moveState = MoveState.Idle;
+        [SerializeField] private InteractionState interactionState = InteractionState.Unlocked;
+        private event Action OnUpdate;
 
         public TokenColor Color 
         {
@@ -35,6 +47,12 @@ namespace Kamikaze.Frontend
             Enemy
         }
 
+        public enum InteractionState
+        {
+            Locked,
+            Unlocked
+        }
+        
         public enum MoveState
         {
             Idle,
@@ -42,38 +60,80 @@ namespace Kamikaze.Frontend
             SelectingTargetPosition
         }
 
-        public void OnPointerClick(PointerEventData eventData)
+
+        private void Start()
+        {
+        }
+        
+        
+        public async void OnPointerClick(PointerEventData eventData)
         {
             Debug.Log("OnPointerClick");
 
-            switch (moveState)
+            if (interactionState == InteractionState.Unlocked)
             {
-                case MoveState.Idle:
-                    BeginMove();
-                    moveState = MoveState.SelectingTargetPosition;
-                    break;
+                switch (eventData.clickCount)
+                {
+                    case 2:
+                        waitingForClickToDisplayAbilities = false;
+                        switch (moveState)
+                        {
+                            case MoveState.Idle:
+                                BeginMove();
+                                moveState = MoveState.SelectingTargetPosition;
+                                interactionState = InteractionState.Locked;
+                                break;
+                            case MoveState.Moving:
+                                break;
+                            case MoveState.SelectingTargetPosition:
+                                break;
+                            default:
+                                throw new ArgumentOutOfRangeException();
+                        }
+
+                        break;
+                    
+                    case 1:
+                        DisplayAbilities();
+                        //interactionState = InteractionState.Locked;
+                        break;
+                    
+                    default:
+                        break;
+                }
             }
         }
-
+        
+        private bool waitingForClickToDisplayAbilities = true;
+        public async void DisplayAbilities()
+        {
+            waitingForClickToDisplayAbilities = true;
+            await Task.Delay(150);
+            if (waitingForClickToDisplayAbilities)
+            {
+                var canvas = frontendController.screenSpaceCanvas;
+                var pos = Camera.main.WorldToScreenPoint(transform.position);
+                Debug.Log(pos);
+                var ap = Instantiate(abilityPanelPrefab, parent: canvas.transform, position: pos, rotation: Quaternion.identity);
+            }
+        }
+        
         public async void BeginMove()
         {
-            Debug.Log("Waiting for Click");
+            //Debug.Log("Waiting for Click");
             var pos = await SelectPosition();
 
             moveState = MoveState.Moving;
             var t = transform.DOMove(new Vector3(pos.x, transform.position.y, pos.z), 0.2f);
-            Debug.Log($"Moving to {pos}");
+            //Debug.Log($"Moving to {pos}");
             t.onComplete += () =>
             {
                 moveState = MoveState.Idle;
-                Debug.Log($"Moved to {pos}");
+                interactionState = InteractionState.Unlocked;
+                //Debug.Log($"Moved to {pos}");
             };
         }
 
-        public void DisplayActions()
-        {
-
-        }
 
         public Task<Vector3> SelectPosition()
         {
@@ -96,6 +156,7 @@ namespace Kamikaze.Frontend
 
             return completionSource.Task;
         }
+
 
         private void Update()
         {

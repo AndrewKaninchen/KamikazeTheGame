@@ -1,18 +1,18 @@
 ﻿namespace Kamikaze.Backend
 {    
+    public enum AttackMode
+    {
+        Frontal,
+        Superior,
+        Internal
+    }
+    
     public class AttackStat
     {
         public AttackStat(AttackMode mode, int value)
         {
             Mode = mode;
             Value = value;
-        }
-
-        public enum AttackMode
-        {
-            Frontal,
-            Superior,
-            Internal
         }
 
         public AttackMode Mode { get; set; }

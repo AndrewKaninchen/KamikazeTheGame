@@ -6,23 +6,25 @@ using Kamikaze.Frontend;
 
 namespace Kamikaze.Backend
 {
-    public partial class GameController
+    public class GameController
     {
         public FrontendController FrontendController { get; }
         public Player[] Players { get; }
         public Player CurrentPlayer { get; set; }
         public GameEvents Events { get; private set; }
+        public GameActions Actions { get; private set; }
 
         public List<Card> CardsInPlay { get; private set; }
         public List<Card> CardsInField { get; private set; }
 
-        private bool IsGameStarted { get; set; }
-        private bool IsGameOver { get; set; }
+        public bool IsGameStarted { get; private set; }
+        public bool IsGameOver { get; private set; }
 
         public GameController (IEnumerable<CardAsset> p1Cards, IEnumerable<CardAsset> p2Cards, FrontendController frontendController)
         {
             FrontendController = frontendController;
             Events = new GameEvents(this);
+            Actions = new GameActions(this, frontendController);
 
             var p1Deck = new Stack<Card>();
             var p2Deck = new Stack<Card>();
@@ -87,7 +89,6 @@ namespace Kamikaze.Backend
         private async Task DrawPhase()
         {
             Debug.Log("DrawPhase");
-
             //await CallEvent<OnDrawPhase>(new OnDrawPhase(currentPlayer));
             await CurrentPlayer.DrawCard();
         }
@@ -119,20 +120,21 @@ namespace Kamikaze.Backend
 
             //await Events.CallEvent(new OnMainPhase());
 
+            Debug.Log("MainPhase");
+            
             FrontendController.DisplayEndTurnButton();
             
             var completionSource = new TaskCompletionSource<int>();
 
-            Debug.Log("MainPhase");
 
 
-            void EndTurn()
+            void OnTurnEnded()
             {
                 completionSource.SetResult(1);
-                FrontendController.OnTurnEnded -= EndTurn;
+                FrontendController.OnTurnEnded -= OnTurnEnded;
             }
 
-            FrontendController.OnTurnEnded += EndTurn;
+            FrontendController.OnTurnEnded += OnTurnEnded;
 
             await completionSource.Task;
         }

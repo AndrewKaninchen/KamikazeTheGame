@@ -10,12 +10,14 @@ namespace Kamikaze
     {
         public override void OnInspectorGUI()
         {
-            Bootstrapper b = target as Bootstrapper;
+            var b = target as Bootstrapper;
             base.OnInspectorGUI();
-
-            if (GUILayout.Button("Begin"))
+            if (b == null || b.gameController == null || !b.gameController.IsGameStarted)
             {
-                b.Begin();
+                if (GUILayout.Button("Begin"))
+                {
+                    if (b != null) b.Begin();
+                }
             }
         }
     }

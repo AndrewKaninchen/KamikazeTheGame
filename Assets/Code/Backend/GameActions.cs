@@ -10,12 +10,14 @@ namespace Kamikaze.Backend
     public class GameActions
     {
         private GameController GameController { get; set; }
+        private Frontend.FrontendController FrontendController{ get; set; }
 
-        public GameActions(GameController controller)
+        public GameActions(GameController controller, Frontend.FrontendController frontend)
         {
             GameController = controller;
+            FrontendController = frontend;
         }
-
+        
         public async Task<Card> GetCardFromDeck(Card card)
         {
             throw new NotImplementedException();
@@ -72,6 +74,11 @@ namespace Kamikaze.Backend
         }
         
         public async Task<int> ChooseOptionFromList(Player player, IEnumerable<string> options)
+        {
+            throw new NotImplementedException();
+        }
+
+        public async Task<string> DisplayMessage(string message)
         {
             throw new NotImplementedException();
         }

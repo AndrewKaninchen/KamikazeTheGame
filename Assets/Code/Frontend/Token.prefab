@@ -142,17 +142,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08fc6375aaf279c44a58b8b159c0605a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementStat: 3
-  moveState: 0
+  frontendController: {fileID: 0}
   layers:
     serializedVersion: 2
     m_Bits: 16384
+  movementStat: 3
+  abilityPanelPrefab: {fileID: 1124221543339476, guid: 9af6944c2b35b3747be1044ac82b5711,
+    type: 2}
   friendlyMat: {fileID: 2100000, guid: 68c35adfd3e9d554982ead477b9f3aec, type: 2}
   enemyMat: {fileID: 2100000, guid: 5c7069a47425b6b489c00dc9486ce56a, type: 2}
   friendlyBaseMat: {fileID: 2100000, guid: 8bfd40eef642acc44bca64b0ea0697fd, type: 2}
   enemyBaseMat: {fileID: 2100000, guid: 6ad203c24d77a094ab6fba2ae2903457, type: 2}
   particleSystemRenderer: {fileID: 199868492653063610}
   meshRenderer: {fileID: 23585990835024922}
+  moveState: 0
+  interactionState: 1
 --- !u!114 &114751495010732520
 MonoBehaviour:
   m_ObjectHideFlags: 1
