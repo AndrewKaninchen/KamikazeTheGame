@@ -5,10 +5,10 @@
     <e p="C:\Users\KonViction\.Rider2018.2\system\extResources" t="IncludeRecursive" />
     <e p="C:\Users\KonViction\.Rider2018.2\system\resharper-host\Local\Transient\ReSharperHost\v182\SolutionCaches\_KamikazeTheGame.287490669.00" t="ExcludeRecursive" />
     <e p="F:\Documents\Unity Projects\KamikazeTheGame" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Cards" t="Include">
-          <e p="Cards.asmdef" t="Include" />
           <e p="Thomas" t="Include">
             <e p="Thomas.cs" t="Include" />
           </e>
@@ -38,6 +38,15 @@
           </e>
           <e p="Bootstrapper.cs" t="Include" />
           <e p="Chris.cs" t="Include" />
+          <e p="ClassTypeReference" t="Include">
+            <e p="ClassTypeReference" t="Include">
+              <e p="ClassTypeConstraintAttribute.cs" t="Include" />
+              <e p="ClassTypeReference.cs" t="Include" />
+              <e p="Editor" t="Include">
+                <e p="ClassTypeReferencePropertyDrawer.cs" t="Include" />
+              </e>
+            </e>
+          </e>
           <e p="CouroutineUtilities.cs" t="Include" />
           <e p="Editor" t="Include">
             <e p="BootstrapperEditor.cs" t="Include" />
@@ -60,7 +69,6 @@
             <e p="HandPanel.cs" t="Include" />
             <e p="Token.cs" t="Include" />
           </e>
-          <e p="Kamikaze.asmdef" t="Include" />
         </e>
         <e p="Demigiant" t="Include">
           <e p="DOTween" t="Include">
@@ -107,8 +115,6 @@
           <e p="TestCoroutineAsync.cs" t="Include" />
         </e>
       </e>
-      <e p="Kamikaze.Cards.csproj" t="IncludeRecursive" />
-      <e p="Kamikaze.csproj" t="IncludeRecursive" />
       <e p="KamikazeTheGame.sln" t="IncludeFlat" />
       <e p="Library" t="ExcludeRecursive" />
       <e p="obj" t="ExcludeRecursive" />

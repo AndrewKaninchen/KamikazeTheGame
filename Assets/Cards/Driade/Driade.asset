@@ -9,13 +9,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 008f4959e49d1ba42ad1951a03990d23, type: 3}
-  m_Name: Thomas
+  m_Name: Driade
   m_EditorClassIdentifier: 
   scriptAssetPath: 
   scriptAsset: {fileID: 0}
-  image: {fileID: 0}
+  image: {fileID: 2800000, guid: 286a61bdeaeae1e48a0e902faae1b0cd, type: 3}
   spriteImage: {fileID: 0}
-  cardName: 
+  cardName: Driade
   cardDescription: 
   associatedType:
     _classRef: Kamikaze.Thomas, Assembly-CSharp

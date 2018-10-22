@@ -8,7 +8,8 @@ namespace Kamikaze.Backend
         public readonly Card card;
         public abstract Task Body();
         public abstract bool Condition();
-        public string description;
+        public abstract string Name { get; }
+        public abstract string Description { get; }
 
         public Ability(Card card)
         {
@@ -22,6 +23,9 @@ namespace Kamikaze.Backend
         public MovementStat movement;
         public Move(Card card, MovementStat movement) : base(card) { this.movement = movement; }
         public override bool Condition() { return true; }
+        public override string Name => "Movement";
+        public override string Description => "Regular movement.";
+
         public override async Task Body()
         {
             card.FrontendCard.BeginMove();
@@ -33,6 +37,8 @@ namespace Kamikaze.Backend
         public AttackStat attack;
         public Attack(Card card, AttackStat attack) : base(card) { this.attack = attack; }
         public override bool Condition () => true;
+        public override string Name => "Attack";
+        public override string Description => "Regular attack.";
 
         public override async Task Body()
         {

@@ -32,7 +32,9 @@ namespace Kamikaze
 			public SayChooChooAbility(Card effectOwnerCard) : base(effectOwnerCard) { }
 
 			public override bool Condition() => true;
-			
+			public override string Name => "Say Choo Choo";
+			public override string Description => "Makes this card say ChooChoo.";
+
 			public override async Task Body()
 			{
 				await Actions.Damage(card as IHealthStatHolder);

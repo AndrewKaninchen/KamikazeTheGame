@@ -1,7 +1,10 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Reflection;
 using Kamikaze.Frontend_Old;
+using TypeReferences;
+using UnityEngine;
 
 namespace Kamikaze.Backend
 {
@@ -20,14 +23,7 @@ namespace Kamikaze.Backend
         public IEnumerable container;
         public Player owner;
         public Player opponent;
-
-        public static Card CreateCard(Type type)
-        {
-            return (Card) Activator.CreateInstance(type);
-        }
-
-        public List<TriggerEffect> TriggerEffects { get; set; }
-
+      
         protected Card(Player owner, Player opponent, IEnumerable container, Frontend_Old.Card front, GameController game, GameActions gameActions)
         {
             this.owner = owner;
@@ -37,6 +33,18 @@ namespace Kamikaze.Backend
             Actions = gameActions;
             FrontendCard = front;            
         }
+        public static Card CreateCard(ClassTypeReference type, Player owner, Player opponent, IEnumerable container, Frontend_Old.Card front, GameController game, GameActions actions)
+        {
+            return (Card) Activator.CreateInstance(type,  args: 
+                new object[] 
+                {
+                    owner, opponent, container, front, game, actions
+                }
+            );
+        }
+
+        public List<TriggerEffect> TriggerEffects { get; set; }
+
 
         public void SubscribeTriggerEffects()
         {

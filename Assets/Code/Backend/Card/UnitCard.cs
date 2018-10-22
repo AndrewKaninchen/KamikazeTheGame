@@ -9,7 +9,7 @@ namespace Kamikaze.Backend
         public MovementStat Movement { get; set; }
         public int Health { get; set; }
 
-        public UnitCard(Player owner, Player opponent, IEnumerable container, Frontend_Old.Card front, GameController game, GameActions actions)
+        protected UnitCard(Player owner, Player opponent, IEnumerable container, Frontend_Old.Card front, GameController game, GameActions actions)
             : base (owner, opponent, container, front, game, actions)
         {
             Abilites = new List<Ability>

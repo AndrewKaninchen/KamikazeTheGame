@@ -39,6 +39,8 @@ namespace Kamikaze
             }
 
             public override bool Condition() => true;
+            public override string Name => "Drink";
+            public override string Description => "Makes this card drink.";
         }
 
         public class DrinkEffect : TriggerEffect<GameEvents.OnCardDamaged>

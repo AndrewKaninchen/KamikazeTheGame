@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using Kamikaze.Backend;
 using UnityEngine;
 
 namespace Kamikaze.Frontend
@@ -6,6 +7,7 @@ namespace Kamikaze.Frontend
 	public class HandPanel : MonoBehaviour
 	{
 		public FrontendController frontendController;
+		public CardAsset templateCard; //TODO: tirar isso e criar uma inicialização de verdade pras cartas
 		
         public Player player;
 
@@ -37,12 +39,8 @@ namespace Kamikaze.Frontend
 		{
 			var dummy = Instantiate(dummyPrefab, dummyRoot).GetComponent<DummyCard>();
 			var card = Instantiate(cardPrefab, drawOrigin.position, drawOrigin.rotation, cardRoot).GetComponent<Card>();
-			card.dummy = dummy;
-			card.frontendController = frontendController;
-			dummy.gameObject.SetActive(true);
-			card.gameObject.SetActive(true);
+			card.Initialize(player, frontendController, Backend.Card.CreateCard(templateCard.associatedType, null, null, null, null, null, null), dummy);
 			cards.Add(card);
-            card.owner = player;
 		}
 	}
 

@@ -4,42 +4,14 @@ using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using DG.Tweening;
+using Kamikaze.Backend;
 using UnityEngine.XR.WSA;
 
 namespace Kamikaze.Frontend
 {
     public class Token : MonoBehaviour, IPointerClickHandler
     {
-        public FrontendController frontendController;
-        
-        public LayerMask layers; //temporário porque preguiça de pensar
-        
-        public float movementStat;
-        
-        [SerializeField] private GameObject abilityPanelPrefab;
-        private AbilityPanel abilityPanel;
-        [SerializeField] private Material friendlyMat, enemyMat, friendlyBaseMat, enemyBaseMat;
-        
-        [SerializeField] private ParticleSystemRenderer particleSystemRenderer;
-        [SerializeField] private MeshRenderer meshRenderer;
-        
-        
-        [SerializeField] private MoveState moveState = MoveState.Idle;
-        [SerializeField] private InteractionState interactionState = InteractionState.Unlocked;
-        private event Action OnUpdate;
-
-        public TokenColor Color 
-        {
-            get => t_Color;
-            set 
-            {
-                meshRenderer.material = value == TokenColor.Friendly ?  friendlyBaseMat : enemyBaseMat;
-                particleSystemRenderer.material = value == TokenColor.Friendly ? friendlyMat : enemyMat;
-                t_Color = value;
-            }
-        }
-
-        private TokenColor t_Color;
+        #region EnumTypes
 
         public enum TokenColor
         {
@@ -59,12 +31,62 @@ namespace Kamikaze.Frontend
             Moving,
             SelectingTargetPosition
         }
-
-
-        private void Start()
+        
+        public enum AbilityState
         {
+            None,
+            WaitingForSecondClickNotToHappenToThenDisplayAbilities,
+            DisplayingPanel,
+            UsingAbility
+        }
+
+        #endregion
+        
+        #region Card Object & Game Logic References
+        [HideInInspector] public FrontendController frontendController;
+        private Backend.FieldCard card;
+        #endregion
+
+        #region Prefabs & Assets
+        [SerializeField] private GameObject abilityPanelPrefab;
+        [SerializeField] private Material friendlyMat, enemyMat, friendlyBaseMat, enemyBaseMat;
+        #endregion
+         
+        #region Component References           
+        [SerializeField] private ParticleSystemRenderer particleSystemRenderer;
+        [SerializeField] private MeshRenderer meshRenderer;
+        private AbilityPanel abilityPanel;
+        #endregion
+        
+        #region Value Fields & Properties
+        [SerializeField] private LayerMask layers; //temporário porque preguiça de pensar        
+        
+        private TokenColor tokenColor;
+        
+        public TokenColor Color 
+        {
+            get => tokenColor;
+            set 
+            {
+                meshRenderer.material = value == TokenColor.Friendly ?  friendlyBaseMat : enemyBaseMat;
+                particleSystemRenderer.material = value == TokenColor.Friendly ? friendlyMat : enemyMat;
+                tokenColor = value;
+            }
         }
         
+        [SerializeField] private MoveState moveState = MoveState.Idle;
+        [SerializeField] private InteractionState interactionState = InteractionState.Unlocked;
+        [SerializeField] private AbilityState abilityState = AbilityState.None;
+        #endregion
+
+        #region Events
+        private event Action OnUpdate;
+        #endregion
+
+        public void Initialize(FieldCard card)
+        {
+            this.card = card;
+        }
         
         public async void OnPointerClick(PointerEventData eventData)
         {
@@ -75,7 +97,7 @@ namespace Kamikaze.Frontend
                 switch (eventData.clickCount)
                 {
                     case 2:
-                        waitingForClickToDisplayAbilities = false;
+                        abilityState = AbilityState.None;
                         switch (moveState)
                         {
                             case MoveState.Idle:
@@ -104,17 +126,22 @@ namespace Kamikaze.Frontend
             }
         }
         
-        private bool waitingForClickToDisplayAbilities = true;
+        
         public async void DisplayAbilities()
         {
-            waitingForClickToDisplayAbilities = true;
+            abilityState = AbilityState.WaitingForSecondClickNotToHappenToThenDisplayAbilities;
             await Task.Delay(150);
-            if (waitingForClickToDisplayAbilities)
+            if (abilityState == AbilityState.WaitingForSecondClickNotToHappenToThenDisplayAbilities)
             {
                 var canvas = frontendController.screenSpaceCanvas;
                 var pos = Camera.main.WorldToScreenPoint(transform.position);
                 Debug.Log(pos);
-                var ap = Instantiate(abilityPanelPrefab, parent: canvas.transform, position: pos, rotation: Quaternion.identity);
+                var ap = Instantiate(abilityPanelPrefab, parent: canvas.transform, position: pos, rotation: Quaternion.identity).GetComponent<AbilityPanel>();
+                var selectedAbility = await ap.Display(card);
+                
+                if (selectedAbility != null)
+                    if (selectedAbility.Condition())
+                        await selectedAbility.Body();
             }
         }
         
@@ -133,7 +160,6 @@ namespace Kamikaze.Frontend
                 //Debug.Log($"Moved to {pos}");
             };
         }
-
 
         public Task<Vector3> SelectPosition()
         {
@@ -156,7 +182,6 @@ namespace Kamikaze.Frontend
 
             return completionSource.Task;
         }
-
 
         private void Update()
         {

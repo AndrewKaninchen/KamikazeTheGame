@@ -66,10 +66,10 @@ namespace Kamikaze.Frontend
             currentPlayer.cam.gameObject.SetActive(true);
             yield return new WaitForSeconds(.3f);
 
-            foreach (Token t in currentPlayer.tokens)
+            foreach (var t in currentPlayer.tokens)
                 t.Color = Token.TokenColor.Friendly;
 
-            foreach (Token t in otherPlayer.tokens)
+            foreach (var t in otherPlayer.tokens)
                 t.Color = Token.TokenColor.Enemy;
 
             suaVez.SetTrigger("DESCE");

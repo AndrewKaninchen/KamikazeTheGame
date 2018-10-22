@@ -1,5 +1,6 @@
 ﻿using System;
 using DG.Tweening;
+using Kamikaze.Backend;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -7,27 +8,32 @@ namespace Kamikaze.Frontend
 {
     public class Card : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHandler, IPointerClickHandler, IPointerEnterHandler, IPointerExitHandler
     {
-        public FrontendController frontendController;
-        public Player owner;
-        
+        #region Enum Types
 
-        //public Material transparentMaterial;
-        public GameObject tokenPrefab;
-        public DummyCard dummy;
-        public float distanceFromCameraWhenDraggingCards;
-        private Token token;
-        [SerializeField] private LayerMask layers; //temporário porque preguiça de pensar
-
-        public DragState dragState = DragState.NotDragging;
         public enum DragState
         {
             NotDragging,
             Dragging,
             Previewing,
         }
-
-        public event Action OnSummon;
+        #endregion
         
+        #region Card Object & Game Logic References
+        public Player owner;
+        [HideInInspector] public FrontendController frontendController;
+        private Backend.Card backendCard;
+        public DummyCard dummy;
+        private Token token;
+        #endregion        
+
+        #region Prefabs & Assets
+        public GameObject tokenPrefab;
+        #endregion
+        
+        #region Value Fields & Properties
+        public float distanceFromCameraWhenDraggingCards;
+        [SerializeField] private LayerMask layers; //TODO: tirar essa bosta? Talvez valha a pena deixar como read only de alguma forma? Mostrar só no prefab?
+        public DragState dragState = DragState.NotDragging;
         private bool isVisible;
         private bool Visible 
         {
@@ -37,12 +43,30 @@ namespace Kamikaze.Frontend
                 if (value)
                     Destroy(token);
                 else
+                {
                     token = Instantiate(tokenPrefab).GetComponent<Token>();
+                    token.Initialize(backendCard as FieldCard);
+                }
 
                 GetComponent<MeshRenderer>().enabled = value;
                 //GetComponent<MeshCollider>().enabled = value;
                 isVisible = value;
             }
+        }
+        #endregion
+
+        #region Events
+        public event Action OnSummon;
+        #endregion
+
+        public void Initialize(Player owner, FrontendController frontendController, Backend.Card backendCard, DummyCard dummy)
+        {
+            this.owner = owner;
+            this.frontendController = frontendController;
+            this.backendCard = backendCard;
+            this.dummy = dummy;
+            dummy.gameObject.SetActive(true);
+            gameObject.SetActive(true);
         }
         
         private void LateUpdate()

@@ -14,7 +14,11 @@ MonoBehaviour:
   scriptAssetPath: 
   scriptAsset: {fileID: 0}
   image: {fileID: 0}
-  description: 
+  spriteImage: {fileID: 0}
+  cardName: 
+  cardDescription: 
+  associatedType:
+    _classRef: Kamikaze.Thomas, Assembly-CSharp
 --- !u!49 &49203741322157322
 TextAsset:
   m_ObjectHideFlags: 0

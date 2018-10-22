@@ -30,9 +30,9 @@ namespace Kamikaze.Backend
             var p2Deck = new Stack<Card>();
 
             foreach (var card in p1Cards)            
-                p1Deck.Push(Card.CreateCard(card.associatedType));
+                p1Deck.Push(Card.CreateCard(card.associatedType, Players[0], Players[1], null, null, this, Actions));
             foreach (var card in p2Cards)
-                p2Deck.Push(Card.CreateCard(card.associatedType));
+                p2Deck.Push(Card.CreateCard(card.associatedType, Players[1], Players[0], null, null, this, Actions));
 
             CardsInPlay = new List<Card>(p1Deck);
             CardsInPlay.AddRange(p2Deck);
