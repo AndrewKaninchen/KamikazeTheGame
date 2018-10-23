@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 namespace Kamikaze.Backend
@@ -13,7 +12,7 @@ namespace Kamikaze.Backend
         public bool IsInField { get; set; }
         public int Health { get; set; }
 
-        protected FieldCard(Player owner, Player opponent, IEnumerable container, Frontend_Old.Card front, GameController game, GameActions actions) 
+        protected FieldCard(Player owner, Player opponent, ICollection<Card> container, Frontend.Card front, GameController game, GameActions actions) 
             : base (owner, opponent, container, front, game, actions)
         {
         }

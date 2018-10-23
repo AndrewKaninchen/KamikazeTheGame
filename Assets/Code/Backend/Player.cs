@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using UnityEngine;
 
@@ -8,57 +9,50 @@ namespace Kamikaze.Backend
 {
     public class Player
     {
+        public GameController GameController { get; private set; }
         public Player Opponent { get; }
-        public Stack<Card> Deck { get; } = new Stack<Card>();
-        public List<Card> Hand { get; } = new List<Card>();
+        public List<Card> Deck { get; }
+        public List<Card> Hand { get; }
 
         public uint maxCrystals;
         public List<EnergyType> crystals;
 
-        public Player(Stack<Card> deck)
+        public Player(List<Card> deck, GameController gameController)
         {
-            this.Deck = deck;
+            GameController = gameController;
+            Deck = deck;
+            Hand = new List<Card>();
         }
 
         public Dictionary<EnergyType, int> Energy { get; set; }
         public int ActionPoints { get; set; }
 
-        public async Task  DrawCards(int amount)
+        public async Task DrawCards(int amount)
         {
-            for (int i = 0; i < amount; i++)
-            {
-                //Do animation using await (possibly not calling DrawCard, for faster drawing)
+            for (var i = 0; i < amount; i++)
                 await DrawCard();
-            }
         }
 
         public async Task DrawCard()
         {
             if (Deck.Count > 0)
             {
-                var card = Deck.Pop();
-                //Do animation using await
-                Hand.Add(card);
+                var card = Deck.First();
+                await GameController.Actions.AddCardToPlayersHand(this, card);
             }
-        //    GameEvents.OnCardDrawn.Invoke(opponent, (card, this));
-        //    //foreach (var del in GameEvents.OnCardDrawn)
-        //    //{
-        //    //    await del(card, this);
-        //    //}
-        //    await card.OnDrawn();
         }
 
         public async Task AddCrystal(EnergyType type)
         {
             if (crystals.Count >= maxCrystals)
                 return;
-            //await GameEvents.OnAddCrystal(type, this);
+            await GameController.Events.CallEvent(new GameEvents.OnAddCrystal(type, this));
         }
 
         public async Task AddEnergy(EnergyType type, int amount)
         {
             Energy[type] += amount;
-            //await GameEvents.OnAddEnergy(type, this, amount);
+            await GameController.Events.CallEvent(new GameEvents.OnAddEnergy(type, this, amount));
         }
 
     }

@@ -3,38 +3,58 @@ using System.Collections.Generic;
 using System;
 using System.Collections;
 using System.Threading.Tasks;
+using Kamikaze.Backend;
 using UnityEngine.Serialization;
 
 namespace Kamikaze.Frontend
 {
+    [Serializable]
+    public class PlayerObjects
+    {
+        public CameraController cam;
+        public HandPanel hand;
+        public List<Token> tokens;
+    }
+    
     public partial class FrontendController : MonoBehaviour
     {
-        public Player p1, p2, currentPlayer, otherPlayer;
-        [FormerlySerializedAs("SUA_VEZ")] public Animator suaVez;
-        public GameObject endTurnButton;
-
-
-        public event Action OnTurnEnded;
-
-        public Canvas screenSpaceCanvas;
+        public Dictionary<Backend.Player, PlayerObjects> playerObjects = new Dictionary<Player, PlayerObjects>();
         
+        #region Backend Objects
         private Backend.GameController gameController;
+        public PlayerObjects p1Objects;
+        public PlayerObjects p2Objects;
+        public PlayerObjects currentPlayerObjects;
+        public PlayerObjects otherPlayerObjects;
+        #endregion
 
-        public void Init(Backend.GameController gc)
+        #region Components & Objects
+        public Animator suaVez;
+        public GameObject endTurnButton;
+        public Canvas screenSpaceCanvas;
+        #endregion
+
+        #region Events
+        public event Action OnTurnEnded;
+        #endregion
+        
+        public void Initialize(Backend.GameController gc)
         {
             gameController = gc;
+            playerObjects.Add(gc.Players[0], p1Objects);
+            playerObjects.Add(gc.Players[1], p2Objects);
         }
 
         public void Start()
         {
-            p1.hand.frontendController = this;
-            p2.hand.frontendController = this;
+            p1Objects.hand.frontendController = this;
+            p2Objects.hand.frontendController = this;
             
-            currentPlayer = p1;
-            otherPlayer = p2;
+            currentPlayerObjects = p1Objects;
+            otherPlayerObjects = p2Objects;
 
-            p1.hand.player = p1;
-            p2.hand.player = p2;
+            p1Objects.hand.playerObjects = p1Objects;
+            p2Objects.hand.playerObjects = p2Objects;
         }
 
         public void DisplayEndTurnButton()
@@ -56,20 +76,20 @@ namespace Kamikaze.Frontend
         {
             HideEndTurnButton();
 
-            otherPlayer = currentPlayer;
-            currentPlayer = currentPlayer == p1 ? p2 : p1;
+            otherPlayerObjects = currentPlayerObjects;
+            currentPlayerObjects = currentPlayerObjects == p1Objects ? p2Objects : p1Objects;
 
             suaVez.SetTrigger("VAI");
             yield return new WaitForSeconds(1.5f);
 
-            otherPlayer.cam.gameObject.SetActive(false);
-            currentPlayer.cam.gameObject.SetActive(true);
+            otherPlayerObjects.cam.gameObject.SetActive(false);
+            currentPlayerObjects.cam.gameObject.SetActive(true);
             yield return new WaitForSeconds(.3f);
 
-            foreach (var t in currentPlayer.tokens)
+            foreach (var t in currentPlayerObjects.tokens)
                 t.Color = Token.TokenColor.Friendly;
 
-            foreach (var t in otherPlayer.tokens)
+            foreach (var t in otherPlayerObjects.tokens)
                 t.Color = Token.TokenColor.Enemy;
 
             suaVez.SetTrigger("DESCE");
@@ -88,11 +108,5 @@ namespace Kamikaze.Frontend
         }
     }
 
-    [Serializable]
-    public class Player
-    {
-        public CameraController cam;
-        public HandPanel hand;
-        public List<Token> tokens;
-    }
+    
 }

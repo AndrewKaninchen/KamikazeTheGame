@@ -18,22 +18,32 @@ namespace Kamikaze.Backend
         protected GameController Game { get; set; }
         public GameActions Actions { get; set; }
 
-        public Frontend_Old.Card FrontendCard { get; private set; }
+        public Frontend.Card FrontendCard { get; private set; }
 
-        public IEnumerable container;
+        private ICollection<Card> container;
+        public ICollection<Card> Container
+        {
+            get => container;
+            set 
+            {
+                container?.Remove(this);
+                container = value;
+            }
+        }
+    
         public Player owner;
         public Player opponent;
       
-        protected Card(Player owner, Player opponent, IEnumerable container, Frontend_Old.Card front, GameController game, GameActions gameActions)
+        protected Card(Player owner, Player opponent, ICollection<Card> container, Frontend.Card front, GameController game, GameActions gameActions)
         {
             this.owner = owner;
             this.opponent = opponent;
-            this.container = container;
+            this.Container = container;
             this.Game = game;
             Actions = gameActions;
             FrontendCard = front;            
         }
-        public static Card CreateCard(ClassTypeReference type, Player owner, Player opponent, IEnumerable container, Frontend_Old.Card front, GameController game, GameActions actions)
+        public static Card CreateCard(ClassTypeReference type, Player owner, Player opponent, ICollection<Card> container, Frontend_Old.Card front, GameController game, GameActions actions)
         {
             return (Card) Activator.CreateInstance(type,  args: 
                 new object[] 

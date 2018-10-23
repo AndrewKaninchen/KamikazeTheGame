@@ -17,6 +17,23 @@ namespace Kamikaze.Backend
             GameController = controller;
             FrontendController = frontend;
         }
+
+        public async Task ForcePlayerToDrawCards(Player player, int amount)
+        {
+            await player.DrawCards(amount);
+        }
+        
+        public async Task ForcePlayerToDrawCard(Player player)
+        {
+            await player.DrawCard();
+        }
+        
+        public async Task AddCardToPlayersHand(Player player, Card card)
+        {
+            player.Hand.Add(card);
+            card.Container = player.Hand;
+            FrontendController.playerObjects[player].hand.AddCard(card.FrontendCard);
+        }
         
         public async Task<Card> GetCardFromDeck(Card card)
         {

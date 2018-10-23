@@ -26,7 +26,7 @@ namespace Kamikaze
             gameController = new Backend.GameController(cardsP1, cardsP2, frontendController);
             gameEvents = new Backend.GameEvents(gameController);
 
-            frontendController.Init(gameController);
+            frontendController.Initialize(gameController);
             gameController.Run();
         }
     }

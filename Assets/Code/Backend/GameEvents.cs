@@ -71,62 +71,76 @@ namespace Kamikaze.Backend
             public UnitCard unit;
         }
 
-        public class OnBuildingSummoned
+        public class OnBuildingSummoned : GameEvent
         {
             public BuildingCard building;
         }
 
-        public class OnCardEffectActivated
+        public class OnCardEffectActivated : GameEvent
         {
             public Card card;
             public TriggerEffect effect;
         }
 
-        public class OnCardAbilityActivated
+        public class OnCardAbilityActivated : GameEvent
         {
             public Card card;
             public Ability ability;
         }
 
-        public class OnCardAttacked
+        public class OnCardAttacked : GameEvent
         {
             public Card attacker;
             public Card defender;
             public Attack attackUsed;
         }
 
-        public class OnCardDamaged
+        public class OnCardDamaged : GameEvent
         {
             public FieldCard damagedCard;
             //info about damage taken
         }
 
 
-        public class OnCardHealed
+        public class OnCardHealed : GameEvent
         {
             public FieldCard healedCard;
         }
         
-        public class OnCardDestroyed
+        public class OnCardDestroyed : GameEvent
         {
             public FieldCard destroyedCard;
         }
 
-        public class OnCardRessurrected
+        public class OnCardRessurrected : GameEvent
         {
             public FieldCard ressurrectedCard;
         }
-        
-        public class OnAddCrystal
+         
+        public class OnAddCrystal : GameEvent
         {
+            public OnAddCrystal(EnergyType energyType, Player player)
+            {
+                this.energyType = energyType;
+                this.player = player;
+            }
+
             public EnergyType energyType;
             public Player player;
         }
 
-        public class OnAddEnergy
+        public class OnAddEnergy : GameEvent
         {
+            public OnAddEnergy(EnergyType energyType, Player player, int amountAdded)
+            {
+                this.energyType = energyType;
+                this.player = player;
+                this.amountAdded = amountAdded;
+            }
+
             public EnergyType energyType;
             public Player player;
+            public int amountAdded;
         }
     }
 }

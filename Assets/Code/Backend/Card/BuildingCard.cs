@@ -1,12 +1,10 @@
-﻿using System.Collections;
+﻿using System.Collections.Generic;
 
 namespace Kamikaze.Backend
 {
-    public abstract class BuildingCard : FieldCard, IHealthStatHolder
+    public abstract class BuildingCard : FieldCard
     {
-        public int Health { get; set; }
-
-        protected BuildingCard(Player owner, Player opponent, IEnumerable container, Frontend_Old.Card front, GameController game, GameActions actions) 
+        protected BuildingCard(Player owner, Player opponent, ICollection<Card> container, Frontend.Card front, GameController game, GameActions actions) 
             : base(owner, opponent, container, front, game, actions)
         {
         }

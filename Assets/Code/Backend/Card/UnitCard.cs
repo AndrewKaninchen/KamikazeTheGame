@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
 namespace Kamikaze.Backend
 {
@@ -9,7 +8,7 @@ namespace Kamikaze.Backend
         public MovementStat Movement { get; set; }
         public int Health { get; set; }
 
-        protected UnitCard(Player owner, Player opponent, IEnumerable container, Frontend_Old.Card front, GameController game, GameActions actions)
+        protected UnitCard(Player owner, Player opponent, ICollection<Card> container, Frontend.Card front, GameController game, GameActions actions)
             : base (owner, opponent, container, front, game, actions)
         {
             Abilites = new List<Ability>

@@ -19,7 +19,7 @@ namespace Kamikaze.Frontend
         #endregion
         
         #region Card Object & Game Logic References
-        public Player owner;
+        public PlayerObjects owner;
         [HideInInspector] public FrontendController frontendController;
         private Backend.Card backendCard;
         public DummyCard dummy;
@@ -59,7 +59,7 @@ namespace Kamikaze.Frontend
         public event Action OnSummon;
         #endregion
 
-        public void Initialize(Player owner, FrontendController frontendController, Backend.Card backendCard, DummyCard dummy)
+        public void Initialize(PlayerObjects owner, FrontendController frontendController, Backend.Card backendCard, DummyCard dummy)
         {
             this.owner = owner;
             this.frontendController = frontendController;

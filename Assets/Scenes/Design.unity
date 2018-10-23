@@ -180,7 +180,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh5074
+  m_Name: pb_Mesh5098
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -3163,7 +3163,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   frontendController: {fileID: 0}
   templateCard: {fileID: 0}
-  player:
+  playerObjects:
     cam: {fileID: 0}
     hand: {fileID: 0}
     tokens: []
@@ -3509,19 +3509,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87492d2d7c8fdda43a44de2959081d45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  p1:
+  p1Objects:
     cam: {fileID: 1745267127}
     hand: {fileID: 1321962136}
     tokens: []
-  p2:
+  p2Objects:
     cam: {fileID: 2059909194}
     hand: {fileID: 584272683}
     tokens: []
-  currentPlayer:
+  currentPlayerObjects:
     cam: {fileID: 0}
     hand: {fileID: 0}
     tokens: []
-  otherPlayer:
+  otherPlayerObjects:
     cam: {fileID: 0}
     hand: {fileID: 0}
     tokens: []
@@ -4427,7 +4427,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   frontendController: {fileID: 0}
   templateCard: {fileID: 11400000, guid: 1850049b406db474793980cb00639ba9, type: 2}
-  player:
+  playerObjects:
     cam: {fileID: 0}
     hand: {fileID: 0}
     tokens: []

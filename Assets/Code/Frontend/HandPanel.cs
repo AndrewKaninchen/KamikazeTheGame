@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using Kamikaze.Backend;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace Kamikaze.Frontend
 {	
@@ -9,7 +10,7 @@ namespace Kamikaze.Frontend
 		public FrontendController frontendController;
 		public CardAsset templateCard; //TODO: tirar isso e criar uma inicialização de verdade pras cartas
 		
-        public Player player;
+        [FormerlySerializedAs("player")] public PlayerObjects playerObjects;
 
 		public GameObject dummyPrefab;
 		public GameObject cardPrefab;
@@ -35,11 +36,17 @@ namespace Kamikaze.Frontend
 				DrawCard();
 		}
 
+		public void AddCard(Card card)
+		{
+			card.dummy.transform.SetParent(dummyRoot);
+			cards.Add(card);
+		}
+		
 		public void DrawCard()
 		{
 			var dummy = Instantiate(dummyPrefab, dummyRoot).GetComponent<DummyCard>();
 			var card = Instantiate(cardPrefab, drawOrigin.position, drawOrigin.rotation, cardRoot).GetComponent<Card>();
-			card.Initialize(player, frontendController, Backend.Card.CreateCard(templateCard.associatedType, null, null, null, null, null, null), dummy);
+			card.Initialize(playerObjects, frontendController, Backend.Card.CreateCard(templateCard.associatedType, null, null, null, null, null, null), dummy);
 			cards.Add(card);
 		}
 	}

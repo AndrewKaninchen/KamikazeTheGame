@@ -9,7 +9,7 @@ namespace Kamikaze
 {
     public class Chris : UnitCard
     {
-        public Chris(Player owner, Player opponent, IEnumerable container, Frontend_Old.Card front, GameController game, GameActions actions) 
+        public Chris(Player owner, Player opponent, ICollection<Card> container, Frontend.Card front, GameController game, GameActions actions) 
             : base(owner, opponent, container, front, game, actions)
         {
             Attack = new AttackStat(AttackMode.Frontal, 3);
