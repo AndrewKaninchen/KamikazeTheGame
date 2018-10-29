@@ -41,17 +41,17 @@ namespace Kamikaze.Frontend
 			card.dummy.transform.SetParent(dummyRoot);
 			cards.Add(card);
 		}
+
+		public DummyCard CreateDummy() => Instantiate(dummyPrefab, dummyRoot).GetComponent<DummyCard>();
 		
 		public void DrawCard()
 		{
 			var dummy = Instantiate(dummyPrefab, dummyRoot).GetComponent<DummyCard>();
 			var card = Instantiate(cardPrefab, drawOrigin.position, drawOrigin.rotation, cardRoot).GetComponent<Card>();
-			card.Initialize(playerObjects, frontendController, Backend.Card.CreateCard(templateCard.associatedType, null, null, null, card.GetComponent<Card>(), null, null), dummy);
+			card.Initialize(playerObjects, frontendController, Backend.Card.CreateCard(templateCard.associatedType, null, null, null, null, null), dummy);
 			
 			//TODO: resolver essa lambança fazendo uma fábrica melhor que gera as duas cartas simultaneamente. Talvez valha a pena retornar uma 3-upla com BackendCard, FrontendCard, FrontendToken
 			card.BackendCard.FrontendCard = card;
-			card.BackendCard.FrontendToken = card.Token;
-			
 			
 			cards.Add(card);
 		}

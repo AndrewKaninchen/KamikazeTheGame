@@ -5,6 +5,7 @@ using System.Collections;
 using System.Threading.Tasks;
 using Kamikaze.Backend;
 using UnityEngine.Serialization;
+using Object = UnityEngine.Object;
 
 namespace Kamikaze.Frontend
 {
@@ -22,27 +23,31 @@ namespace Kamikaze.Frontend
         
         #region Backend Objects
         private Backend.GameController gameController;
+        #endregion
+
+        #region Components & Objects
         public PlayerObjects p1Objects;
         public PlayerObjects p2Objects;
         public PlayerObjects currentPlayerObjects;
         public PlayerObjects otherPlayerObjects;
-        #endregion
-
-        #region Components & Objects
         public Animator suaVez;
         public GameObject endTurnButton;
         public Canvas screenSpaceCanvas;
+        [SerializeField] private GameObject cardPrefab;
+        [SerializeField] private GameObject dummyPrefab;
+        [SerializeField] private GameObject tokenPrefab;
+
         #endregion
 
         #region Events
         public event Action OnTurnEnded;
         #endregion
         
-        public void Initialize(Backend.GameController gc)
+        public void Initialize(Player p1, Player p2)
         {
-            gameController = gc;
-            playerObjects.Add(gc.Players[0], p1Objects);
-            playerObjects.Add(gc.Players[1], p2Objects);
+            this.gameController = gameController;
+            playerObjects.Add(p1, p1Objects);
+            playerObjects.Add(p2, p2Objects);
         }
 
         public void Start()
@@ -95,16 +100,20 @@ namespace Kamikaze.Frontend
             suaVez.SetTrigger("DESCE");
             yield return new WaitForSeconds(.7f);
         }
-
-        public Token CreateToken()
-        {
-            
-            throw new NotImplementedException();
-        }
+//
+//        public Token CreateToken(Backend.FieldCard card)
+//        {
+//            var i = Instantiate(tokenPrefab).GetComponent<Token>();
+//            i.Initialize(card);
+//            i.gameObject.SetActive(false);
+//            return i;
+//        }
         
-        public Token CreateCard()
+        public Card CreateCard(Backend.Card backend)
         {
-            throw new NotImplementedException();
+            var i = Instantiate(cardPrefab).GetComponent<Card>();
+            i.Initialize(playerObjects[backend.owner], this, backend, Instantiate(dummyPrefab).GetComponent<DummyCard>());
+            return i;
         }
     }
 

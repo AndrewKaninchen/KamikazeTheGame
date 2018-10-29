@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Reflection;
+using Kamikaze.Frontend;
 using Kamikaze.Frontend_Old;
 using TypeReferences;
 using UnityEngine;
@@ -19,7 +20,7 @@ namespace Kamikaze.Backend
         public GameActions Actions { get; set; }
 
         public Frontend.Card FrontendCard { get; set; }
-        public Frontend.Token FrontendToken { get; set; }
+        public Frontend.Token FrontendToken => FrontendCard.Token;
         
         private ICollection<Card> container;
         public ICollection<Card> Container
@@ -35,7 +36,7 @@ namespace Kamikaze.Backend
         public Player owner;
         public Player opponent;
       
-        protected Card(Player owner, Player opponent, ICollection<Card> container, Frontend.Card front, GameController game, GameActions gameActions)
+        protected Card(Player owner, Player opponent, ICollection<Card> container, GameController game, GameActions gameActions)
         {
             this.owner = owner;
             this.opponent = opponent;
@@ -46,14 +47,20 @@ namespace Kamikaze.Backend
             //FrontendToken = front.Token;
         }
         
-        public static Card CreateCard(ClassTypeReference type, Player owner, Player opponent, ICollection<Card> container, Frontend.Card front, GameController game, GameActions gameActions)
+        public static Card CreateCard(ClassTypeReference type, Player owner, Player opponent, ICollection<Card> container, GameController game, GameActions gameActions)
         {
-            return (Card) Activator.CreateInstance(type,  args: 
+            var instance = (Card) Activator.CreateInstance(type,  args: 
                 new object[] 
                 {
-                    owner, opponent, container, front, game, gameActions
+                    owner, opponent, container, game, gameActions
                 }
             );
+
+            var dummy = game.FrontendController.playerObjects[owner].hand.CreateDummy();
+            var front = game.FrontendController.CreateCard(instance);
+            front.dummy = dummy;
+            instance.FrontendCard = front;
+            return instance;
         }
 
         public List<TriggerEffect> TriggerEffects { get; set; }

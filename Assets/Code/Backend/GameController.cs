@@ -24,31 +24,34 @@ namespace Kamikaze.Backend
         public GameController (IEnumerable<CardAsset> p1Cards, IEnumerable<CardAsset> p2Cards, FrontendController frontendController)
         {
             FrontendController = frontendController;
+            
             Events = new GameEvents(this);
             Actions = new GameActions(this, frontendController);
 
             var p1Deck = new List<Card>();
             var p2Deck = new List<Card>();
 
+            Players = new Player[2];
+            Players[0] = new Player(p1Deck, this);
+            Players[1] = new Player(p2Deck, this);            
+            
+            FrontendController.Initialize(Players[0], Players[1]);
+            
             foreach (var card in p1Cards)
             {
-                var backendCard = Card.CreateCard(card.associatedType, Players[0], Players[1], p1Deck, null, this, Actions);
+                var backendCard = Card.CreateCard(card.associatedType, Players[0], Players[1], p1Deck, this, Actions);
                 p1Deck.Add(backendCard);
             }
 
             foreach (var card in p2Cards)
             {
-                var backendCard = Card.CreateCard(card.associatedType, Players[1], Players[0], p1Deck, null, this, Actions);
+                var backendCard = Card.CreateCard(card.associatedType, Players[1], Players[0], p2Deck, this, Actions);
                 p2Deck.Add(backendCard);
             }
 
             CardsInPlay = new List<Card>(p1Deck);
             CardsInPlay.AddRange(p2Deck);
             CardsInField = new List<Card>();
-
-            Players = new Player[2];
-            Players[0] = new Player(p1Deck, this);
-            Players[1] = new Player(p2Deck, this);
             CurrentPlayer = Players[0];            
             IsGameOver = false;
         }

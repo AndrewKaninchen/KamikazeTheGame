@@ -7,8 +7,8 @@ namespace Kamikaze.Backend
         public AttackStat Attack { get; set; }
         public MovementStat Movement { get; set; }
 
-        protected UnitCard(Player owner, Player opponent, ICollection<Card> container, Frontend.Card front, GameController game, GameActions actions)
-            : base (owner, opponent, container, front, game, actions)
+        protected UnitCard(Player owner, Player opponent, ICollection<Card> container, GameController game, GameActions actions)
+            : base (owner, opponent, container, game, actions)
         {
             Abilites = new List<Ability>
             {

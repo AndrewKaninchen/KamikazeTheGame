@@ -12,8 +12,8 @@ namespace Kamikaze.Backend
         public bool IsInField { get; set; }
         public int Health { get; set; }
 
-        protected FieldCard(Player owner, Player opponent, ICollection<Card> container, Frontend.Card front, GameController game, GameActions actions) 
-            : base (owner, opponent, container, front, game, actions)
+        protected FieldCard(Player owner, Player opponent, ICollection<Card> container, GameController game, GameActions actions) 
+            : base (owner, opponent, container, game, actions)
         {
         }
 

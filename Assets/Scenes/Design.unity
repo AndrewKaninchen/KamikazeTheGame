@@ -3373,6 +3373,10 @@ MonoBehaviour:
   suaVez: {fileID: 1891281480}
   endTurnButton: {fileID: 323472567}
   screenSpaceCanvas: {fileID: 1140343449}
+  cardPrefab: {fileID: 1232956521329182, guid: 4bdd51278f121334d8de61c32ff201ad, type: 2}
+  dummyPrefab: {fileID: 1392364476756528, guid: 4272cf77797d0674884cc928875859a6,
+    type: 2}
+  tokenPrefab: {fileID: 0}
 --- !u!4 &887486903
 Transform:
   m_ObjectHideFlags: 0
@@ -3398,8 +3402,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   frontendController: {fileID: 0}
-  cardsP1: []
-  cardsP2: []
+  cardsP1:
+  - {fileID: 11400000, guid: 1850049b406db474793980cb00639ba9, type: 2}
+  - {fileID: 11400000, guid: 1850049b406db474793980cb00639ba9, type: 2}
+  - {fileID: 11400000, guid: 1850049b406db474793980cb00639ba9, type: 2}
+  cardsP2:
+  - {fileID: 11400000, guid: 1850049b406db474793980cb00639ba9, type: 2}
+  - {fileID: 11400000, guid: 1850049b406db474793980cb00639ba9, type: 2}
+  - {fileID: 11400000, guid: 1850049b406db474793980cb00639ba9, type: 2}
 --- !u!1 &1008049443
 GameObject:
   m_ObjectHideFlags: 0
@@ -7445,7 +7455,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh5024
+  m_Name: pb_Mesh13656
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
