@@ -21,9 +21,26 @@ namespace Kamikaze.Frontend
         #region Card Object & Game Logic References
         public PlayerObjects owner;
         [HideInInspector] public FrontendController frontendController;
-        private Backend.Card backendCard;
+        public Backend.Card BackendCard { get; private set; }
         public DummyCard dummy;
-        private Token token;
+
+        // ReSharper disable once InconsistentNaming
+        private Token _token;
+        public Token Token
+        {
+            get
+            {
+                if(_token != null) return _token; 
+                _token = Instantiate(tokenPrefab).GetComponent<Token>();
+                _token.Initialize(BackendCard as FieldCard);
+                _token.gameObject.SetActive(false);
+                Debug.Log(_token);
+                return _token;
+            }
+
+            private set => _token = value;
+        }
+
         #endregion        
 
         #region Prefabs & Assets
@@ -38,15 +55,9 @@ namespace Kamikaze.Frontend
         private bool Visible 
         {
             get => isVisible;
-            set 
+            set
             {
-                if (value)
-                    Destroy(token);
-                else
-                {
-                    token = Instantiate(tokenPrefab).GetComponent<Token>();
-                    token.Initialize(backendCard as FieldCard);
-                }
+                Token.gameObject.SetActive(!value);
 
                 GetComponent<MeshRenderer>().enabled = value;
                 //GetComponent<MeshCollider>().enabled = value;
@@ -63,8 +74,10 @@ namespace Kamikaze.Frontend
         {
             this.owner = owner;
             this.frontendController = frontendController;
-            this.backendCard = backendCard;
+            this.BackendCard = backendCard;
             this.dummy = dummy;
+            
+            Debug.Log(this.BackendCard);
             dummy.gameObject.SetActive(true);
             gameObject.SetActive(true);
         }
@@ -109,7 +122,7 @@ namespace Kamikaze.Frontend
                         var objectHit = hit.transform;
                     }
                     var pos = hit.point;
-                    token.transform.position = pos;
+                    Token.transform.position = pos;
                     break;
                 }
             }
@@ -178,11 +191,13 @@ namespace Kamikaze.Frontend
                 case DragState.Previewing:
                     OnSummon?.Invoke();
                     
-                    owner.tokens.Add(token);
-                    token.Color = Token.TokenColor.Friendly;
-                    token.frontendController = frontendController;
-                    Destroy(dummy.gameObject);
-                    Destroy(this.gameObject);
+                    owner.tokens.Add(Token);
+                    Token.Color = Token.TokenColor.Friendly;
+                    Token.frontendController = frontendController;
+                    dummy.gameObject.SetActive(false);
+                    this.gameObject.SetActive(false);
+                    //Destroy(dummy.gameObject);
+                    //Destroy(this.gameObject);
                     break;
             }
         }

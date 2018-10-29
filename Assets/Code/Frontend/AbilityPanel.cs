@@ -12,6 +12,13 @@ namespace Kamikaze.Frontend
 {
     public class AbilityPanel : MonoBehaviour
     {
+        private static  GameObject prefab;
+        private static AbilityPanel instance;
+
+        //TODO: essa desgraça de Singleton
+        private static AbilityPanel Instance => instance != null ? instance : Instantiate(prefab).GetComponent<AbilityPanel>();
+
+        
         [SerializeField] private GameObject buttonPrefab;
         
         [Space, SerializeField] private Transform buttonRoot;
@@ -31,11 +38,12 @@ namespace Kamikaze.Frontend
 
         private void CreateButtons(FieldCard card)
         {
+            Debug.Log(card);
             foreach (var ability in card.Abilites)
             {
-                var instance = Instantiate(buttonPrefab, buttonRoot).GetComponent<Button>();
-                instance.GetComponentInChildren<TextMeshProUGUI>().text = ability.Name;
-                abilityButtons.Add(ability, instance);
+                var i = Instantiate(buttonPrefab, buttonRoot).GetComponent<Button>();
+                i.GetComponentInChildren<TextMeshProUGUI>().text = ability.Name;
+                abilityButtons.Add(ability, i);
             }
         }
         
@@ -51,7 +59,12 @@ namespace Kamikaze.Frontend
             foreach (var abilityButton in abilityButtons)
             {
                 abilityButton.Value.interactable = abilityButton.Key.Condition();
-                abilityButton.Value.onClick.AddListener(() => ResolveSelection(abilityButton.Key));
+                abilityButton.Value.onClick.AddListener (
+                () =>
+                {
+                    gameObject.SetActive(false);
+                    ResolveSelection(abilityButton.Key);
+                });
             }
         }
 

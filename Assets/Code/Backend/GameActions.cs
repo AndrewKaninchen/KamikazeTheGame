@@ -97,7 +97,9 @@ namespace Kamikaze.Backend
 
         public async Task<string> DisplayMessage(string message)
         {
-            throw new NotImplementedException();
+            Debug.Log(message);
+            return message;
+            //throw new NotImplementedException();
         }
     }
 }

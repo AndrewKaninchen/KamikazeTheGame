@@ -28,7 +28,7 @@ namespace Kamikaze.Backend
 
         public override async Task Body()
         {
-            //card.FrontendCard.BeginMove();
+            await card.FrontendToken.BeginMove();
         }
     }
 

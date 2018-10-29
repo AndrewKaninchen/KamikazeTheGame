@@ -18,8 +18,9 @@ namespace Kamikaze.Backend
         protected GameController Game { get; set; }
         public GameActions Actions { get; set; }
 
-        public Frontend.Card FrontendCard { get; private set; }
-
+        public Frontend.Card FrontendCard { get; set; }
+        public Frontend.Token FrontendToken { get; set; }
+        
         private ICollection<Card> container;
         public ICollection<Card> Container
         {
@@ -41,14 +42,16 @@ namespace Kamikaze.Backend
             this.Container = container;
             this.Game = game;
             Actions = gameActions;
-            FrontendCard = front;            
+            //FrontendCard = front;
+            //FrontendToken = front.Token;
         }
-        public static Card CreateCard(ClassTypeReference type, Player owner, Player opponent, ICollection<Card> container, Frontend_Old.Card front, GameController game, GameActions actions)
+        
+        public static Card CreateCard(ClassTypeReference type, Player owner, Player opponent, ICollection<Card> container, Frontend.Card front, GameController game, GameActions gameActions)
         {
             return (Card) Activator.CreateInstance(type,  args: 
                 new object[] 
                 {
-                    owner, opponent, container, front, game, actions
+                    owner, opponent, container, front, game, gameActions
                 }
             );
         }

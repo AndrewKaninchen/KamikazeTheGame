@@ -3,6 +3,7 @@ using Kamikaze.Backend;
 using System.Collections;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using UnityEngine;
 
 namespace Kamikaze
 {
@@ -25,6 +26,8 @@ namespace Kamikaze
 			{
 				new PunchFascistsEffect(this),
 			};
+			
+			Debug.Log(Abilites);
 		}
 
 		public class SayChooChooAbility : Ability
@@ -37,7 +40,7 @@ namespace Kamikaze
 
 			public override async Task Body()
 			{
-				await Actions.Damage(card as IHealthStatHolder);
+				//await Actions.Damage(card as IHealthStatHolder);
 				await Actions.DisplayMessage("Thomas: ChooChoo, motherfucker");
 			}
 		}

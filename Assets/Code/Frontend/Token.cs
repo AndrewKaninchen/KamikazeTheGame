@@ -101,9 +101,8 @@ namespace Kamikaze.Frontend
                         switch (moveState)
                         {
                             case MoveState.Idle:
-                                BeginMove();
-                                moveState = MoveState.SelectingTargetPosition;
-                                interactionState = InteractionState.Locked;
+                                await BeginMove();
+                                
                                 break;
                             case MoveState.Moving:
                                 break;
@@ -145,8 +144,11 @@ namespace Kamikaze.Frontend
             }
         }
         
-        public async void BeginMove()
+        public async Task BeginMove()
         {
+            moveState = MoveState.SelectingTargetPosition;
+            interactionState = InteractionState.Locked;
+            
             //Debug.Log("Waiting for Click");
             var pos = await SelectPosition();
 

@@ -27,7 +27,9 @@ namespace Kamikaze
             gameEvents = new Backend.GameEvents(gameController);
 
             frontendController.Initialize(gameController);
+#pragma warning disable 4014
             gameController.Run();
+#pragma warning restore 4014
         }
     }
 }
