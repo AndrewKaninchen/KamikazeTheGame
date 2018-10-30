@@ -81,7 +81,7 @@ namespace Kamikaze.Backend
         private async Task Turn(Player player)
         {
             await VictoryCheckPhase();
-            await DrawPhase();
+            //await DrawPhase();
             await CrystalUnlockPhase();
             await ActionPointRestorePhase();
             await MainPhase();
@@ -101,7 +101,8 @@ namespace Kamikaze.Backend
         {
             Debug.Log("DrawPhase");
             //await CallEvent<OnDrawPhase>(new OnDrawPhase(currentPlayer));
-            await CurrentPlayer.DrawCard();
+            
+            //await CurrentPlayer.DrawCard();
         }
 
         private async Task CrystalUnlockPhase()

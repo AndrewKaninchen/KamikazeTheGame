@@ -38,7 +38,9 @@ namespace Kamikaze.Frontend
 
 		public void AddCard(Card card)
 		{
-			card.dummy.transform.SetParent(dummyRoot);
+			card.transform.SetParent(transform);
+			card.dummy.transform.SetParent(dummyRoot, false);
+			card.dummy.gameObject.SetActive(true);
 			cards.Add(card);
 		}
 

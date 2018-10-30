@@ -332,6 +332,7 @@
 -i:C:/Users/andre/Documents/GitHub/KamikazeTheGame/Assets/Code/Frontend/AbilityPanel.cs
 -i:C:/Users/andre/Documents/GitHub/KamikazeTheGame/Assets/Code/Frontend/CameraController.cs
 -i:C:/Users/andre/Documents/GitHub/KamikazeTheGame/Assets/Code/Frontend/Card.cs
+-i:C:/Users/andre/Documents/GitHub/KamikazeTheGame/Assets/Code/Frontend/Deck.cs
 -i:C:/Users/andre/Documents/GitHub/KamikazeTheGame/Assets/Code/Frontend/DummyCard.cs
 -i:C:/Users/andre/Documents/GitHub/KamikazeTheGame/Assets/Code/Frontend/FrontendController.cs
 -i:C:/Users/andre/Documents/GitHub/KamikazeTheGame/Assets/Code/Frontend/FrontendControllerActions.cs

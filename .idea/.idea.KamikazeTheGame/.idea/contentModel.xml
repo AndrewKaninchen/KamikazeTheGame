@@ -62,6 +62,7 @@
             <e p="AbilityPanel.cs" t="Include" />
             <e p="CameraController.cs" t="Include" />
             <e p="Card.cs" t="Include" />
+            <e p="Deck.cs" t="Include" />
             <e p="DummyCard.cs" t="Include" />
             <e p="FrontendController.cs" t="Include" />
             <e p="FrontendControllerActions.cs" t="Include" />

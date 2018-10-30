@@ -25,6 +25,12 @@ namespace Kamikaze
         {
             gameController = new Backend.GameController(cardsP1, cardsP2, frontendController);
             gameEvents = new Backend.GameEvents(gameController);
+
+            foreach (var player in gameController.Players)
+                foreach (var c in player.Deck)
+                    gameController.FrontendController.playerObjects[player].deck.AddCard(c.FrontendCard);
+            
+            
 #pragma warning disable 4014
             gameController.Run();
 #pragma warning restore 4014

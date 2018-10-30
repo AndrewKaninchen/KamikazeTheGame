@@ -4,6 +4,7 @@ using System;
 using System.Collections;
 using System.Threading.Tasks;
 using Kamikaze.Backend;
+using TMPro;
 using UnityEngine.Serialization;
 using Object = UnityEngine.Object;
 
@@ -15,8 +16,9 @@ namespace Kamikaze.Frontend
         public CameraController cam;
         public HandPanel hand;
         public List<Token> tokens;
+        public Deck deck;
     }
-    
+
     public partial class FrontendController : MonoBehaviour
     {
         public Dictionary<Backend.Player, PlayerObjects> playerObjects = new Dictionary<Player, PlayerObjects>();
@@ -33,6 +35,7 @@ namespace Kamikaze.Frontend
         public Animator suaVez;
         public GameObject endTurnButton;
         public Canvas screenSpaceCanvas;
+        public TextMeshProUGUI centeredText;
         [SerializeField] private GameObject cardPrefab;
         [SerializeField] private GameObject dummyPrefab;
         [SerializeField] private GameObject tokenPrefab;
@@ -111,9 +114,17 @@ namespace Kamikaze.Frontend
         
         public Card CreateCard(Backend.Card backend)
         {
-            var i = Instantiate(cardPrefab).GetComponent<Card>();
+            var i = Instantiate(cardPrefab, playerObjects[backend.owner].deck.transform).GetComponent<Card>();
             i.Initialize(playerObjects[backend.owner], this, backend, Instantiate(dummyPrefab).GetComponent<DummyCard>());
             return i;
+        }
+
+        public async Task DisplayText(string text)
+        {
+            centeredText.text = text;
+            centeredText.gameObject.SetActive(true);
+            await Task.Delay(1000);
+            centeredText.gameObject.SetActive(false);
         }
     }
 

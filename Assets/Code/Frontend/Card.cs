@@ -16,6 +16,14 @@ namespace Kamikaze.Frontend
             Dragging,
             Previewing,
         }
+        
+        public enum LocationState
+        {
+            Hand,
+            Field,
+            Deck,
+        }
+       
         #endregion
         
         #region Card Object & Game Logic References
@@ -51,6 +59,7 @@ namespace Kamikaze.Frontend
         public float distanceFromCameraWhenDraggingCards;
         [SerializeField] private LayerMask layers; //TODO: tirar essa bosta? Talvez valha a pena deixar como read only de alguma forma? Mostrar só no prefab?
         public DragState dragState = DragState.NotDragging;
+        public LocationState locationState = LocationState.Deck;
         private bool isVisible;
         private bool Visible 
         {
@@ -60,7 +69,6 @@ namespace Kamikaze.Frontend
                 Token.gameObject.SetActive(!value);
 
                 GetComponent<MeshRenderer>().enabled = value;
-                //GetComponent<MeshCollider>().enabled = value;
                 isVisible = value;
             }
         }
@@ -84,73 +92,75 @@ namespace Kamikaze.Frontend
         
         private void LateUpdate()
         {
-            switch (dragState)
+            switch (locationState)
             {
-                case DragState.Dragging:
-                {
-                    var pos = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 1f);
-                    pos.z *= distanceFromCameraWhenDraggingCards;
-                    if (Camera.main != null) pos = Camera.main.ScreenToWorldPoint(pos);
-
-                    transform.position = pos;
+                case LocationState.Deck:
                     break;
-                }
-                case DragState.NotDragging:
-                {
-                    transform.SetPositionAndRotation
-                    (
-                        Vector3.Lerp(transform.position, dummy.transform.position, 0.5f),
-                        Quaternion.Lerp(transform.rotation, dummy.transform.rotation, 0.5f)
-                    );
-                    
-                    if (Vector3.Distance(transform.position, dummy.transform.position) < 0.01f &&
-                        Quaternion.Angle(transform.rotation, dummy.transform.rotation) < 0.01f )
+                case LocationState.Hand:
+                    switch (dragState)
                     {
-                        transform.position = dummy.transform.position;
-                        transform.rotation = dummy.transform.rotation;
-                        dragState = DragState.NotDragging;
-                    }
-                    
-                    break;
-                }
-                case DragState.Previewing:
-                {
-                    var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+                        case DragState.Dragging:
+                        {
+                            var pos = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 1f);
+                            pos.z *= distanceFromCameraWhenDraggingCards;
+                            if (Camera.main != null) pos = Camera.main.ScreenToWorldPoint(pos);
 
-                    if (Physics.Raycast(ray, out var hit, 1000f, layers))
-                    {
-                        var objectHit = hit.transform;
+                            transform.position = pos;
+                            break;
+                        }
+                        case DragState.NotDragging:
+                        {
+                            transform.SetPositionAndRotation
+                            (
+                                Vector3.Lerp(transform.position, dummy.transform.position, 0.5f),
+                                Quaternion.Lerp(transform.rotation, dummy.transform.rotation, 0.5f)
+                            );
+
+                            if (Vector3.Distance(transform.position, dummy.transform.position) < 0.01f &&
+                                Quaternion.Angle(transform.rotation, dummy.transform.rotation) < 0.01f)
+                            {
+                                transform.position = dummy.transform.position;
+                                transform.rotation = dummy.transform.rotation;
+                                dragState = DragState.NotDragging;
+                            }
+
+                            break;
+                        }
+                        case DragState.Previewing:
+                        {
+                            var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+
+                            if (Physics.Raycast(ray, out var hit, 1000f, layers))
+                            {
+                                var objectHit = hit.transform;
+                            }
+
+                            var pos = hit.point;
+                            Token.transform.position = pos;
+                            break;
+                        }
+                        default:
+                            throw new ArgumentOutOfRangeException();
                     }
-                    var pos = hit.point;
-                    Token.transform.position = pos;
+
                     break;
-                }
+                case LocationState.Field:
+                    break;
+                default:
+                    throw new ArgumentOutOfRangeException();
             }
         }
 
-        public Tweener MoveToPosition(Vector3 position, Quaternion rotation)
-        {
-            transform.DOKill();
-            var t = transform.DOMove(position, 0.05f);
-            transform.DORotate(rotation.eulerAngles, 0.2f);
-            return t;
-        }
-        
-        public void MoveToPositionImmediately(Vector3 position, Quaternion rotation)
-        {
-            transform.DOKill();
-            transform.position = position;
-            transform.rotation = rotation;
-        }
-    
-        public Tweener MoveToPosition() => MoveToPosition(dummy.transform.position, dummy.transform.rotation);
-        public void MoveToPositionImmediately() => MoveToPositionImmediately(dummy.transform.position, dummy.transform.rotation);
-
         public void OnBeginDrag(PointerEventData eventData)
         {
-            Debug.Log($"OnBeginDrag: {this}");
-            if (dragState == DragState.NotDragging)
-                dragState = DragState.Dragging;
+            switch (locationState)
+            {
+                case LocationState.Hand:
+                    Debug.Log($"OnBeginDrag: {this}");
+                    if (dragState == DragState.NotDragging)
+                        dragState = DragState.Dragging;
+                    break;
+            }
         }
 
         public void OnDrag(PointerEventData eventData)
@@ -204,6 +214,19 @@ namespace Kamikaze.Frontend
 
         public void OnPointerClick(PointerEventData eventData)
         {
+            switch (locationState)
+            {
+                case LocationState.Hand:
+                    break;
+                case LocationState.Field:
+                    break;
+                case LocationState.Deck:
+                    locationState = LocationState.Hand;
+                    owner.hand.AddCard(this);
+                    break;
+                default:
+                    throw new ArgumentOutOfRangeException();
+            }
         }
 
         public void OnPointerEnter(PointerEventData eventData)

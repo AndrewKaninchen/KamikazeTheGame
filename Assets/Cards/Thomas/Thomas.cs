@@ -41,7 +41,7 @@ namespace Kamikaze
 			public override async Task Body()
 			{
 				//await Actions.Damage(card as IHealthStatHolder);
-				await Actions.DisplayMessage("Thomas: ChooChoo, motherfucker");
+				await Actions.DisplayMessage("Thomas: Chooooo Choooooo!!!");
 			}
 		}
 		

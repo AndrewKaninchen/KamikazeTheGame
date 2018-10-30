@@ -98,6 +98,7 @@ namespace Kamikaze.Backend
         public async Task<string> DisplayMessage(string message)
         {
             Debug.Log(message);
+            await FrontendController.DisplayText(message);
             return message;
             //throw new NotImplementedException();
         }

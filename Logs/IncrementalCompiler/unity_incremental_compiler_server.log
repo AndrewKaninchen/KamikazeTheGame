@@ -1,286 +1,253 @@
  (0,0): Unity incremental compiler server
- (0,0): watchdog active on pid: 20408
- (0,0): [10/29/2018 01:53:45.359 ] Unity.TextMeshPro.dll: no prior compilation found in cache
- (0,0): [10/29/2018 01:53:45.359 ] Unity.Postprocessing.Runtime.dll: no prior compilation found in cache
- (0,0): [10/29/2018 01:53:45.360 ] Unity.PackageManagerUI.Editor.dll: no prior compilation found in cache
- (0,0): [10/29/2018 01:53:45.359 ] UnityEditor.StandardEvents.dll: no prior compilation found in cache
- (0,0): [10/29/2018 01:53:45.468 ] Unity.PackageManagerUI.Editor.dll compiling...
- (0,0): [10/29/2018 01:53:45.469 ] Unity.Postprocessing.Runtime.dll compiling...
- (0,0): [10/29/2018 01:53:45.469 ] Unity.TextMeshPro.dll compiling...
- (0,0): [10/29/2018 01:53:45.482 ] UnityEditor.StandardEvents.dll compiling...
- (0,0): [10/29/2018 01:53:54.469 ] Unity.Postprocessing.Runtime.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Unity.Postprocessing.Runtime.dll
- (0,0): [10/29/2018 01:53:54.473 ] UnityEditor.StandardEvents.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\UnityEditor.StandardEvents.dll
- (0,0): [10/29/2018 01:53:54.469 ] Unity.TextMeshPro.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Unity.TextMeshPro.dll
- (0,0): [10/29/2018 01:53:54.473 ] Unity.PackageManagerUI.Editor.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Unity.PackageManagerUI.Editor.dll
- (0,0): [10/29/2018 01:53:55.082 ] UnityEditor.StandardEvents.dll compilation finished in 9601ms  source files re-parsed: 1 metadata reloaded: 192
- (0,0): [10/29/2018 01:53:55.316 ] Unity.TextMeshPro.dll compilation finished in 9847ms  source files re-parsed: 45 metadata reloaded: 182
- (0,0): [10/29/2018 01:53:55.086 ] Unity.PackageManagerUI.Editor.dll compilation finished in 9618ms  source files re-parsed: 44 metadata reloaded: 194
- (0,0): [10/29/2018 01:53:55.093 ] Unity.Postprocessing.Runtime.dll compilation finished in 9623ms  source files re-parsed: 56 metadata reloaded: 144
- (0,0): [10/29/2018 01:53:55.562 ] Unity.ProBuilder.AddOns.Editor.dll: no prior compilation found in cache
- (0,0): [10/29/2018 01:53:55.575 ] Unity.ProBuilder.AddOns.Editor.dll compiling...
- (0,0): [10/29/2018 01:53:55.628 ] Unity.ProBuilder.AddOns.Editor.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Unity.ProBuilder.AddOns.Editor.dll
- (0,0): [10/29/2018 01:53:55.695 ] Unity.ProBuilder.AddOns.Editor.dll compilation finished in 120ms  source files re-parsed: 1 metadata reloaded: 0
- (0,0): [10/29/2018 01:53:56.282 ] Unity.TextMeshPro.Editor.dll: no prior compilation found in cache
- (0,0): [10/29/2018 01:53:56.299 ] Unity.TextMeshPro.Editor.dll compiling...
- (0,0): [10/29/2018 01:53:57.111 ] Unity.Postprocessing.Editor.dll: no prior compilation found in cache
- (0,0): [10/29/2018 01:53:57.124 ] Unity.Postprocessing.Editor.dll compiling...
- (0,0): [10/29/2018 01:53:57.201 ] Unity.TextMeshPro.Editor.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Unity.TextMeshPro.Editor.dll
- (0,0): [10/29/2018 01:53:57.504 ] Unity.TextMeshPro.Editor.dll compilation finished in 1205ms  source files re-parsed: 39 metadata reloaded: 1
- (0,0): [10/29/2018 01:53:58.785 ] Unity.Postprocessing.Editor.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Unity.Postprocessing.Editor.dll
- (0,0): [10/29/2018 01:53:58.931 ] Unity.Postprocessing.Editor.dll compilation finished in 1808ms  source files re-parsed: 35 metadata reloaded: 1
- (0,0): [10/29/2018 01:54:01.782 ] Assembly-CSharp.dll: no prior compilation found in cache
- (0,0): [10/29/2018 01:54:01.796 ] Assembly-CSharp.dll compiling...
- (0,0): [10/29/2018 01:54:02.068 ] Assembly-CSharp.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp.dll
- (0,0): [10/29/2018 01:54:02.102 ] Assembly-CSharp.dll compilation finished in 306ms  source files re-parsed: 43 metadata reloaded: 5
- (0,0): [10/29/2018 01:54:05.913 ] Unity.Postprocessing.Runtime.dll: no prior compilation found in cache
- (0,0): [10/29/2018 01:54:05.925 ] Unity.Postprocessing.Runtime.dll compiling...
- (0,0): [10/29/2018 01:54:06.031 ] Unity.TextMeshPro.dll: no prior compilation found in cache
- (0,0): [10/29/2018 01:54:06.057 ] Unity.TextMeshPro.dll compiling...
- (0,0): [10/29/2018 01:54:06.185 ] Unity.PackageManagerUI.Editor.dll: no prior compilation found in cache
- (0,0): [10/29/2018 01:54:06.249 ] Unity.PackageManagerUI.Editor.dll compiling...
- (0,0): [10/29/2018 01:54:06.441 ] UnityEditor.StandardEvents.dll: no prior compilation found in cache
- (0,0): [10/29/2018 01:54:06.506 ] UnityEditor.StandardEvents.dll compiling...
- (0,0): [10/29/2018 01:54:06.512 ] Unity.Postprocessing.Runtime.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Unity.Postprocessing.Runtime.dll
- (0,0): [10/29/2018 01:54:06.557 ] UnityEditor.StandardEvents.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\UnityEditor.StandardEvents.dll
- (0,0): [10/29/2018 01:54:06.786 ] Unity.PackageManagerUI.Editor.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Unity.PackageManagerUI.Editor.dll
- (0,0): [10/29/2018 01:54:07.081 ] UnityEditor.StandardEvents.dll compilation finished in 574ms  source files re-parsed: 1 metadata reloaded: 0
- (0,0): [10/29/2018 01:54:07.137 ] Unity.Postprocessing.Runtime.dll compilation finished in 1213ms  source files re-parsed: 56 metadata reloaded: 0
- (0,0): [10/29/2018 01:54:07.298 ] Unity.TextMeshPro.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Unity.TextMeshPro.dll
- (0,0): [10/29/2018 01:54:07.546 ] Unity.PackageManagerUI.Editor.dll compilation finished in 1296ms  source files re-parsed: 44 metadata reloaded: 0
- (0,0): [10/29/2018 01:54:07.718 ] Unity.ProBuilder.AddOns.Editor.dll: no prior compilation found in cache
- (0,0): [10/29/2018 01:54:07.733 ] Unity.ProBuilder.AddOns.Editor.dll compiling...
- (0,0): [10/29/2018 01:54:07.775 ] Unity.ProBuilder.AddOns.Editor.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Unity.ProBuilder.AddOns.Editor.dll
- (0,0): [10/29/2018 01:54:07.817 ] Unity.TextMeshPro.dll compilation finished in 1761ms  source files re-parsed: 45 metadata reloaded: 0
- (0,0): [10/29/2018 01:54:07.910 ] Unity.ProBuilder.AddOns.Editor.dll compilation finished in 178ms  source files re-parsed: 1 metadata reloaded: 0
- (0,0): [10/29/2018 01:54:08.234 ] Unity.Postprocessing.Editor.dll: no prior compilation found in cache
- (0,0): [10/29/2018 01:54:08.246 ] Unity.Postprocessing.Editor.dll compiling...
- (0,0): [10/29/2018 01:54:08.454 ] Unity.Postprocessing.Editor.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Unity.Postprocessing.Editor.dll
- (0,0): [10/29/2018 01:54:09.644 ] Unity.Postprocessing.Editor.dll compilation finished in 1399ms  source files re-parsed: 35 metadata reloaded: 1
- (0,0): [10/29/2018 01:54:09.657 ] Unity.TextMeshPro.Editor.dll: no prior compilation found in cache
- (0,0): [10/29/2018 01:54:09.670 ] Unity.TextMeshPro.Editor.dll compiling...
- (0,0): [10/29/2018 01:54:10.022 ] Unity.TextMeshPro.Editor.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Unity.TextMeshPro.Editor.dll
- (0,0): [10/29/2018 01:54:10.204 ] Unity.TextMeshPro.Editor.dll compilation finished in 534ms  source files re-parsed: 39 metadata reloaded: 1
- (0,0): [10/29/2018 01:54:10.503 ] Assembly-CSharp.dll: no prior compilation found in cache
- (0,0): [10/29/2018 01:54:10.515 ] Assembly-CSharp.dll compiling...
- (0,0): [10/29/2018 01:54:10.631 ] Assembly-CSharp.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp.dll
- (0,0): [10/29/2018 01:54:10.646 ] Assembly-CSharp.dll compilation finished in 131ms  source files re-parsed: 47 metadata reloaded: 5
- (0,0): [10/29/2018 01:57:06.801 ] Assembly-CSharp.dll compiling...
- (0,0): [10/29/2018 01:57:06.938 ] Assembly-CSharp.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp.dll
- (0,0): [10/29/2018 01:57:06.951 ] Assembly-CSharp.dll compilation finished in 149ms  source files re-parsed: 1 metadata reloaded: 0
- (0,0): [10/29/2018 01:57:06.963 ] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed.
- (0,0): [10/29/2018 01:57:18.892 ] Assembly-CSharp.dll compiling...
- (0,0): [10/29/2018 01:57:19.171 ] Assembly-CSharp.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp.dll
- (0,0): [10/29/2018 01:57:19.568 ] Assembly-CSharp.dll compilation finished in 676ms  source files re-parsed: 1 metadata reloaded: 0
- (0,0): [10/29/2018 01:57:19.580 ] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed.
- (0,0): [10/29/2018 01:57:20.010 ] Assembly-CSharp-Editor.dll: no prior compilation found in cache
- (0,0): [10/29/2018 01:57:20.022 ] Assembly-CSharp-Editor.dll compiling...
- (0,0): [10/29/2018 01:57:20.092 ] Assembly-CSharp-Editor.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp-Editor.dll
- (0,0): [10/29/2018 01:57:20.140 ] Assembly-CSharp-Editor.dll compilation finished in 118ms  source files re-parsed: 3 metadata reloaded: 1
- (0,0): [10/29/2018 01:58:30.879 ] Compiler cache size is now 18,74 MB
- (0,0): [10/29/2018 02:34:25.136 ] Assembly-CSharp.dll compiling...
- (0,0): [10/29/2018 02:34:25.264 ] Assembly-CSharp.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp.dll
- (0,0): [10/29/2018 02:34:25.365 ] Assembly-CSharp.dll compilation finished in 229ms  source files re-parsed: 1 metadata reloaded: 0
- (0,0): [10/29/2018 02:34:25.377 ] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed.
- (0,0): [10/29/2018 02:34:25.869 ] Assembly-CSharp-Editor.dll compiling...
- (0,0): [10/29/2018 02:34:25.906 ] Assembly-CSharp-Editor.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp-Editor.dll
- (0,0): [10/29/2018 02:34:25.975 ] Assembly-CSharp-Editor.dll compilation finished in 105ms  source files re-parsed: 0 metadata reloaded: 1
- (0,0): [10/29/2018 02:34:25.987 ] Assembly-CSharp-Editor.dll: compilation was cached, 0 file(s) were found to have changed.
- (0,0): [10/29/2018 03:54:53.485 ] Assembly-CSharp.dll compiling...
- (0,0): [10/29/2018 03:54:53.583 ] Assembly-CSharp.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp.dll
- (0,0): [10/29/2018 03:54:53.610 ] Assembly-CSharp.dll compilation finished in 123ms  source files re-parsed: 2 metadata reloaded: 0
- (0,0): [10/29/2018 03:54:53.622 ] Assembly-CSharp.dll: compilation was cached, 2 file(s) were found to have changed.
- (0,0): [10/29/2018 04:01:38.825 ] Assembly-CSharp.dll compiling...
- (0,0): [10/29/2018 04:01:38.934 ] Assembly-CSharp.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp.dll
- (0,0): [10/29/2018 04:01:38.947 ] Assembly-CSharp.dll compilation finished in 122ms  source files re-parsed: 3 metadata reloaded: 0
- (0,0): [10/29/2018 04:01:38.965 ] Assembly-CSharp.dll: compilation was cached, 3 file(s) were found to have changed.
- (0,0): [10/29/2018 04:02:15.012 ] Assembly-CSharp.dll compiling...
- (0,0): [10/29/2018 04:02:15.133 ] Assembly-CSharp.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp.dll
- (0,0): [10/29/2018 04:02:15.157 ] Assembly-CSharp.dll compilation finished in 145ms  source files re-parsed: 1 metadata reloaded: 0
- (0,0): [10/29/2018 04:02:15.170 ] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed.
- (0,0): [10/29/2018 04:02:49.600 ] Assembly-CSharp.dll compiling...
- (0,0): [10/29/2018 04:02:49.732 ] Assembly-CSharp.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp.dll
- (0,0): [10/29/2018 04:02:49.746 ] Assembly-CSharp.dll compilation finished in 146ms  source files re-parsed: 1 metadata reloaded: 0
- (0,0): [10/29/2018 04:02:49.758 ] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed.
- (0,0): [10/29/2018 04:03:05.572 ] Assembly-CSharp.dll compiling...
- (0,0): [10/29/2018 04:03:05.676 ] Assembly-CSharp.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp.dll
- (0,0): [10/29/2018 04:03:05.689 ] Assembly-CSharp.dll compilation finished in 117ms  source files re-parsed: 1 metadata reloaded: 0
- (0,0): [10/29/2018 04:03:05.702 ] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed.
- (0,0): [10/29/2018 04:03:11.989 ] Assembly-CSharp.dll compiling...
- (0,0): [10/29/2018 04:03:12.097 ] Assembly-CSharp.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp.dll
- (0,0): [10/29/2018 04:03:12.119 ] Assembly-CSharp.dll compilation finished in 130ms  source files re-parsed: 1 metadata reloaded: 0
- (0,0): [10/29/2018 04:03:12.131 ] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed.
- (0,0): [10/29/2018 04:03:18.402 ] Assembly-CSharp.dll compiling...
- (0,0): [10/29/2018 04:03:18.520 ] Assembly-CSharp.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp.dll
- (0,0): [10/29/2018 04:03:18.532 ] Assembly-CSharp.dll compilation finished in 131ms  source files re-parsed: 1 metadata reloaded: 0
- (0,0): [10/29/2018 04:03:18.544 ] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed.
- (0,0): [10/29/2018 04:03:29.738 ] Assembly-CSharp.dll compiling...
- (0,0): [10/29/2018 04:03:29.854 ] Assembly-CSharp.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp.dll
- (0,0): [10/29/2018 04:03:29.867 ] Assembly-CSharp.dll compilation finished in 128ms  source files re-parsed: 1 metadata reloaded: 0
- (0,0): [10/29/2018 04:03:29.879 ] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed.
- (0,0): [10/29/2018 04:03:44.883 ] Assembly-CSharp.dll compiling...
- (0,0): [10/29/2018 04:03:45.003 ] Assembly-CSharp.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp.dll
- (0,0): [10/29/2018 04:03:45.016 ] Assembly-CSharp.dll compilation finished in 133ms  source files re-parsed: 1 metadata reloaded: 0
- (0,0): [10/29/2018 04:03:45.028 ] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed.
- (0,0): [10/29/2018 04:03:46.212 ] Assembly-CSharp.dll compiling...
- (0,0): [10/29/2018 04:03:46.323 ] Assembly-CSharp.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp.dll
- (0,0): [10/29/2018 04:03:46.335 ] Assembly-CSharp.dll compilation finished in 123ms  source files re-parsed: 0 metadata reloaded: 0
- (0,0): [10/29/2018 04:03:46.347 ] Assembly-CSharp.dll: compilation was cached, 0 file(s) were found to have changed.
- (0,0): [10/29/2018 04:04:03.002 ] Assembly-CSharp.dll compiling...
- (0,0): [10/29/2018 04:04:03.105 ] Assembly-CSharp.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp.dll
- (0,0): [10/29/2018 04:04:03.118 ] Assembly-CSharp.dll compilation finished in 116ms  source files re-parsed: 1 metadata reloaded: 0
- (0,0): [10/29/2018 04:04:03.130 ] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed.
- (0,0): [10/29/2018 04:04:16.647 ] Assembly-CSharp.dll compiling...
- (0,0): [10/29/2018 04:04:16.787 ] Assembly-CSharp.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp.dll
- (0,0): [10/29/2018 04:04:16.801 ] Assembly-CSharp.dll compilation finished in 153ms  source files re-parsed: 1 metadata reloaded: 0
- (0,0): [10/29/2018 04:04:16.813 ] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed.
- (0,0): [10/29/2018 04:04:30.405 ] Assembly-CSharp.dll compiling...
- (0,0): [10/29/2018 04:04:30.511 ] Assembly-CSharp.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp.dll
- (0,0): [10/29/2018 04:04:30.523 ] Assembly-CSharp.dll compilation finished in 118ms  source files re-parsed: 1 metadata reloaded: 0
- (0,0): [10/29/2018 04:04:30.535 ] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed.
- (0,0): [10/29/2018 04:04:52.059 ] Assembly-CSharp.dll compiling...
- (0,0): [10/29/2018 04:04:52.237 ] Assembly-CSharp.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp.dll
- (0,0): [10/29/2018 04:04:52.467 ] Assembly-CSharp.dll compilation finished in 407ms  source files re-parsed: 1 metadata reloaded: 0
- (0,0): [10/29/2018 04:04:52.478 ] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed.
- (0,0): [10/29/2018 04:04:54.610 ] Assembly-CSharp-Editor.dll compiling...
- (0,0): [10/29/2018 04:04:54.649 ] Assembly-CSharp-Editor.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp-Editor.dll
- (0,0): [10/29/2018 04:04:54.696 ] Assembly-CSharp-Editor.dll compilation finished in 87ms  source files re-parsed: 0 metadata reloaded: 1
- (0,0): [10/29/2018 04:04:54.708 ] Assembly-CSharp-Editor.dll: compilation was cached, 0 file(s) were found to have changed.
- (0,0): [10/29/2018 04:07:13.036 ] Assembly-CSharp.dll compiling...
- (0,0): [10/29/2018 04:07:13.198 ] Assembly-CSharp.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp.dll
- (0,0): [10/29/2018 04:07:13.361 ] Assembly-CSharp.dll compilation finished in 324ms  source files re-parsed: 1 metadata reloaded: 0
- (0,0): [10/29/2018 04:07:13.373 ] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed.
- (0,0): [10/29/2018 04:07:13.923 ] Assembly-CSharp-Editor.dll compiling...
- (0,0): [10/29/2018 04:07:13.962 ] Assembly-CSharp-Editor.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp-Editor.dll
- (0,0): [10/29/2018 04:07:14.008 ] Assembly-CSharp-Editor.dll compilation finished in 85ms  source files re-parsed: 0 metadata reloaded: 1
- (0,0): [10/29/2018 04:07:14.020 ] Assembly-CSharp-Editor.dll: compilation was cached, 0 file(s) were found to have changed.
- (0,0): [10/29/2018 04:07:18.142 ] Assembly-CSharp.dll compiling...
- (0,0): [10/29/2018 04:07:18.271 ] Assembly-CSharp.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp.dll
- (0,0): [10/29/2018 04:07:18.356 ] Assembly-CSharp.dll compilation finished in 214ms  source files re-parsed: 0 metadata reloaded: 0
- (0,0): [10/29/2018 04:07:18.369 ] Assembly-CSharp.dll: compilation was cached, 0 file(s) were found to have changed.
- (0,0): [10/29/2018 04:07:18.866 ] Assembly-CSharp-Editor.dll compiling...
- (0,0): [10/29/2018 04:07:18.922 ] Assembly-CSharp-Editor.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp-Editor.dll
- (0,0): [10/29/2018 04:07:18.966 ] Assembly-CSharp-Editor.dll compilation finished in 100ms  source files re-parsed: 0 metadata reloaded: 1
- (0,0): [10/29/2018 04:07:18.978 ] Assembly-CSharp-Editor.dll: compilation was cached, 0 file(s) were found to have changed.
- (0,0): [10/29/2018 04:10:45.937 ] Assembly-CSharp.dll compiling...
- (0,0): [10/29/2018 04:10:46.133 ] Assembly-CSharp.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp.dll
- (0,0): [10/29/2018 04:10:46.272 ] Assembly-CSharp.dll compilation finished in 334ms  source files re-parsed: 1 metadata reloaded: 0
- (0,0): [10/29/2018 04:10:46.284 ] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed.
- (0,0): [10/29/2018 04:10:47.040 ] Assembly-CSharp-Editor.dll compiling...
- (0,0): [10/29/2018 04:10:47.094 ] Assembly-CSharp-Editor.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp-Editor.dll
- (0,0): [10/29/2018 04:10:47.225 ] Assembly-CSharp-Editor.dll compilation finished in 184ms  source files re-parsed: 0 metadata reloaded: 1
- (0,0): [10/29/2018 04:10:47.237 ] Assembly-CSharp-Editor.dll: compilation was cached, 0 file(s) were found to have changed.
- (0,0): [10/29/2018 04:11:50.858 ] Assembly-CSharp.dll compiling...
- (0,0): [10/29/2018 04:11:50.999 ] Assembly-CSharp.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp.dll
- (0,0): [10/29/2018 04:11:51.085 ] Assembly-CSharp.dll compilation finished in 225ms  source files re-parsed: 2 metadata reloaded: 0
- (0,0): [10/29/2018 04:11:51.096 ] Assembly-CSharp.dll: compilation was cached, 2 file(s) were found to have changed.
- (0,0): [10/29/2018 04:11:51.737 ] Assembly-CSharp-Editor.dll compiling...
- (0,0): [10/29/2018 04:11:51.781 ] Assembly-CSharp-Editor.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp-Editor.dll
- (0,0): [10/29/2018 04:11:51.824 ] Assembly-CSharp-Editor.dll compilation finished in 86ms  source files re-parsed: 0 metadata reloaded: 1
- (0,0): [10/29/2018 04:11:51.836 ] Assembly-CSharp-Editor.dll: compilation was cached, 0 file(s) were found to have changed.
- (0,0): [10/29/2018 04:14:41.152 ] Compiler cache size is now 18,74 MB
- (0,0): [10/29/2018 04:22:00.766 ] Assembly-CSharp.dll compiling...
- (0,0): [10/29/2018 04:22:00.907 ] Assembly-CSharp.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp.dll
- (0,0): [10/29/2018 04:22:01.005 ] Assembly-CSharp.dll compilation finished in 239ms  source files re-parsed: 1 metadata reloaded: 0
- (0,0): [10/29/2018 04:22:01.017 ] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed.
- (0,0): [10/29/2018 04:22:01.604 ] Assembly-CSharp-Editor.dll compiling...
- (0,0): [10/29/2018 04:22:01.642 ] Assembly-CSharp-Editor.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp-Editor.dll
- (0,0): [10/29/2018 04:22:01.691 ] Assembly-CSharp-Editor.dll compilation finished in 86ms  source files re-parsed: 0 metadata reloaded: 1
- (0,0): [10/29/2018 04:22:01.703 ] Assembly-CSharp-Editor.dll: compilation was cached, 0 file(s) were found to have changed.
- (0,0): [10/29/2018 04:22:35.250 ] Assembly-CSharp.dll compiling...
- (0,0): [10/29/2018 04:22:35.383 ] Assembly-CSharp.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp.dll
- (0,0): [10/29/2018 04:22:35.406 ] Assembly-CSharp.dll compilation finished in 156ms  source files re-parsed: 1 metadata reloaded: 0
- (0,0): [10/29/2018 04:22:35.418 ] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed.
- (0,0): [10/29/2018 04:23:15.048 ] Assembly-CSharp.dll compiling...
- (0,0): [10/29/2018 04:23:15.222 ] Assembly-CSharp.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp.dll
- (0,0): [10/29/2018 04:23:15.387 ] Assembly-CSharp.dll compilation finished in 338ms  source files re-parsed: 1 metadata reloaded: 0
- (0,0): [10/29/2018 04:23:15.399 ] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed.
- (0,0): [10/29/2018 04:23:16.229 ] Assembly-CSharp-Editor.dll compiling...
- (0,0): [10/29/2018 04:23:16.278 ] Assembly-CSharp-Editor.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp-Editor.dll
- (0,0): [10/29/2018 04:23:16.328 ] Assembly-CSharp-Editor.dll compilation finished in 98ms  source files re-parsed: 0 metadata reloaded: 1
- (0,0): [10/29/2018 04:23:16.340 ] Assembly-CSharp-Editor.dll: compilation was cached, 0 file(s) were found to have changed.
- (0,0): [10/29/2018 04:23:17.591 ] Assembly-CSharp.dll compiling...
- (0,0): [10/29/2018 04:23:17.726 ] Assembly-CSharp.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp.dll
- (0,0): [10/29/2018 04:23:17.807 ] Assembly-CSharp.dll compilation finished in 216ms  source files re-parsed: 1 metadata reloaded: 0
- (0,0): [10/29/2018 04:23:17.819 ] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed.
- (0,0): [10/29/2018 04:23:18.349 ] Assembly-CSharp-Editor.dll compiling...
- (0,0): [10/29/2018 04:23:18.393 ] Assembly-CSharp-Editor.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp-Editor.dll
- (0,0): [10/29/2018 04:23:18.440 ] Assembly-CSharp-Editor.dll compilation finished in 91ms  source files re-parsed: 0 metadata reloaded: 1
- (0,0): [10/29/2018 04:23:18.452 ] Assembly-CSharp-Editor.dll: compilation was cached, 0 file(s) were found to have changed.
- (0,0): [10/29/2018 04:23:54.056 ] Assembly-CSharp.dll compiling...
- (0,0): [10/29/2018 04:23:54.202 ] Assembly-CSharp.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp.dll
- (0,0): [10/29/2018 04:23:54.290 ] Assembly-CSharp.dll compilation finished in 233ms  source files re-parsed: 1 metadata reloaded: 0
- (0,0): [10/29/2018 04:23:54.302 ] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed.
- (0,0): [10/29/2018 04:23:54.752 ] Assembly-CSharp-Editor.dll compiling...
- (0,0): [10/29/2018 04:23:54.788 ] Assembly-CSharp-Editor.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp-Editor.dll
- (0,0): [10/29/2018 04:23:54.834 ] Assembly-CSharp-Editor.dll compilation finished in 82ms  source files re-parsed: 0 metadata reloaded: 1
- (0,0): [10/29/2018 04:23:54.846 ] Assembly-CSharp-Editor.dll: compilation was cached, 0 file(s) were found to have changed.
- (0,0): [10/29/2018 04:30:24.227 ] Assembly-CSharp.dll compiling...
- (0,0): [10/29/2018 04:30:24.365 ] Assembly-CSharp.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp.dll
- (0,0): [10/29/2018 04:30:24.454 ] Assembly-CSharp.dll compilation finished in 226ms  source files re-parsed: 4 metadata reloaded: 0
- (0,0): [10/29/2018 04:30:24.466 ] Assembly-CSharp.dll: compilation was cached, 4 file(s) were found to have changed.
- (0,0): [10/29/2018 04:30:24.943 ] Assembly-CSharp-Editor.dll compiling...
- (0,0): [10/29/2018 04:30:24.994 ] Assembly-CSharp-Editor.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp-Editor.dll
- (0,0): [10/29/2018 04:30:25.038 ] Assembly-CSharp-Editor.dll compilation finished in 94ms  source files re-parsed: 0 metadata reloaded: 1
- (0,0): [10/29/2018 04:30:25.050 ] Assembly-CSharp-Editor.dll: compilation was cached, 0 file(s) were found to have changed.
- (0,0): [10/29/2018 04:37:44.518 ] Assembly-CSharp.dll compiling...
- (0,0): [10/29/2018 04:37:44.706 ] Assembly-CSharp.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp.dll
- (0,0): [10/29/2018 04:37:44.775 ] Assembly-CSharp.dll compilation finished in 256ms  source files re-parsed: 1 metadata reloaded: 0
- (0,0): [10/29/2018 04:37:44.787 ] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed.
- (0,0): [10/29/2018 04:39:09.281 ] Assembly-CSharp.dll compiling...
- (0,0): [10/29/2018 04:39:09.449 ] Assembly-CSharp.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp.dll
- (0,0): [10/29/2018 04:39:09.592 ] Assembly-CSharp.dll compilation finished in 310ms  source files re-parsed: 1 metadata reloaded: 0
- (0,0): [10/29/2018 04:39:09.603 ] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed.
- (0,0): [10/29/2018 04:39:10.250 ] Assembly-CSharp-Editor.dll compiling...
- (0,0): [10/29/2018 04:39:10.288 ] Assembly-CSharp-Editor.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp-Editor.dll
- (0,0): [10/29/2018 04:39:10.332 ] Assembly-CSharp-Editor.dll compilation finished in 82ms  source files re-parsed: 0 metadata reloaded: 1
- (0,0): [10/29/2018 04:39:10.344 ] Assembly-CSharp-Editor.dll: compilation was cached, 0 file(s) were found to have changed.
- (0,0): [10/29/2018 04:40:40.521 ] Assembly-CSharp.dll compiling...
- (0,0): [10/29/2018 04:40:40.689 ] Assembly-CSharp.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp.dll
- (0,0): [10/29/2018 04:40:40.845 ] Assembly-CSharp.dll compilation finished in 323ms  source files re-parsed: 1 metadata reloaded: 0
- (0,0): [10/29/2018 04:40:40.857 ] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed.
- (0,0): [10/29/2018 04:40:41.490 ] Assembly-CSharp-Editor.dll compiling...
- (0,0): [10/29/2018 04:40:41.530 ] Assembly-CSharp-Editor.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp-Editor.dll
- (0,0): [10/29/2018 04:40:41.577 ] Assembly-CSharp-Editor.dll compilation finished in 87ms  source files re-parsed: 0 metadata reloaded: 1
- (0,0): [10/29/2018 04:40:41.589 ] Assembly-CSharp-Editor.dll: compilation was cached, 0 file(s) were found to have changed.
- (0,0): [10/29/2018 04:41:05.206 ] Assembly-CSharp.dll compiling...
- (0,0): [10/29/2018 04:41:05.371 ] Assembly-CSharp.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp.dll
- (0,0): [10/29/2018 04:41:05.506 ] Assembly-CSharp.dll compilation finished in 299ms  source files re-parsed: 1 metadata reloaded: 0
- (0,0): [10/29/2018 04:41:05.518 ] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed.
- (0,0): [10/29/2018 04:41:06.186 ] Assembly-CSharp-Editor.dll compiling...
- (0,0): [10/29/2018 04:41:06.231 ] Assembly-CSharp-Editor.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp-Editor.dll
- (0,0): [10/29/2018 04:41:06.280 ] Assembly-CSharp-Editor.dll compilation finished in 94ms  source files re-parsed: 0 metadata reloaded: 1
- (0,0): [10/29/2018 04:41:06.292 ] Assembly-CSharp-Editor.dll: compilation was cached, 0 file(s) were found to have changed.
- (0,0): [10/29/2018 04:42:09.973 ] Assembly-CSharp.dll compiling...
- (0,0): [10/29/2018 04:42:10.228 ] Assembly-CSharp.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp.dll
- (0,0): [10/29/2018 04:42:10.361 ] Assembly-CSharp.dll compilation finished in 387ms  source files re-parsed: 1 metadata reloaded: 0
- (0,0): [10/29/2018 04:42:10.373 ] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed.
- (0,0): [10/29/2018 04:42:11.869 ] Assembly-CSharp-Editor.dll compiling...
- (0,0): [10/29/2018 04:42:11.912 ] Assembly-CSharp-Editor.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp-Editor.dll
- (0,0): [10/29/2018 04:42:12.029 ] Assembly-CSharp-Editor.dll compilation finished in 159ms  source files re-parsed: 0 metadata reloaded: 1
- (0,0): [10/29/2018 04:42:12.042 ] Assembly-CSharp-Editor.dll: compilation was cached, 0 file(s) were found to have changed.
- (0,0): [10/29/2018 04:42:12.632 ] Assembly-CSharp.dll compiling...
- (0,0): [10/29/2018 04:42:12.864 ] Assembly-CSharp.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp.dll
- (0,0): [10/29/2018 04:42:12.960 ] Assembly-CSharp.dll compilation finished in 328ms  source files re-parsed: 0 metadata reloaded: 0
- (0,0): [10/29/2018 04:42:12.972 ] Assembly-CSharp.dll: compilation was cached, 0 file(s) were found to have changed.
- (0,0): [10/29/2018 04:42:13.530 ] Assembly-CSharp-Editor.dll compiling...
- (0,0): [10/29/2018 04:42:13.565 ] Assembly-CSharp-Editor.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp-Editor.dll
- (0,0): [10/29/2018 04:42:13.612 ] Assembly-CSharp-Editor.dll compilation finished in 82ms  source files re-parsed: 0 metadata reloaded: 1
- (0,0): [10/29/2018 04:42:13.624 ] Assembly-CSharp-Editor.dll: compilation was cached, 0 file(s) were found to have changed.
- (0,0): [10/29/2018 04:42:49.420 ] Assembly-CSharp.dll compiling...
- (0,0): [10/29/2018 04:42:49.555 ] Assembly-CSharp.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp.dll
- (0,0): [10/29/2018 04:42:49.569 ] Assembly-CSharp.dll compilation finished in 149ms  source files re-parsed: 1 metadata reloaded: 0
- (0,0): [10/29/2018 04:42:49.581 ] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed.
- (0,0): [10/29/2018 04:43:10.509 ] Assembly-CSharp.dll compiling...
- (0,0): [10/29/2018 04:43:10.637 ] Assembly-CSharp.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp.dll
- (0,0): [10/29/2018 04:43:10.650 ] Assembly-CSharp.dll compilation finished in 140ms  source files re-parsed: 1 metadata reloaded: 0
- (0,0): [10/29/2018 04:43:10.662 ] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed.
- (0,0): [10/29/2018 04:43:29.572 ] Assembly-CSharp.dll compiling...
- (0,0): [10/29/2018 04:43:29.730 ] Assembly-CSharp.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp.dll
- (0,0): [10/29/2018 04:43:29.841 ] Assembly-CSharp.dll compilation finished in 267ms  source files re-parsed: 1 metadata reloaded: 0
- (0,0): [10/29/2018 04:43:29.853 ] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed.
- (0,0): [10/29/2018 04:43:30.355 ] Assembly-CSharp-Editor.dll compiling...
- (0,0): [10/29/2018 04:43:30.395 ] Assembly-CSharp-Editor.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp-Editor.dll
- (0,0): [10/29/2018 04:43:30.439 ] Assembly-CSharp-Editor.dll compilation finished in 83ms  source files re-parsed: 0 metadata reloaded: 1
- (0,0): [10/29/2018 04:43:30.451 ] Assembly-CSharp-Editor.dll: compilation was cached, 0 file(s) were found to have changed.
- (0,0): [10/29/2018 04:44:57.228 ] Compiler cache size is now 18,74 MB
+ (0,0): watchdog active on pid: 25192
+ (0,0): [10/30/2018 02:01:24.190 ] Assembly-CSharp.dll: no prior compilation found in cache
+ (0,0): [10/30/2018 02:01:24.205 ] Assembly-CSharp.dll compiling...
+ (0,0): [10/30/2018 02:01:32.096 ] Assembly-CSharp.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp.dll
+ (0,0): [10/30/2018 02:01:32.339 ] Assembly-CSharp.dll compilation finished in 8134ms  source files re-parsed: 47 metadata reloaded: 198
+ (0,0): [10/30/2018 02:08:53.516 ] Assembly-CSharp-Editor.dll: no prior compilation found in cache
+ (0,0): [10/30/2018 02:08:53.532 ] Assembly-CSharp-Editor.dll compiling...
+ (0,0): [10/30/2018 02:08:53.817 ] Assembly-CSharp-Editor.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp-Editor.dll
+ (0,0): [10/30/2018 02:08:53.888 ] Assembly-CSharp-Editor.dll compilation finished in 356ms  source files re-parsed: 3 metadata reloaded: 137
+ (0,0): [10/30/2018 02:12:08.685 ] Compiler cache size is now 18,74 MB
+ (0,0): [10/30/2018 03:07:36.073 ] Assembly-CSharp.dll compiling...
+ (0,0): [10/30/2018 03:07:36.373 ] Assembly-CSharp.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp.dll
+ (0,0): [10/30/2018 03:07:36.592 ] Assembly-CSharp.dll compilation finished in 519ms  source files re-parsed: 1 metadata reloaded: 0
+ (0,0): [10/30/2018 03:07:36.605 ] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed.
+ (0,0): [10/30/2018 03:07:37.278 ] Assembly-CSharp-Editor.dll compiling...
+ (0,0): [10/30/2018 03:07:37.319 ] Assembly-CSharp-Editor.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp-Editor.dll
+ (0,0): [10/30/2018 03:07:37.414 ] Assembly-CSharp-Editor.dll compilation finished in 137ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [10/30/2018 03:07:37.426 ] Assembly-CSharp-Editor.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [10/30/2018 03:10:50.964 ] Assembly-CSharp.dll compiling...
+ (0,0): [10/30/2018 03:10:51.175 ] Assembly-CSharp.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp.dll
+ (0,0): [10/30/2018 03:10:51.424 ] Assembly-CSharp.dll compilation finished in 459ms  source files re-parsed: 1 metadata reloaded: 0
+ (0,0): [10/30/2018 03:10:51.437 ] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed.
+ (0,0): [10/30/2018 03:10:52.015 ] Assembly-CSharp-Editor.dll compiling...
+ (0,0): [10/30/2018 03:10:52.051 ] Assembly-CSharp-Editor.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp-Editor.dll
+ (0,0): [10/30/2018 03:10:52.095 ] Assembly-CSharp-Editor.dll compilation finished in 79ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [10/30/2018 03:10:52.107 ] Assembly-CSharp-Editor.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [10/30/2018 03:13:05.504 ] Assembly-CSharp.dll: no prior compilation found in cache
+ (0,0): [10/30/2018 03:13:05.518 ] Assembly-CSharp.dll compiling...
+ (0,0): [10/30/2018 03:13:05.860 ] Assembly-CSharp.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp.dll
+ (0,0): [10/30/2018 03:13:06.038 ] Assembly-CSharp.dll compilation finished in 520ms  source files re-parsed: 48 metadata reloaded: 0
+ (0,0): [10/30/2018 03:13:07.532 ] Assembly-CSharp-Editor.dll compiling...
+ (0,0): [10/30/2018 03:13:07.640 ] Assembly-CSharp-Editor.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp-Editor.dll
+ (0,0): [10/30/2018 03:13:07.809 ] Assembly-CSharp-Editor.dll compilation finished in 277ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [10/30/2018 03:13:07.825 ] Assembly-CSharp-Editor.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [10/30/2018 03:14:08.296 ] Assembly-CSharp.dll compiling...
+ (0,0): [10/30/2018 03:14:08.569 ] Assembly-CSharp.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp.dll
+ (0,0): [10/30/2018 03:14:09.083 ] Assembly-CSharp.dll compilation finished in 786ms  source files re-parsed: 2 metadata reloaded: 0
+ (0,0): [10/30/2018 03:14:09.095 ] Assembly-CSharp.dll: compilation was cached, 2 file(s) were found to have changed.
+ (0,0): [10/30/2018 03:14:09.925 ] Assembly-CSharp-Editor.dll compiling...
+ (0,0): [10/30/2018 03:14:09.967 ] Assembly-CSharp-Editor.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp-Editor.dll
+ (0,0): [10/30/2018 03:14:10.012 ] Assembly-CSharp-Editor.dll compilation finished in 87ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [10/30/2018 03:14:10.024 ] Assembly-CSharp-Editor.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [10/30/2018 03:15:10.272 ] Assembly-CSharp.dll compiling...
+ (0,0): [10/30/2018 03:15:10.375 ] Assembly-CSharp.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp.dll
+ (0,0): [10/30/2018 03:15:10.458 ] Assembly-CSharp.dll compilation finished in 185ms  source files re-parsed: 1 metadata reloaded: 0
+ (0,0): [10/30/2018 03:15:10.470 ] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed.
+ (0,0): [10/30/2018 03:15:42.089 ] Assembly-CSharp.dll compiling...
+ (0,0): [10/30/2018 03:15:42.347 ] Assembly-CSharp.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp.dll
+ (0,0): [10/30/2018 03:15:42.673 ] Assembly-CSharp.dll compilation finished in 584ms  source files re-parsed: 1 metadata reloaded: 0
+ (0,0): [10/30/2018 03:15:42.689 ] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed.
+ (0,0): [10/30/2018 03:15:43.474 ] Assembly-CSharp-Editor.dll compiling...
+ (0,0): [10/30/2018 03:15:43.535 ] Assembly-CSharp-Editor.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp-Editor.dll
+ (0,0): [10/30/2018 03:15:43.590 ] Assembly-CSharp-Editor.dll compilation finished in 116ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [10/30/2018 03:15:43.603 ] Assembly-CSharp-Editor.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [10/30/2018 03:16:01.710 ] Assembly-CSharp.dll compiling...
+ (0,0): [10/30/2018 03:16:01.931 ] Assembly-CSharp.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp.dll
+ (0,0): [10/30/2018 03:16:02.207 ] Assembly-CSharp.dll compilation finished in 497ms  source files re-parsed: 1 metadata reloaded: 0
+ (0,0): [10/30/2018 03:16:02.253 ] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed.
+ (0,0): [10/30/2018 03:16:03.170 ] Assembly-CSharp-Editor.dll compiling...
+ (0,0): [10/30/2018 03:16:03.234 ] Assembly-CSharp-Editor.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp-Editor.dll
+ (0,0): [10/30/2018 03:16:03.432 ] Assembly-CSharp-Editor.dll compilation finished in 262ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [10/30/2018 03:16:03.444 ] Assembly-CSharp-Editor.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [10/30/2018 03:16:47.231 ] Assembly-CSharp.dll compiling...
+ (0,0): [10/30/2018 03:16:47.423 ] Assembly-CSharp.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp.dll
+ (0,0): [10/30/2018 03:16:47.662 ] Assembly-CSharp.dll compilation finished in 431ms  source files re-parsed: 1 metadata reloaded: 0
+ (0,0): [10/30/2018 03:16:47.674 ] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed.
+ (0,0): [10/30/2018 03:16:48.514 ] Assembly-CSharp-Editor.dll compiling...
+ (0,0): [10/30/2018 03:16:48.561 ] Assembly-CSharp-Editor.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp-Editor.dll
+ (0,0): [10/30/2018 03:16:48.715 ] Assembly-CSharp-Editor.dll compilation finished in 201ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [10/30/2018 03:16:48.728 ] Assembly-CSharp-Editor.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [10/30/2018 03:17:04.638 ] Assembly-CSharp.dll compiling...
+ (0,0): [10/30/2018 03:17:04.838 ] Assembly-CSharp.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp.dll
+ (0,0): [10/30/2018 03:17:05.047 ] Assembly-CSharp.dll compilation finished in 408ms  source files re-parsed: 1 metadata reloaded: 0
+ (0,0): [10/30/2018 03:17:05.059 ] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed.
+ (0,0): [10/30/2018 03:17:05.714 ] Assembly-CSharp-Editor.dll compiling...
+ (0,0): [10/30/2018 03:17:05.759 ] Assembly-CSharp-Editor.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp-Editor.dll
+ (0,0): [10/30/2018 03:17:05.808 ] Assembly-CSharp-Editor.dll compilation finished in 94ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [10/30/2018 03:17:05.820 ] Assembly-CSharp-Editor.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [10/30/2018 03:18:48.721 ] Assembly-CSharp.dll compiling...
+ (0,0): [10/30/2018 03:18:48.986 ] Assembly-CSharp.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp.dll
+ (0,0): [10/30/2018 03:18:49.205 ] Assembly-CSharp.dll compilation finished in 484ms  source files re-parsed: 1 metadata reloaded: 0
+ (0,0): [10/30/2018 03:18:49.217 ] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed.
+ (0,0): [10/30/2018 03:18:49.872 ] Assembly-CSharp-Editor.dll compiling...
+ (0,0): [10/30/2018 03:18:49.923 ] Assembly-CSharp-Editor.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp-Editor.dll
+ (0,0): [10/30/2018 03:18:49.975 ] Assembly-CSharp-Editor.dll compilation finished in 102ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [10/30/2018 03:18:49.987 ] Assembly-CSharp-Editor.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [10/30/2018 03:19:10.574 ] Compiler cache size is now 18,74 MB
+ (0,0): [10/30/2018 03:21:25.150 ] Assembly-CSharp.dll compiling...
+ (0,0): [10/30/2018 03:21:25.352 ] Assembly-CSharp.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp.dll
+ (0,0): [10/30/2018 03:21:25.534 ] Assembly-CSharp.dll compilation finished in 383ms  source files re-parsed: 1 metadata reloaded: 0
+ (0,0): [10/30/2018 03:21:25.546 ] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed.
+ (0,0): [10/30/2018 03:21:26.231 ] Assembly-CSharp-Editor.dll compiling...
+ (0,0): [10/30/2018 03:21:26.272 ] Assembly-CSharp-Editor.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp-Editor.dll
+ (0,0): [10/30/2018 03:21:26.368 ] Assembly-CSharp-Editor.dll compilation finished in 136ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [10/30/2018 03:21:26.381 ] Assembly-CSharp-Editor.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [10/30/2018 03:27:25.884 ] Assembly-CSharp.dll compiling...
+ (0,0): [10/30/2018 03:27:26.044 ] Assembly-CSharp.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp.dll
+ (0,0): [10/30/2018 03:27:27.023 ] Assembly-CSharp.dll compilation finished in 1138ms  source files re-parsed: 1 metadata reloaded: 0
+ (0,0): [10/30/2018 03:27:27.035 ] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed.
+ (0,0): [10/30/2018 03:27:27.736 ] Assembly-CSharp-Editor.dll compiling...
+ (0,0): [10/30/2018 03:27:27.777 ] Assembly-CSharp-Editor.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp-Editor.dll
+ (0,0): [10/30/2018 03:27:27.820 ] Assembly-CSharp-Editor.dll compilation finished in 84ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [10/30/2018 03:27:27.833 ] Assembly-CSharp-Editor.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [10/30/2018 03:31:43.493 ] Assembly-CSharp.dll compiling...
+ (0,0): [10/30/2018 03:31:43.666 ] Assembly-CSharp.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp.dll
+ (0,0): [10/30/2018 03:31:43.792 ] Assembly-CSharp.dll compilation finished in 298ms  source files re-parsed: 1 metadata reloaded: 0
+ (0,0): [10/30/2018 03:31:43.804 ] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed.
+ (0,0): [10/30/2018 03:31:45.610 ] Assembly-CSharp-Editor.dll compiling...
+ (0,0): [10/30/2018 03:31:45.651 ] Assembly-CSharp-Editor.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp-Editor.dll
+ (0,0): [10/30/2018 03:31:45.694 ] Assembly-CSharp-Editor.dll compilation finished in 84ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [10/30/2018 03:31:45.706 ] Assembly-CSharp-Editor.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [10/30/2018 03:34:27.838 ] Assembly-CSharp.dll compiling...
+ (0,0): [10/30/2018 03:34:28.035 ] Assembly-CSharp.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp.dll
+ (0,0): [10/30/2018 03:34:28.162 ] Assembly-CSharp.dll compilation finished in 324ms  source files re-parsed: 1 metadata reloaded: 0
+ (0,0): [10/30/2018 03:34:28.174 ] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed.
+ (0,0): [10/30/2018 03:34:28.701 ] Assembly-CSharp-Editor.dll compiling...
+ (0,0): [10/30/2018 03:34:28.742 ] Assembly-CSharp-Editor.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp-Editor.dll
+ (0,0): [10/30/2018 03:34:28.789 ] Assembly-CSharp-Editor.dll compilation finished in 88ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [10/30/2018 03:34:28.801 ] Assembly-CSharp-Editor.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [10/30/2018 03:39:22.418 ] Compiler cache size is now 18,74 MB
+ (0,0): [10/30/2018 03:42:30.841 ] Assembly-CSharp.dll compiling...
+ (0,0): [10/30/2018 03:42:31.121 ] Assembly-CSharp.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp.dll
+ (0,0): [10/30/2018 03:42:31.321 ] Assembly-CSharp.dll compilation finished in 479ms  source files re-parsed: 1 metadata reloaded: 0
+ (0,0): [10/30/2018 03:42:31.333 ] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed.
+ (0,0): [10/30/2018 03:42:31.903 ] Assembly-CSharp-Editor.dll compiling...
+ (0,0): [10/30/2018 03:42:31.941 ] Assembly-CSharp-Editor.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp-Editor.dll
+ (0,0): [10/30/2018 03:42:31.995 ] Assembly-CSharp-Editor.dll compilation finished in 91ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [10/30/2018 03:42:32.007 ] Assembly-CSharp-Editor.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [10/30/2018 03:43:57.989 ] Assembly-CSharp.dll compiling...
+ (0,0): [10/30/2018 03:43:58.133 ] Assembly-CSharp.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp.dll
+ (0,0): [10/30/2018 03:43:58.226 ] Assembly-CSharp.dll compilation finished in 237ms  source files re-parsed: 1 metadata reloaded: 0
+ (0,0): [10/30/2018 03:43:58.239 ] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed.
+ (0,0): [10/30/2018 03:43:58.918 ] Assembly-CSharp-Editor.dll compiling...
+ (0,0): [10/30/2018 03:43:58.964 ] Assembly-CSharp-Editor.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp-Editor.dll
+ (0,0): [10/30/2018 03:43:59.015 ] Assembly-CSharp-Editor.dll compilation finished in 96ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [10/30/2018 03:43:59.028 ] Assembly-CSharp-Editor.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [10/30/2018 03:44:24.983 ] Compiler cache size is now 18,74 MB
+ (0,0): [10/30/2018 03:51:37.019 ] Assembly-CSharp.dll compiling...
+ (0,0): [10/30/2018 03:51:37.183 ] Assembly-CSharp.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp.dll
+ (0,0): [10/30/2018 03:51:37.313 ] Assembly-CSharp.dll compilation finished in 292ms  source files re-parsed: 1 metadata reloaded: 0
+ (0,0): [10/30/2018 03:51:37.327 ] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed.
+ (0,0): [10/30/2018 03:51:38.022 ] Assembly-CSharp-Editor.dll compiling...
+ (0,0): [10/30/2018 03:51:38.065 ] Assembly-CSharp-Editor.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp-Editor.dll
+ (0,0): [10/30/2018 03:51:38.108 ] Assembly-CSharp-Editor.dll compilation finished in 86ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [10/30/2018 03:51:38.120 ] Assembly-CSharp-Editor.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [10/30/2018 03:53:54.548 ] Assembly-CSharp.dll compiling...
+ (0,0): [10/30/2018 03:53:54.747 ] Assembly-CSharp.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp.dll
+ (0,0): [10/30/2018 03:53:55.687 ] Assembly-CSharp.dll compilation finished in 1139ms  source files re-parsed: 1 metadata reloaded: 0
+ (0,0): [10/30/2018 03:53:55.699 ] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed.
+ (0,0): [10/30/2018 03:53:56.450 ] Assembly-CSharp-Editor.dll compiling...
+ (0,0): [10/30/2018 03:53:56.491 ] Assembly-CSharp-Editor.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp-Editor.dll
+ (0,0): [10/30/2018 03:53:56.603 ] Assembly-CSharp-Editor.dll compilation finished in 152ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [10/30/2018 03:53:56.615 ] Assembly-CSharp-Editor.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [10/30/2018 03:54:32.458 ] Assembly-CSharp.dll compiling...
+ (0,0): [10/30/2018 03:54:32.598 ] Assembly-CSharp.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp.dll
+ (0,0): [10/30/2018 03:54:32.726 ] Assembly-CSharp.dll compilation finished in 268ms  source files re-parsed: 1 metadata reloaded: 0
+ (0,0): [10/30/2018 03:54:32.739 ] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed.
+ (0,0): [10/30/2018 03:54:33.665 ] Assembly-CSharp-Editor.dll compiling...
+ (0,0): [10/30/2018 03:54:33.706 ] Assembly-CSharp-Editor.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp-Editor.dll
+ (0,0): [10/30/2018 03:54:33.752 ] Assembly-CSharp-Editor.dll compilation finished in 86ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [10/30/2018 03:54:33.763 ] Assembly-CSharp-Editor.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [10/30/2018 04:02:58.692 ] Assembly-CSharp.dll compiling...
+ (0,0): [10/30/2018 04:02:58.955 ] Assembly-CSharp.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp.dll
+ (0,0): [10/30/2018 04:02:59.035 ] Assembly-CSharp.dll compilation finished in 343ms  source files re-parsed: 1 metadata reloaded: 0
+ (0,0): [10/30/2018 04:02:59.048 ] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed.
+ (0,0): [10/30/2018 04:03:00.324 ] Assembly-CSharp-Editor.dll compiling...
+ (0,0): [10/30/2018 04:03:00.382 ] Assembly-CSharp-Editor.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp-Editor.dll
+ (0,0): [10/30/2018 04:03:00.440 ] Assembly-CSharp-Editor.dll compilation finished in 115ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [10/30/2018 04:03:00.452 ] Assembly-CSharp-Editor.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [10/30/2018 04:13:59.704 ] Assembly-CSharp.dll compiling...
+ (0,0): [10/30/2018 04:13:59.902 ] Assembly-CSharp.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp.dll
+ (0,0): [10/30/2018 04:14:00.093 ] Assembly-CSharp.dll compilation finished in 388ms  source files re-parsed: 1 metadata reloaded: 0
+ (0,0): [10/30/2018 04:14:00.109 ] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed.
+ (0,0): [10/30/2018 04:14:00.781 ] Assembly-CSharp-Editor.dll compiling...
+ (0,0): [10/30/2018 04:14:00.822 ] Assembly-CSharp-Editor.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp-Editor.dll
+ (0,0): [10/30/2018 04:14:00.877 ] Assembly-CSharp-Editor.dll compilation finished in 95ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [10/30/2018 04:14:00.889 ] Assembly-CSharp-Editor.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [10/30/2018 04:23:32.498 ] Assembly-CSharp.dll compiling...
+ (0,0): [10/30/2018 04:23:32.656 ] Assembly-CSharp.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp.dll
+ (0,0): [10/30/2018 04:23:32.759 ] Assembly-CSharp.dll compilation finished in 261ms  source files re-parsed: 1 metadata reloaded: 0
+ (0,0): [10/30/2018 04:23:32.771 ] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed.
+ (0,0): [10/30/2018 04:23:34.189 ] Assembly-CSharp-Editor.dll compiling...
+ (0,0): [10/30/2018 04:23:34.237 ] Assembly-CSharp-Editor.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp-Editor.dll
+ (0,0): [10/30/2018 04:23:34.289 ] Assembly-CSharp-Editor.dll compilation finished in 99ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [10/30/2018 04:23:34.300 ] Assembly-CSharp-Editor.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [10/30/2018 04:24:06.986 ] Assembly-CSharp.dll compiling...
+ (0,0): [10/30/2018 04:24:07.164 ] Assembly-CSharp.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp.dll
+ (0,0): [10/30/2018 04:24:07.254 ] Assembly-CSharp.dll compilation finished in 267ms  source files re-parsed: 1 metadata reloaded: 0
+ (0,0): [10/30/2018 04:24:07.266 ] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed.
+ (0,0): [10/30/2018 04:24:08.132 ] Assembly-CSharp-Editor.dll compiling...
+ (0,0): [10/30/2018 04:24:08.172 ] Assembly-CSharp-Editor.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp-Editor.dll
+ (0,0): [10/30/2018 04:24:08.215 ] Assembly-CSharp-Editor.dll compilation finished in 82ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [10/30/2018 04:24:08.232 ] Assembly-CSharp-Editor.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [10/30/2018 04:24:22.162 ] Assembly-CSharp.dll compiling...
+ (0,0): [10/30/2018 04:24:22.318 ] Assembly-CSharp.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp.dll
+ (0,0): [10/30/2018 04:24:22.411 ] Assembly-CSharp.dll compilation finished in 248ms  source files re-parsed: 1 metadata reloaded: 0
+ (0,0): [10/30/2018 04:24:22.424 ] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed.
+ (0,0): [10/30/2018 04:24:22.888 ] Assembly-CSharp-Editor.dll compiling...
+ (0,0): [10/30/2018 04:24:22.932 ] Assembly-CSharp-Editor.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp-Editor.dll
+ (0,0): [10/30/2018 04:24:22.980 ] Assembly-CSharp-Editor.dll compilation finished in 92ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [10/30/2018 04:24:22.992 ] Assembly-CSharp-Editor.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [10/30/2018 04:25:23.078 ] Assembly-CSharp.dll compiling...
+ (0,0): [10/30/2018 04:25:23.245 ] Assembly-CSharp.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp.dll
+ (0,0): [10/30/2018 04:25:23.448 ] Assembly-CSharp.dll compilation finished in 370ms  source files re-parsed: 1 metadata reloaded: 0
+ (0,0): [10/30/2018 04:25:23.460 ] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed.
+ (0,0): [10/30/2018 04:25:24.137 ] Assembly-CSharp-Editor.dll compiling...
+ (0,0): [10/30/2018 04:25:24.176 ] Assembly-CSharp-Editor.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp-Editor.dll
+ (0,0): [10/30/2018 04:25:24.221 ] Assembly-CSharp-Editor.dll compilation finished in 83ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [10/30/2018 04:25:24.233 ] Assembly-CSharp-Editor.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [10/30/2018 04:26:38.282 ] Assembly-CSharp.dll compiling...
+ (0,0): [10/30/2018 04:26:38.715 ] Assembly-CSharp.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp.dll
+ (0,0): [10/30/2018 04:26:40.325 ] Assembly-CSharp.dll compilation finished in 2042ms  source files re-parsed: 1 metadata reloaded: 0
+ (0,0): [10/30/2018 04:26:40.355 ] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed.
+ (0,0): [10/30/2018 04:26:41.168 ] Assembly-CSharp-Editor.dll compiling...
+ (0,0): [10/30/2018 04:26:41.208 ] Assembly-CSharp-Editor.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp-Editor.dll
+ (0,0): [10/30/2018 04:26:41.254 ] Assembly-CSharp-Editor.dll compilation finished in 86ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [10/30/2018 04:26:41.266 ] Assembly-CSharp-Editor.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [10/30/2018 04:45:54.573 ] Assembly-CSharp.dll compiling...
+ (0,0): [10/30/2018 04:45:54.747 ] Assembly-CSharp.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp.dll
+ (0,0): [10/30/2018 04:45:54.949 ] Assembly-CSharp.dll compilation finished in 375ms  source files re-parsed: 2 metadata reloaded: 0
+ (0,0): [10/30/2018 04:45:54.961 ] Assembly-CSharp.dll: compilation was cached, 2 file(s) were found to have changed.
+ (0,0): [10/30/2018 04:45:55.437 ] Assembly-CSharp-Editor.dll compiling...
+ (0,0): [10/30/2018 04:45:55.479 ] Assembly-CSharp-Editor.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp-Editor.dll
+ (0,0): [10/30/2018 04:45:55.529 ] Assembly-CSharp-Editor.dll compilation finished in 92ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [10/30/2018 04:45:55.541 ] Assembly-CSharp-Editor.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [10/30/2018 04:48:33.648 ] Assembly-CSharp.dll compiling...
+ (0,0): [10/30/2018 04:48:33.847 ] Assembly-CSharp.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp.dll
+ (0,0): [10/30/2018 04:48:33.955 ] Assembly-CSharp.dll compilation finished in 305ms  source files re-parsed: 1 metadata reloaded: 0
+ (0,0): [10/30/2018 04:48:33.967 ] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed.
+ (0,0): [10/30/2018 04:48:34.578 ] Assembly-CSharp-Editor.dll compiling...
+ (0,0): [10/30/2018 04:48:34.626 ] Assembly-CSharp-Editor.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp-Editor.dll
+ (0,0): [10/30/2018 04:48:34.688 ] Assembly-CSharp-Editor.dll compilation finished in 109ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [10/30/2018 04:48:34.701 ] Assembly-CSharp-Editor.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [10/30/2018 04:49:57.988 ] Compiler cache size is now 18,74 MB
+ (0,0): [10/30/2018 04:50:19.336 ] Assembly-CSharp.dll compiling...
+ (0,0): [10/30/2018 04:50:19.478 ] Assembly-CSharp.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp.dll
+ (0,0): [10/30/2018 04:50:19.565 ] Assembly-CSharp.dll compilation finished in 229ms  source files re-parsed: 1 metadata reloaded: 0
+ (0,0): [10/30/2018 04:50:19.577 ] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed.
+ (0,0): [10/30/2018 04:50:20.096 ] Assembly-CSharp-Editor.dll compiling...
+ (0,0): [10/30/2018 04:50:20.132 ] Assembly-CSharp-Editor.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp-Editor.dll
+ (0,0): [10/30/2018 04:50:20.176 ] Assembly-CSharp-Editor.dll compilation finished in 80ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [10/30/2018 04:50:20.188 ] Assembly-CSharp-Editor.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [10/30/2018 04:51:16.812 ] Assembly-CSharp.dll compiling...
+ (0,0): [10/30/2018 04:51:16.965 ] Assembly-CSharp.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp.dll
+ (0,0): [10/30/2018 04:51:17.051 ] Assembly-CSharp.dll compilation finished in 238ms  source files re-parsed: 1 metadata reloaded: 0
+ (0,0): [10/30/2018 04:51:17.063 ] Assembly-CSharp.dll: compilation was cached, 1 file(s) were found to have changed.
+ (0,0): [10/30/2018 04:51:17.516 ] Assembly-CSharp-Editor.dll compiling...
+ (0,0): [10/30/2018 04:51:17.556 ] Assembly-CSharp-Editor.dll: emitting IL to : C:\Users\andre\Documents\GitHub\KamikazeTheGame\Temp\Assembly-CSharp-Editor.dll
+ (0,0): [10/30/2018 04:51:17.599 ] Assembly-CSharp-Editor.dll compilation finished in 83ms  source files re-parsed: 0 metadata reloaded: 1
+ (0,0): [10/30/2018 04:51:17.611 ] Assembly-CSharp-Editor.dll: compilation was cached, 0 file(s) were found to have changed.
+ (0,0): [10/30/2018 04:55:00.528 ] Compiler cache size is now 18,74 MB
  (0,0): watchdog triggered an exit
